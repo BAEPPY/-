@@ -11,7 +11,10 @@
   "scripts": {
     "start": "node server.js",
     "dev": "MOCK_DICT=1 DEBUG=1 node server.js",
-    "test": "node --test test/*.test.js"
+    "test": "node --test test/*.test.js",
+    "test:live": "node --test test/live.test.js",
+    "check": "node scripts/check-words.mjs",
+    "fixture": "node scripts/build-fixture.mjs"
   },
   "license": "MIT"
 }

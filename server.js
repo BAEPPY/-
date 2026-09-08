@@ -7,7 +7,7 @@ import path from 'node:path';
 
 import { getConfig } from './lib/config.js';
 import { OpenDictClient, MockDictClient, OpenDictError } from './lib/opendict.js';
-import { evaluateWord, REASON_MESSAGES } from './lib/rules.js';
+import { evaluateWord, searchFilters, REASON_MESSAGES } from './lib/rules.js';
 import { allowedStarts, lastSyllable, isHangulWord, euro } from './lib/hangul.js';
 import { pickBotWord } from './lib/bot.js';
 
@@ -77,8 +77,14 @@ async function handleValidate(url, res) {
   }
   if (used.has(word)) return sendJson(res, 200, { ok: false, word, reason: 'used', message: REASON_MESSAGES.used });
 
-  const result = await client.search({ q: word, method: 'exact', num: 100 });
-  const verdict = evaluateWord(word, result.items, config.rules);
+  // 1) 규칙을 검색 필터(명사·단어·일반어·비외래어)로 붙여 조회한다. 외래어 여부는 응답에 없어 이 방법으로만 거를 수 있다.
+  const strict = await client.search({ q: word, method: 'exact', num: 100, filters: searchFilters(config.rules) });
+  let verdict = evaluateWord(word, strict.items, config.rules);
+  if (!verdict.ok) {
+    // 2) 실패했으면 필터 없이 다시 조회해서 "왜 안 되는지"(북한어·방언·외래어 …)를 알아낸다.
+    const all = await client.search({ q: word, method: 'exact', num: 100 });
+    verdict = evaluateWord(word, all.items, config.rules, { unfiltered: true });
+  }
   if (verdict.ok) {
     verdict.nextStarts = allowedStarts(lastSyllable(word), { dueum: config.dueum });
   }
@@ -100,7 +106,9 @@ async function handleRaw(url, res) {
   const q = (url.searchParams.get('word') ?? url.searchParams.get('q') ?? '').trim();
   if (!q) return sendJson(res, 400, { ok: false, error: 'word 파라미터가 필요해요.' });
   const method = url.searchParams.get('method') ?? 'exact';
-  const raw = await client.raw({ q, method, num: Number(url.searchParams.get('num')) || 20, start: Number(url.searchParams.get('start')) || 1 });
+  // strict=1 이면 게임 규칙 필터를 붙여 조회 (실제 판정에 쓰는 요청과 같음)
+  const filters = /^(1|true|yes|on)$/i.test(url.searchParams.get('strict') ?? '') ? searchFilters(config.rules) : {};
+  const raw = await client.raw({ q, method, num: Number(url.searchParams.get('num')) || 20, start: Number(url.searchParams.get('start')) || 1, filters });
   return sendJson(res, 200, raw);
 }
 
