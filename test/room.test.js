@@ -15,7 +15,7 @@ function fakeRes() {
 
 function makeRoom(overrides = {}) {
   const deps = { client, english, rng: seeded(), now: () => Date.now(), log: { error() {}, warn() {} } };
-  const room = new Room({ id: 'TEST01', name: '테스트', mode: 'kkm', settings: { turnSec: 5, rounds: 2, maxPlayers: 8 }, hostClientId: 'host', deps, ...overrides });
+  const room = new Room({ id: 'TEST01', name: '테스트', mode: 'kkm', settings: { turnSec: 5, rounds: 2, maxPlayers: 8, countdownSec: 0 }, hostClientId: 'host', deps, ...overrides });
   return room;
 }
 
@@ -148,7 +148,7 @@ test('컴퓨터가 자기 차례에 단어를 낸다', async () => {
 });
 
 test('초성 퀴즈: 턴 없이 누구나 답하고, 문제 수만큼 진행', async () => {
-  const room = makeRoom({ mode: 'choseong', settings: { turnSec: 5, rounds: 1, quizCount: 3 } });
+  const room = makeRoom({ mode: 'choseong', settings: { turnSec: 5, rounds: 1, quizCount: 3, countdownSec: 0 } });
   const me = room.join({ clientId: 'host', name: '나' });
   await room.start('host');
   assert.equal(room.prompt.type, 'choseong');
@@ -169,12 +169,12 @@ test('초성 퀴즈: 턴 없이 누구나 답하고, 문제 수만큼 진행', a
 });
 
 test('영어 모드: 사전이 준비된 경우에만 시작', async () => {
-  const room = makeRoom({ mode: 'english', settings: { turnSec: 5, rounds: 1 } });
+  const room = makeRoom({ mode: 'english', settings: { turnSec: 5, rounds: 1, countdownSec: 0 } });
   room.join({ clientId: 'host', name: 'me' });
   room.join({ clientId: 'host', name: 'you' });
   await room.start('host');
   assert.equal(room.prompt.type, 'letter');
-  const noDict = new Room({ id: 'X', name: 'x', mode: 'english', hostClientId: 'h', deps: { client, english: new EnglishDict(), rng: Math.random, now: Date.now, log: { error() {}, warn() {} } } });
+  const noDict = new Room({ id: 'X', name: 'x', mode: 'english', settings: { countdownSec: 0 }, hostClientId: 'h', deps: { client, english: new EnglishDict(), rng: Math.random, now: Date.now, log: { error() {}, warn() {} } } });
   noDict.join({ clientId: 'h', name: 'a' });
   noDict.join({ clientId: 'h', name: 'b' });
   await assert.rejects(() => noDict.start('h'), /영어 사전/);
@@ -193,4 +193,17 @@ test('RoomManager: 만들기·목록·비공개·빈 방 정리', () => {
   b.removePlayer(p.id, 'h2'); // 사람이 없고 접속도 없으면 방 삭제
   assert.throws(() => mgr.get(b.id), RoomError);
   mgr.close();
+});
+
+test('시작 카운트다운: countdownSec 동안 countdown 상태였다가 게임 시작', async () => {
+  const room = makeRoom({ settings: { turnSec: 5, rounds: 1, countdownSec: 1 } });
+  room.join({ clientId: 'host', name: '나' });
+  room.addBot('host', 'easy');
+  const starting = room.start('host');
+  await new Promise((r) => setTimeout(r, 50));
+  assert.equal(room.state, 'countdown');
+  assert.ok(room.deadline > Date.now());
+  await starting;
+  assert.equal(room.state, 'playing');
+  room.destroy();
 });
