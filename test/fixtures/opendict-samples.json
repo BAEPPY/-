@@ -1,0 +1,5546 @@
+{
+ "_note": "우리말샘 검색 API(method=exact, advanced=y, req_type=json) 실제 응답의 channel.item 을 단어별로 모은 것 (2026-09-08 수집). 뜻풀이 출처: 국립국어원 우리말샘 (CC BY-SA 2.0 KR)",
+ "words": {
+  "사과": [
+   {
+    "word": "사과",
+    "sense": [
+     {
+      "cat": "식물",
+      "definition": "살이 연하고 달며 물이 많은 참외.",
+      "link": "https://opendict.korean.go.kr/dictionary/view?sense_no=424473",
+      "sense_no": "001",
+      "target_code": "424473",
+      "type": "일반어",
+      "pos": "명사"
+     }
+    ]
+   },
+   {
+    "word": "사과",
+    "sense": [
+     {
+      "cat": "역사",
+      "definition": "조선 시대에, 오위(五衛)에 둔 정육품의 군직(軍職). 현직에 종사하고 있지 않은 문관, 무관 및 음관(蔭官)이 맡았다.",
+      "link": "https://opendict.korean.go.kr/dictionary/view?sense_no=184907",
+      "origin": "司果",
+      "sense_no": "002",
+      "target_code": "184907",
+      "type": "일반어",
+      "pos": "명사"
+     }
+    ]
+   },
+   {
+    "word": "사과",
+    "sense": [
+     {
+      "cat": "불교",
+      "definition": "소승 불교에서 이르는 깨달음의 네 단계. 수다원과, 사다함과, 아나함과, 아라한과의 단계가 있다.",
+      "link": "https://opendict.korean.go.kr/dictionary/view?sense_no=387777",
+      "origin": "四果",
+      "sense_no": "003",
+      "target_code": "387777",
+      "type": "일반어",
+      "pos": "명사"
+     }
+    ]
+   },
+   {
+    "word": "사과",
+    "sense": [
+     {
+      "definition": "유학의 네 가지 학과. 덕행, 언어, 정사(政事), 문학을 이른다.",
+      "link": "https://opendict.korean.go.kr/dictionary/view?sense_no=368696",
+      "origin": "四科",
+      "sense_no": "004",
+      "target_code": "368696",
+      "type": "일반어",
+      "pos": "명사"
+     }
+    ]
+   },
+   {
+    "word": "사과",
+    "sense": [
+     {
+      "cat": "종교 일반",
+      "definition": "천도교에서, 도를 닦는 네 과정. 곧 성(誠), 경(敬), 신(信), 법(法)을 이른다.",
+      "link": "https://opendict.korean.go.kr/dictionary/view?sense_no=372231",
+      "origin": "四科",
+      "sense_no": "005",
+      "target_code": "372231",
+      "type": "일반어",
+      "pos": "명사"
+     }
+    ]
+   },
+   {
+    "word": "사과",
+    "sense": [
+     {
+      "definition": "사과나무의 열매.",
+      "link": "https://opendict.korean.go.kr/dictionary/view?sense_no=184908",
+      "origin": "沙果/砂果",
+      "sense_no": "006",
+      "target_code": "184908",
+      "type": "일반어",
+      "pos": "명사"
+     }
+    ]
+   },
+   {
+    "word": "사과",
+    "sense": [
+     {
+      "definition": "잘못을 용서함.",
+      "link": "https://opendict.korean.go.kr/dictionary/view?sense_no=181737",
+      "origin": "赦過",
+      "sense_no": "007",
+      "target_code": "181737",
+      "type": "일반어",
+      "pos": "명사"
+     }
+    ]
+   },
+   {
+    "word": "사과",
+    "sense": [
+     {
+      "cat": "식물",
+      "definition": "박과의 한해살이 덩굴풀. 줄기는 덩굴손으로 다른 물건을 감고 올라간다. 잎은 손바닥 모양으로 5~7갈래 갈라지고 잎자루가 길다. 여름에 노란 꽃이 총상(總狀) 화서로 피고 열매는 원통 모양의 긴 장과(漿果)로 녹색이다. 열매 속의 섬유로는 수세미를 만들고 줄기의 액으로는 화장수를 만든다. 열대 아시아가 원산지이다.",
+      "link": "https://opendict.korean.go.kr/dictionary/view?sense_no=181738",
+      "origin": "絲瓜",
+      "sense_no": "008",
+      "target_code": "181738",
+      "type": "일반어",
+      "pos": "명사"
+     }
+    ]
+   },
+   {
+    "word": "사과",
+    "sense": [
+     {
+      "definition": "자기의 잘못을 인정하고 용서를 빎.",
+      "link": "https://opendict.korean.go.kr/dictionary/view?sense_no=181739",
+      "origin": "謝過",
+      "sense_no": "009",
+      "target_code": "181739",
+      "type": "일반어",
+      "pos": "명사"
+     }
+    ]
+   },
+   {
+    "word": "사과",
+    "sense": [
+     {
+      "cat": "교육",
+      "definition": "중세 서양의 기초 학문이었던 자유과의 한 갈래. 산술·기하·천문학·음악으로 구성되었다.",
+      "link": "https://opendict.korean.go.kr/dictionary/view?sense_no=1328685",
+      "origin": "四科",
+      "sense_no": "010",
+      "target_code": "1328685",
+      "type": "일반어",
+      "pos": "명사"
+     }
+    ]
+   },
+   {
+    "word": "사과",
+    "sense": [
+     {
+      "cat": "미술",
+      "definition": "이인성이 그린 그림. 1940년에 제작되었다.",
+      "link": "https://opendict.korean.go.kr/dictionary/view?sense_no=1471271",
+      "origin": "沙果/砂果",
+      "sense_no": "011",
+      "target_code": "1471271",
+      "type": "일반어",
+      "pos": "명사"
+     }
+    ]
+   }
+  ],
+  "정구지": [
+   {
+    "word": "정구지",
+    "sense": [
+     {
+      "definition": "‘부추’의 방언",
+      "link": "https://opendict.korean.go.kr/dictionary/view?sense_no=433889",
+      "sense_no": "001",
+      "target_code": "433889",
+      "type": "방언",
+      "pos": "명사"
+     }
+    ]
+   }
+  ],
+  "즈믄": [
+   {
+    "word": "즈믄",
+    "sense": [
+     {
+      "definition": "‘천’의 옛말.",
+      "link": "https://opendict.korean.go.kr/dictionary/view?sense_no=280214",
+      "sense_no": "001",
+      "target_code": "280214",
+      "type": "옛말",
+      "pos": "수·관"
+     }
+    ]
+   }
+  ],
+  "컴퓨터": [
+   {
+    "word": "컴퓨터",
+    "sense": [
+     {
+      "cat": "정보·통신",
+      "definition": "전자 회로를 이용한 고속의 자동 계산기. 숫자 계산, 자동 제어, 데이터 처리, 사무 관리, 언어나 영상 정보 처리 따위에 광범위하게 이용된다.",
+      "link": "https://opendict.korean.go.kr/dictionary/view?sense_no=547591",
+      "origin": "computer",
+      "sense_no": "001",
+      "target_code": "547591",
+      "type": "일반어",
+      "pos": "명사"
+     }
+    ]
+   }
+  ],
+  "버스": [
+   {
+    "word": "버스",
+    "sense": [
+     {
+      "cat": "교통",
+      "definition": "선박의 안전을 유지하기 위하여 다른 선박이나 육지와의 사이에 남겨 두어야 할 공간. 또는 항만에서 배를 매어 두는 위치를 이르는 경우도 있다.",
+      "link": "https://opendict.korean.go.kr/dictionary/view?sense_no=166420",
+      "origin": "berth",
+      "sense_no": "001",
+      "target_code": "166420",
+      "type": "일반어",
+      "pos": "명사"
+     }
+    ]
+   },
+   {
+    "word": "버스",
+    "sense": [
+     {
+      "definition": "많은 사람이 함께 타는 대형 자동차. 보통은 운임을 받고 정해진 길을 따라 운행하며, 시내버스, 시외버스, 관광버스, 고속버스 따위가 있다.",
+      "link": "https://opendict.korean.go.kr/dictionary/view?sense_no=10792",
+      "origin": "bus",
+      "sense_no": "002",
+      "target_code": "10792",
+      "type": "일반어",
+      "pos": "명사"
+     }
+    ]
+   },
+   {
+    "word": "버스",
+    "sense": [
+     {
+      "cat": "정보·통신",
+      "definition": "여러 개의 장치나 레지스터 따위 사이에서 데이터를 전송하는 통로. 메모리와 다른 장치 사이의 통로는 ‘메모리 버스’라고 하고, 입출력 장치와 접속되는 통로는 ‘입출력 버스’라고 한다.",
+      "link": "https://opendict.korean.go.kr/dictionary/view?sense_no=41650",
+      "origin": "bus",
+      "sense_no": "003",
+      "target_code": "41650",
+      "type": "일반어",
+      "pos": "명사"
+     }
+    ]
+   },
+   {
+    "word": "버스",
+    "sense": [
+     {
+      "cat": "음악",
+      "definition": "일반적으로 재즈나 대중음악에서 코러스로 들어가기 전의 서주 부분을 이르는 말. 코러스보다 짧게 만드는 것이 일반적이다.",
+      "link": "https://opendict.korean.go.kr/dictionary/view?sense_no=1237141",
+      "origin": "verse",
+      "sense_no": "004",
+      "target_code": "1237141",
+      "type": "일반어",
+      "pos": "명사"
+     }
+    ]
+   }
+  ],
+  "사과나무": [
+   {
+    "word": "사과-나무",
+    "sense": [
+     {
+      "cat": "식물",
+      "definition": "장미과의 낙엽 교목. 잎은 어긋나고 타원형 또는 달걀 모양으로 톱니가 있다. 4~5월에 약간 붉은색을 띤 흰 꽃이 잎과 함께 가지 끝 잎겨드랑이에서 나와 산형(繖形) 화서로 피고, 열매는 8~9월에 익는데 비타민 시(C)가 풍부하고 신맛, 단맛이 있다. 아시아 서부, 유럽 동남부가 원산지로 국광, 홍옥 따위의 많은 개량 품종이 있다.",
+      "link": "https://opendict.korean.go.kr/dictionary/view?sense_no=181742",
+      "origin": "沙果나무",
+      "sense_no": "001",
+      "target_code": "181742",
+      "type": "일반어",
+      "pos": "명사"
+     }
+    ]
+   },
+   {
+    "word": "사과-나무",
+    "sense": [
+     {
+      "cat": "책명",
+      "definition": "지연희(池蓮姬)가 지은 시집. 2004년에 간행되었다.",
+      "link": "https://opendict.korean.go.kr/dictionary/view?sense_no=1435265",
+      "origin": "沙果나무",
+      "sense_no": "002",
+      "target_code": "1435265",
+      "type": "일반어",
+      "pos": "명사"
+     }
+    ]
+   },
+   {
+    "word": "사과-나무",
+    "sense": [
+     {
+      "cat": "미술",
+      "definition": "이인성이 그린 그림. 1942년에 제작되었으며, 대구 시립 미술관에 소장되어 있다.",
+      "link": "https://opendict.korean.go.kr/dictionary/view?sense_no=1471266",
+      "origin": "沙果나무",
+      "sense_no": "009",
+      "target_code": "1471266",
+      "type": "일반어",
+      "pos": "명사"
+     }
+    ]
+   }
+  ],
+  "책가방": [
+   {
+    "word": "책-가방",
+    "sense": [
+     {
+      "definition": "주로 학생들이 책이나 학용품 따위를 넣어서 들거나 메고 다니는 가방.",
+      "link": "https://opendict.korean.go.kr/dictionary/view?sense_no=286848",
+      "origin": "冊가방",
+      "sense_no": "001",
+      "target_code": "286848",
+      "type": "일반어",
+      "pos": "명사"
+     }
+    ]
+   },
+   {
+    "word": "책-가방",
+    "sense": [
+     {
+      "cat": "책명",
+      "definition": "에스파냐의 작가 &lt;FL&gt;리오나&lt;/FL&gt;(Lyona)와 &lt;FL&gt;마르쿠스&lt;/FL&gt;(Marcus)가 지은 책. 우리나라에는 2021년에 출간되었다.",
+      "link": "https://opendict.korean.go.kr/dictionary/view?sense_no=1610881",
+      "origin": "冊가방",
+      "sense_no": "002",
+      "target_code": "1610881",
+      "type": "일반어",
+      "pos": "명사"
+     }
+    ]
+   }
+  ],
+  "서울": [
+   {
+    "word": "서울",
+    "sense": [
+     {
+      "definition": "한 나라의 중앙 정부가 있는 곳.",
+      "link": "https://opendict.korean.go.kr/dictionary/view?sense_no=14098",
+      "sense_no": "001",
+      "target_code": "14098",
+      "type": "일반어",
+      "pos": "명사"
+     }
+    ]
+   },
+   {
+    "word": "서울",
+    "sense": [
+     {
+      "cat": "지명",
+      "definition": "우리나라 중심부에 있는 시. 한강 하류에 위치하며, 북한산·도봉산·인왕산·관악산 따위의 산에 둘러싸여 분지를 이룬다. 일제 강점기에는 경성부로 불리다가 1946년에 이 이름으로 정해졌다. 1949년에 특별시로 승격하여 지금까지 우리나라의 정치, 경제, 교육 따위의 중심지 역할을 하고 있다. 대한민국의 수도이다. 면적은 약 605㎢.",
+      "link": "https://opendict.korean.go.kr/dictionary/view?sense_no=45025",
+      "sense_no": "002",
+      "target_code": "45025",
+      "type": "일반어",
+      "pos": "명사"
+     }
+    ]
+   },
+   {
+    "word": "서울",
+    "sense": [
+     {
+      "cat": "한의",
+      "definition": "한의학에서, 더위가 심할 때 서늘하고 찬 곳에 있음으로써 양기가 속으로 몰리고 밖으로 나가지 못하여 생긴 우울증. 머리와 팔다리의 관절이 아프며 열이 나고 땀이 나지 않는다.",
+      "link": "https://opendict.korean.go.kr/dictionary/view?sense_no=572601",
+      "origin": "暑鬱",
+      "sense_no": "003",
+      "target_code": "572601",
+      "type": "일반어",
+      "pos": "명사"
+     }
+    ]
+   },
+   {
+    "word": "서울",
+    "sense": [
+     {
+      "definition": "‘술’의 방언",
+      "link": "https://opendict.korean.go.kr/dictionary/view?sense_no=920697",
+      "sense_no": "004",
+      "target_code": "920697",
+      "type": "방언",
+      "pos": "명사"
+     }
+    ]
+   }
+  ],
+  "세종": [
+   {
+    "word": "세종",
+    "sense": [
+     {
+      "cat": "역사",
+      "definition": "덕망이 높은 제왕에게 붙이던 묘호.",
+      "link": "https://opendict.korean.go.kr/dictionary/view?sense_no=196242",
+      "origin": "世宗",
+      "sense_no": "001",
+      "target_code": "196242",
+      "type": "일반어",
+      "pos": "명사"
+     }
+    ]
+   },
+   {
+    "word": "세종",
+    "sense": [
+     {
+      "cat": "인명",
+      "definition": "조선 제4대 왕(1397~1450). 이름은 도(裪). 자는 원정(元正). 집현전을 두어 학문을 장려하였고, 훈민정음을 창제하였으며, 측우기·해시계 따위의 과학 기구를 제작하게 하였다. 밖으로는 6진(鎭)을 개척하여 국토를 확장하고, 쓰시마섬(對馬島)을 정벌하여 왜구의 소요를 진정시키는 등 조선 왕조의 기틀을 튼튼히 하였다. 재위 기간은 1418~1450년이다.",
+      "link": "https://opendict.korean.go.kr/dictionary/view?sense_no=196243",
+      "origin": "世宗",
+      "sense_no": "002",
+      "target_code": "196243",
+      "type": "일반어",
+      "pos": "명사"
+     }
+    ]
+   },
+   {
+    "word": "세종",
+    "sense": [
+     {
+      "cat": "인명",
+      "definition": "중국 금나라의 제5대 황제(1123~1189). 이름은 옹(雍). 안으로는 관리의 숙정(肅正)과 재정을 줄이는 일에 힘쓰고 여진(女眞)의 고유한 풍속을 장려하였으며, 밖으로는 남송과의 국교 회복에 힘쓰는 등 금나라의 황금시대를 열었다. 재위 기간은 1161~1189년이다.",
+      "link": "https://opendict.korean.go.kr/dictionary/view?sense_no=536296",
+      "origin": "世宗",
+      "sense_no": "003",
+      "target_code": "536296",
+      "type": "일반어",
+      "pos": "명사"
+     }
+    ]
+   },
+   {
+    "word": "세종",
+    "sense": [
+     {
+      "cat": "농업",
+      "definition": "12월경에 누에의 알이 휴면(休眠) 상태가 되었을 때에, 누에씨를 맑은 물로 씻어서 잡물을 제거하는 일.",
+      "link": "https://opendict.korean.go.kr/dictionary/view?sense_no=389030",
+      "origin": "洗種",
+      "sense_no": "004",
+      "target_code": "389030",
+      "type": "일반어",
+      "pos": "명사"
+     }
+    ]
+   },
+   {
+    "word": "세종",
+    "sense": [
+     {
+      "definition": "조세의 종류에 따른 구별.",
+      "link": "https://opendict.korean.go.kr/dictionary/view?sense_no=573082",
+      "origin": "稅種",
+      "sense_no": "005",
+      "target_code": "573082",
+      "type": "일반어",
+      "pos": "명사"
+     }
+    ]
+   },
+   {
+    "word": "세종",
+    "sense": [
+     {
+      "definition": "한 해가 끝날 무렵. 설을 앞둔 섣달그믐께를 이른다.",
+      "link": "https://opendict.korean.go.kr/dictionary/view?sense_no=462673",
+      "origin": "歲終",
+      "sense_no": "006",
+      "target_code": "462673",
+      "type": "일반어",
+      "pos": "명사"
+     }
+    ]
+   },
+   {
+    "word": "세종",
+    "sense": [
+     {
+      "cat": "인명",
+      "definition": "중국 명나라의 제11대 황제인 ‘가정제’의 묘호.",
+      "link": "https://opendict.korean.go.kr/dictionary/view?sense_no=1032414",
+      "origin": "世宗",
+      "sense_no": "007",
+      "target_code": "1032414",
+      "type": "일반어",
+      "pos": "명사"
+     }
+    ]
+   },
+   {
+    "word": "세종",
+    "sense": [
+     {
+      "cat": "인명",
+      "definition": "중국 청나라의 제5대 황제인 ‘옹정제’의 묘호.",
+      "link": "https://opendict.korean.go.kr/dictionary/view?sense_no=1144205",
+      "origin": "世宗",
+      "sense_no": "008",
+      "target_code": "1144205",
+      "type": "일반어",
+      "pos": "명사"
+     }
+    ]
+   },
+   {
+    "word": "세종",
+    "sense": [
+     {
+      "cat": "인명",
+      "definition": "중국 요나라의 제3대 황제인 야율완의 묘호.",
+      "link": "https://opendict.korean.go.kr/dictionary/view?sense_no=1193374",
+      "origin": "世宗",
+      "sense_no": "009",
+      "target_code": "1193374",
+      "type": "일반어",
+      "pos": "명사"
+     }
+    ]
+   },
+   {
+    "word": "세종",
+    "sense": [
+     {
+      "cat": "지명",
+      "definition": "우리나라 중부에 있는 시. ‘세종특별자치시 설치 등에 관한 특별법’에 따라 충청남도 연기군을 폐지하고 2012년 7월에 특별자치시로 출범하였다. 지역 개발과 국가의 균형 발전을 위해 새롭게 조성한 행정 중심 복합 도시이다. 면적은 약 465㎢.",
+      "link": "https://opendict.korean.go.kr/dictionary/view?sense_no=1388590",
+      "origin": "世宗",
+      "sense_no": "010",
+      "target_code": "1388590",
+      "type": "일반어",
+      "pos": "명사"
+     }
+    ]
+   },
+   {
+    "word": "세종",
+    "sense": [
+     {
+      "cat": "지명",
+      "definition": "세종특별자치시 연기면에 있는 이. 연기면의 남부에 위치해 있다. 북쪽에 원수산, 중앙부에 전월산 등이 솟아 있다. 금강이 남동쪽 경계를 따라 흐르고, 미호천이 북쪽 경계를 따라 흘러 금강에 합류한다. 중앙부에 국립 세종 수목원이 들어서 있다. 당진 영덕 고속 도로와 1번 국도, 96번 지방도가 지난다.",
+      "link": "https://opendict.korean.go.kr/dictionary/view?sense_no=1472754",
+      "origin": "世宗",
+      "sense_no": "011",
+      "target_code": "1472754",
+      "type": "일반어",
+      "pos": "명사"
+     }
+    ]
+   }
+  ],
+  "한강": [
+   {
+    "word": "한강",
+    "sense": [
+     {
+      "cat": "지명",
+      "definition": "우리나라 중부를 흐르는 강. 태백산맥에서 시작하여 황해로 흘러든다. 북한강·남한강의 두 물줄기가 남양주시에서 합류하며, 이 유역은 삼국 시대부터 중요시되어 왔다. 길이는 494.44km.",
+      "link": "https://opendict.korean.go.kr/dictionary/view?sense_no=314924",
+      "origin": "漢江",
+      "sense_no": "001",
+      "target_code": "314924",
+      "type": "일반어",
+      "pos": "명사"
+     }
+    ]
+   },
+   {
+    "word": "한강",
+    "sense": [
+     {
+      "cat": "지명",
+      "definition": "중국 양쯔강(揚子江)의 지류. 산시성(陝西省) 서남쪽, 친링산맥(秦嶺山脈)에서 시작하여 한중(漢中)을 지나 후베이성(湖北省) 한커우(漢口)에서 양쯔강으로 흘러든다. 길이는 1,532km.",
+      "link": "https://opendict.korean.go.kr/dictionary/view?sense_no=314925",
+      "origin": "漢江",
+      "sense_no": "002",
+      "target_code": "314925",
+      "type": "일반어",
+      "pos": "명사"
+     }
+    ]
+   },
+   {
+    "word": "한강",
+    "sense": [
+     {
+      "cat": "지명",
+      "definition": "중국 화난(華南) 지방을 흐르는 강. 푸젠성(福建省) 창팅(長汀) 동쪽에서 시작하여 광둥성(廣東省) 동부를 지나 남중국해로 흘러들어 간다. 길이는 350km. ⇒규범 표기는 ‘한장강’이다.",
+      "link": "https://opendict.korean.go.kr/dictionary/view?sense_no=314926",
+      "origin": "韓江",
+      "sense_no": "003",
+      "target_code": "314926",
+      "type": "일반어",
+      "pos": "명사"
+     }
+    ]
+   },
+   {
+    "word": "한강",
+    "sense": [
+     {
+      "definition": "‘잔뜩’의 방언",
+      "link": "https://opendict.korean.go.kr/dictionary/view?sense_no=889689",
+      "sense_no": "004",
+      "target_code": "889689",
+      "type": "방언",
+      "pos": "부사"
+     }
+    ]
+   },
+   {
+    "word": "한강",
+    "sense": [
+     {
+      "cat": "문학",
+      "definition": "조정래(趙廷來)가 지은 대하소설. 1998년 ≪한겨레≫에 발표되었다.",
+      "link": "https://opendict.korean.go.kr/dictionary/view?sense_no=1472319",
+      "origin": "漢江",
+      "sense_no": "005",
+      "target_code": "1472319",
+      "type": "일반어",
+      "pos": "명사"
+     }
+    ]
+   },
+   {
+    "word": "한강",
+    "sense": [
+     {
+      "cat": "영상",
+      "definition": "방한준 감독이 만든 영화. 1938년에 개봉하였다.",
+      "link": "https://opendict.korean.go.kr/dictionary/view?sense_no=1615998",
+      "origin": "漢江",
+      "sense_no": "007",
+      "target_code": "1615998",
+      "type": "일반어",
+      "pos": "명사"
+     }
+    ]
+   },
+   {
+    "word": "한강",
+    "sense": [
+     {
+      "cat": "음악",
+      "definition": "김재태 작사, 김성현 작곡의 대중가요. 1993년에 발표된 노래 마을의 앨범에 수록되어 있다.",
+      "link": "https://opendict.korean.go.kr/dictionary/view?sense_no=1624782",
+      "origin": "漢江",
+      "sense_no": "008",
+      "target_code": "1624782",
+      "type": "일반어",
+      "pos": "명사"
+     }
+    ]
+   }
+  ],
+  "것": [
+   {
+    "word": "것",
+    "sense": [
+     {
+      "definition": "사물, 일, 현상 따위를 추상적으로 이르는 말.",
+      "link": "https://opendict.korean.go.kr/dictionary/view?sense_no=3277",
+      "sense_no": "001",
+      "target_code": "3277",
+      "type": "일반어",
+      "pos": "의존 명사"
+     }
+    ]
+   },
+   {
+    "word": "것",
+    "sense": [
+     {
+      "definition": "사람을 낮추어 이르거나 동물을 이르는 말.",
+      "link": "https://opendict.korean.go.kr/dictionary/view?sense_no=33145",
+      "sense_no": "002",
+      "target_code": "33145",
+      "type": "일반어",
+      "pos": "의존 명사"
+     }
+    ]
+   },
+   {
+    "word": "것",
+    "sense": [
+     {
+      "syntacticAnnotation": "((사람을 나타내는 명사나 대명사 뒤에 쓰여))",
+      "definition": "그 사람의 소유물임을 나타내는 말.",
+      "link": "https://opendict.korean.go.kr/dictionary/view?sense_no=63647",
+      "sense_no": "003",
+      "target_code": "63647",
+      "type": "일반어",
+      "pos": "의존 명사"
+     }
+    ]
+   },
+   {
+    "word": "것",
+    "sense": [
+     {
+      "syntacticAnnotation": "((‘-는/은 것이다’ 구성으로 쓰여))",
+      "definition": "말하는 이의 확신, 결정, 결심 따위를 나타내는 말.",
+      "link": "https://opendict.korean.go.kr/dictionary/view?sense_no=69542",
+      "sense_no": "004",
+      "target_code": "69542",
+      "type": "일반어",
+      "pos": "의존 명사"
+     }
+    ]
+   },
+   {
+    "word": "것",
+    "sense": [
+     {
+      "syntacticAnnotation": "((‘-ㄹ/을 것이다’ 구성으로 쓰여))",
+      "definition": "말하는 이의 전망이나 추측, 또는 주관적 소신 따위를 나타내는 말.",
+      "link": "https://opendict.korean.go.kr/dictionary/view?sense_no=71446",
+      "sense_no": "005",
+      "target_code": "71446",
+      "type": "일반어",
+      "pos": "의존 명사"
+     }
+    ]
+   },
+   {
+    "word": "것",
+    "sense": [
+     {
+      "syntacticAnnotation": "((‘-ㄹ/을 것’ 구성으로 쓰여))",
+      "definition": "명령이나 시킴의 뜻을 나타내면서 문장을 끝맺는 말.",
+      "link": "https://opendict.korean.go.kr/dictionary/view?sense_no=72321",
+      "sense_no": "006",
+      "target_code": "72321",
+      "type": "일반어",
+      "pos": "의존 명사"
+     }
+    ]
+   },
+   {
+    "word": "것",
+    "sense": [
+     {
+      "definition": "‘먹이’의 방언",
+      "link": "https://opendict.korean.go.kr/dictionary/view?sense_no=83545",
+      "sense_no": "007",
+      "target_code": "83545",
+      "type": "방언",
+      "pos": "명사"
+     }
+    ]
+   },
+   {
+    "word": "것",
+    "sense": [
+     {
+      "definition": "‘들것’의 방언",
+      "link": "https://opendict.korean.go.kr/dictionary/view?sense_no=83546",
+      "sense_no": "008",
+      "target_code": "83546",
+      "type": "방언",
+      "pos": "명사"
+     }
+    ]
+   },
+   {
+    "word": "것",
+    "sense": [
+     {
+      "definition": "‘그것’의 방언",
+      "link": "https://opendict.korean.go.kr/dictionary/view?sense_no=688054",
+      "sense_no": "009",
+      "target_code": "688054",
+      "type": "방언",
+      "pos": "명사"
+     }
+    ]
+   }
+  ],
+  "설겆이": [
+   {
+    "word": "설겆이",
+    "sense": [
+     {
+      "definition": "‘설거지’의 북한어.",
+      "link": "https://opendict.korean.go.kr/dictionary/view?sense_no=45428",
+      "sense_no": "002",
+      "target_code": "45428",
+      "type": "북한어",
+      "pos": "명사"
+     }
+    ]
+   },
+   {
+    "word": "설겆-이",
+    "sense": [
+     {
+      "definition": "먹고 난 뒤의 그릇을 씻어 정리하는 일. ⇒규범 표기는 ‘설거지’이다.",
+      "link": "https://opendict.korean.go.kr/dictionary/view?sense_no=14477",
+      "sense_no": "001",
+      "target_code": "14477",
+      "type": "일반어",
+      "pos": "명사"
+     }
+    ]
+   },
+   {
+    "word": "설겆-이",
+    "sense": [
+     {
+      "definition": "비가 오려고 하거나 올 때, 비에 맞으면 안 되는 물건을 치우거나 덮는 일. ⇒규범 표기는 ‘설거지’이다.",
+      "link": "https://opendict.korean.go.kr/dictionary/view?sense_no=1269822",
+      "sense_no": "003",
+      "target_code": "1269822",
+      "type": "일반어",
+      "pos": "명사"
+     }
+    ]
+   }
+  ],
+  "삭월세": [
+   {
+    "word": "삭월-세",
+    "sense": [
+     {
+      "definition": "집이나 방을 다달이 빌려 쓰는 일. 또는 그 돈. ⇒규범 표기는 ‘사글세’이다.",
+      "link": "https://opendict.korean.go.kr/dictionary/view?sense_no=186779",
+      "origin": "朔月貰",
+      "sense_no": "001",
+      "target_code": "186779",
+      "type": "일반어",
+      "pos": "명사"
+     }
+    ]
+   },
+   {
+    "word": "삭월-세",
+    "sense": [
+     {
+      "definition": "월세를 받고 빌려주는 방. 또는 월세를 주고 빌려 쓰는 방. ⇒규범 표기는 ‘사글세’이다.",
+      "link": "https://opendict.korean.go.kr/dictionary/view?sense_no=1268870",
+      "origin": "朔月貰",
+      "sense_no": "002",
+      "target_code": "1268870",
+      "type": "일반어",
+      "pos": "명사"
+     }
+    ]
+   }
+  ],
+  "가정법원": [
+   {
+    "word": "가정^법원",
+    "sense": [
+     {
+      "cat": "법률",
+      "definition": "이혼, 상속 따위의 가정에 관한 사건과 소년에 관한 사건을 처리할 목적으로 설치된 법원. 지방 법원과 동급의 하급 법원으로 서울 및 주요 도시에 설치되어 있다.",
+      "link": "https://opendict.korean.go.kr/dictionary/view?sense_no=522786",
+      "origin": "家庭法院",
+      "sense_no": "001",
+      "target_code": "522786",
+      "type": "일반어",
+      "pos": ""
+     }
+    ]
+   }
+  ],
+  "력사": [
+   {
+    "word": "력사",
+    "sense": [
+     {
+      "definition": "‘역사’의 북한어.",
+      "link": "https://opendict.korean.go.kr/dictionary/view?sense_no=382937",
+      "origin": "力士",
+      "sense_no": "001",
+      "target_code": "382937",
+      "type": "북한어",
+      "pos": "명사"
+     }
+    ]
+   },
+   {
+    "word": "력사",
+    "sense": [
+     {
+      "definition": "‘역사’의 북한어.",
+      "link": "https://opendict.korean.go.kr/dictionary/view?sense_no=141710",
+      "origin": "歷史",
+      "sense_no": "002",
+      "target_code": "141710",
+      "type": "북한어",
+      "pos": "명사"
+     }
+    ]
+   },
+   {
+    "word": "력사",
+    "sense": [
+     {
+      "definition": "‘역사’의 북한어.",
+      "link": "https://opendict.korean.go.kr/dictionary/view?sense_no=141711",
+      "origin": "歷事",
+      "sense_no": "003",
+      "target_code": "141711",
+      "type": "북한어",
+      "pos": "명사"
+     }
+    ]
+   },
+   {
+    "word": "력사",
+    "sense": [
+     {
+      "cat": "역사",
+      "definition": "‘역사’의 북한어.",
+      "link": "https://opendict.korean.go.kr/dictionary/view?sense_no=382938",
+      "origin": "歷辭",
+      "sense_no": "004",
+      "target_code": "382938",
+      "type": "북한어",
+      "pos": "명사"
+     }
+    ]
+   },
+   {
+    "word": "력사",
+    "sense": [
+     {
+      "definition": "‘역사’의 북한어.",
+      "link": "https://opendict.korean.go.kr/dictionary/view?sense_no=141712",
+      "origin": "轢死",
+      "sense_no": "005",
+      "target_code": "141712",
+      "type": "북한어",
+      "pos": "명사"
+     }
+    ]
+   }
+  ],
+  "역사": [
+   {
+    "word": "역사",
+    "sense": [
+     {
+      "definition": "뛰어나게 힘이 센 사람.",
+      "link": "https://opendict.korean.go.kr/dictionary/view?sense_no=228634",
+      "origin": "力士",
+      "sense_no": "001",
+      "target_code": "228634",
+      "type": "일반어",
+      "pos": "명사"
+     }
+    ]
+   },
+   {
+    "word": "역사",
+    "sense": [
+     {
+      "cat": "건설",
+      "definition": "토목이나 건축 따위의 공사.",
+      "link": "https://opendict.korean.go.kr/dictionary/view?sense_no=17620",
+      "origin": "役事",
+      "sense_no": "002",
+      "target_code": "17620",
+      "type": "일반어",
+      "pos": "명사"
+     }
+    ]
+   },
+   {
+    "word": "역사",
+    "sense": [
+     {
+      "cat": "기독교",
+      "definition": "하나님이 일함. 또는 그런 일.",
+      "link": "https://opendict.korean.go.kr/dictionary/view?sense_no=48491",
+      "origin": "役事",
+      "sense_no": "003",
+      "target_code": "48491",
+      "type": "일반어",
+      "pos": "명사"
+     }
+    ]
+   },
+   {
+    "word": "역사",
+    "sense": [
+     {
+      "definition": "육체적 힘을 들여서 하는 일을 통틀어 이르는 말.",
+      "link": "https://opendict.korean.go.kr/dictionary/view?sense_no=65908",
+      "origin": "役事",
+      "sense_no": "004",
+      "target_code": "65908",
+      "type": "북한어",
+      "pos": "명사"
+     }
+    ]
+   },
+   {
+    "word": "역사",
+    "sense": [
+     {
+      "definition": "‘심부름꾼’의 북한어.",
+      "link": "https://opendict.korean.go.kr/dictionary/view?sense_no=228636",
+      "origin": "役使",
+      "sense_no": "005",
+      "target_code": "228636",
+      "type": "북한어",
+      "pos": "명사"
+     }
+    ]
+   },
+   {
+    "word": "역사",
+    "sense": [
+     {
+      "definition": "인류 사회의 변천과 흥망의 과정. 또는 그 기록.",
+      "link": "https://opendict.korean.go.kr/dictionary/view?sense_no=17621",
+      "origin": "歷史",
+      "sense_no": "006",
+      "target_code": "17621",
+      "type": "일반어",
+      "pos": "명사"
+     }
+    ]
+   },
+   {
+    "word": "역사",
+    "sense": [
+     {
+      "definition": "어떠한 사물이나 사실이 존재해 온 연혁.",
+      "link": "https://opendict.korean.go.kr/dictionary/view?sense_no=48492",
+      "origin": "歷史",
+      "sense_no": "007",
+      "target_code": "48492",
+      "type": "일반어",
+      "pos": "명사"
+     }
+    ]
+   },
+   {
+    "word": "역사",
+    "sense": [
+     {
+      "definition": "자연 현상이 변하여 온 자취.",
+      "link": "https://opendict.korean.go.kr/dictionary/view?sense_no=65909",
+      "origin": "歷史",
+      "sense_no": "008",
+      "target_code": "65909",
+      "type": "일반어",
+      "pos": "명사"
+     }
+    ]
+   },
+   {
+    "word": "역사",
+    "sense": [
+     {
+      "cat": "역사",
+      "definition": "역사를 연구 대상으로 하는 학문.",
+      "link": "https://opendict.korean.go.kr/dictionary/view?sense_no=69969",
+      "origin": "歷史",
+      "sense_no": "009",
+      "target_code": "69969",
+      "type": "일반어",
+      "pos": "명사"
+     }
+    ]
+   },
+   {
+    "word": "역사",
+    "sense": [
+     {
+      "cat": "책명",
+      "definition": "기원전 425년 무렵에 그리스의 헤로도토스가 쓴 역사책. 페르시아 전쟁의 역사를 이야기식으로 기술하였다. 9권.",
+      "link": "https://opendict.korean.go.kr/dictionary/view?sense_no=71327",
+      "origin": "歷史",
+      "sense_no": "010",
+      "target_code": "71327",
+      "type": "일반어",
+      "pos": "명사"
+     }
+    ]
+   },
+   {
+    "word": "역사",
+    "sense": [
+     {
+      "cat": "책명",
+      "definition": "기원전 400년 무렵에 그리스의 투키디데스가 쓴 역사책. 펠로폰네소스 전쟁에 대한 기록으로, 실용적 역사관에 입각하여 정치사와 군사사에 한정하여 서술하였다.",
+      "link": "https://opendict.korean.go.kr/dictionary/view?sense_no=72188",
+      "origin": "歷史",
+      "sense_no": "011",
+      "target_code": "72188",
+      "type": "일반어",
+      "pos": "명사"
+     }
+    ]
+   },
+   {
+    "word": "역사",
+    "sense": [
+     {
+      "definition": "여러 대의 임금을 내리 섬김.",
+      "link": "https://opendict.korean.go.kr/dictionary/view?sense_no=503108",
+      "origin": "歷事/歷仕",
+      "sense_no": "012",
+      "target_code": "503108",
+      "type": "일반어",
+      "pos": "명사"
+     }
+    ]
+   },
+   {
+    "word": "역사",
+    "sense": [
+     {
+      "cat": "역사",
+      "definition": "조선 시대에, 새로 임명된 벼슬아치가 감독 관아를 돌아다니며 인사하던 일. 그 벼슬에 임명된 지 10일 이내에, 의정부·전조(銓曹) 등에 인사를 다녔다.",
+      "link": "https://opendict.korean.go.kr/dictionary/view?sense_no=228637",
+      "origin": "歷辭",
+      "sense_no": "013",
+      "target_code": "228637",
+      "type": "일반어",
+      "pos": "명사"
+     }
+    ]
+   },
+   {
+    "word": "역사",
+    "sense": [
+     {
+      "cat": "책명",
+      "definition": "중국 청나라 때 마숙(馬驌)이 지은 역사책. 태고로부터 진(秦)나라 말기까지의 고서를 섭렵하여 뽑아낸 사료를 유형별로 모아 논단(論斷)을 붙인 것으로, 청나라 때의 경사(經史) 고정학(考訂學)에 많은 영향을 끼쳤다. 160권.",
+      "link": "https://opendict.korean.go.kr/dictionary/view?sense_no=228639",
+      "origin": "繹史",
+      "sense_no": "014",
+      "target_code": "228639",
+      "type": "일반어",
+      "pos": "명사"
+     }
+    ]
+   },
+   {
+    "word": "역사",
+    "sense": [
+     {
+      "cat": "역사",
+      "definition": "고려 시대에, 중서문하성에 속한 구실아치.",
+      "link": "https://opendict.korean.go.kr/dictionary/view?sense_no=228640",
+      "origin": "譯史",
+      "sense_no": "015",
+      "target_code": "228640",
+      "type": "일반어",
+      "pos": "명사"
+     }
+    ]
+   },
+   {
+    "word": "역사",
+    "sense": [
+     {
+      "definition": "통역을 맡은 사신.",
+      "link": "https://opendict.korean.go.kr/dictionary/view?sense_no=228641",
+      "origin": "譯使",
+      "sense_no": "016",
+      "target_code": "228641",
+      "type": "일반어",
+      "pos": "명사"
+     }
+    ]
+   },
+   {
+    "word": "역사",
+    "sense": [
+     {
+      "definition": "외국 노래의 가사를 번역하는 일. 또는 그 가사.",
+      "link": "https://opendict.korean.go.kr/dictionary/view?sense_no=466297",
+      "origin": "譯詞",
+      "sense_no": "017",
+      "target_code": "466297",
+      "type": "일반어",
+      "pos": "명사"
+     }
+    ]
+   },
+   {
+    "word": "역사",
+    "sense": [
+     {
+      "definition": "차에 치여 죽음.",
+      "link": "https://opendict.korean.go.kr/dictionary/view?sense_no=228642",
+      "origin": "轢死",
+      "sense_no": "018",
+      "target_code": "228642",
+      "type": "일반어",
+      "pos": "명사"
+     }
+    ]
+   },
+   {
+    "word": "역사",
+    "sense": [
+     {
+      "definition": "역으로 쓰는 건물.",
+      "link": "https://opendict.korean.go.kr/dictionary/view?sense_no=228645",
+      "origin": "驛舍",
+      "sense_no": "019",
+      "target_code": "228645",
+      "type": "일반어",
+      "pos": "명사"
+     }
+    ]
+   }
+  ],
+  "물": [
+   {
+    "word": "물",
+    "sense": [
+     {
+      "definition": "자연계에 강, 호수, 바다, 지하수 따위의 형태로 널리 분포하는 액체. 순수한 것은 빛깔, 냄새, 맛이 없고 투명하다. 산소와 수소의 화학적 결합물로, 어는점 이하에서는 얼음이 되고 끓는점 이상에서는 수증기가 된다. 공기와 더불어 생물이 살아가는 데 없어서는 안 될 중요한 물질이다.",
+      "link": "https://opendict.korean.go.kr/dictionary/view?sense_no=8978",
+      "sense_no": "001",
+      "target_code": "8978",
+      "type": "일반어",
+      "pos": "명사"
+     }
+    ]
+   },
+   {
+    "word": "물",
+    "sense": [
+     {
+      "definition": "못, 내, 호수, 강, 바다 따위를 두루 이르는 말.",
+      "link": "https://opendict.korean.go.kr/dictionary/view?sense_no=41057",
+      "sense_no": "002",
+      "target_code": "41057",
+      "type": "일반어",
+      "pos": "명사"
+     }
+    ]
+   },
+   {
+    "word": "물",
+    "sense": [
+     {
+      "definition": "‘조수’를 달리 이르는 말.",
+      "link": "https://opendict.korean.go.kr/dictionary/view?sense_no=64491",
+      "sense_no": "003",
+      "target_code": "64491",
+      "type": "일반어",
+      "pos": "명사"
+     }
+    ]
+   },
+   {
+    "word": "물",
+    "sense": [
+     {
+      "definition": "음료수나 술 따위를 비유적으로 이르는 말.",
+      "link": "https://opendict.korean.go.kr/dictionary/view?sense_no=70277",
+      "sense_no": "004",
+      "target_code": "70277",
+      "type": "일반어",
+      "pos": "명사"
+     }
+    ]
+   },
+   {
+    "word": "물",
+    "sense": [
+     {
+      "syntacticAnnotation": "((‘들다’, ‘먹다’와 함께 쓰여))",
+      "definition": "그곳에서의 경험이나 영향을 비유적으로 이르는 말.",
+      "link": "https://opendict.korean.go.kr/dictionary/view?sense_no=71356",
+      "sense_no": "005",
+      "target_code": "71356",
+      "type": "일반어",
+      "pos": "명사"
+     }
+    ]
+   },
+   {
+    "word": "물",
+    "sense": [
+     {
+      "definition": "물감이 물건에 묻어서 드러나는 빛깔.",
+      "link": "https://opendict.korean.go.kr/dictionary/view?sense_no=384613",
+      "sense_no": "006",
+      "target_code": "384613",
+      "type": "일반어",
+      "pos": "명사"
+     }
+    ]
+   },
+   {
+    "word": "물",
+    "sense": [
+     {
+      "definition": "물고기 따위의 싱싱한 정도.",
+      "link": "https://opendict.korean.go.kr/dictionary/view?sense_no=157328",
+      "sense_no": "007",
+      "target_code": "157328",
+      "type": "일반어",
+      "pos": "명사"
+     }
+    ]
+   },
+   {
+    "word": "물",
+    "sense": [
+     {
+      "definition": "옷을 한 번 빨래할 동안.",
+      "link": "https://opendict.korean.go.kr/dictionary/view?sense_no=8979",
+      "sense_no": "008",
+      "target_code": "8979",
+      "type": "일반어",
+      "pos": "의존 명사"
+     }
+    ]
+   },
+   {
+    "word": "물",
+    "sense": [
+     {
+      "definition": "농산물이나 해산물 따위가 얼마 동안의 사이를 두고 한 목씩 무리로 나올 때의 차례.",
+      "link": "https://opendict.korean.go.kr/dictionary/view?sense_no=41058",
+      "sense_no": "009",
+      "target_code": "41058",
+      "type": "일반어",
+      "pos": "의존 명사"
+     }
+    ]
+   },
+   {
+    "word": "물",
+    "sense": [
+     {
+      "definition": "알에서 갓 깬 어린누에를 잠란지(蠶卵紙)에서 그러모아 다른 종이로 옮기는 차례.",
+      "link": "https://opendict.korean.go.kr/dictionary/view?sense_no=64540",
+      "sense_no": "010",
+      "target_code": "64540",
+      "type": "일반어",
+      "pos": "의존 명사"
+     }
+    ]
+   },
+   {
+    "word": "물",
+    "sense": [
+     {
+      "definition": "바다에 친 그물을 추어올려서 한 차례씩 물고기를 잡아 내는 일.",
+      "link": "https://opendict.korean.go.kr/dictionary/view?sense_no=70278",
+      "sense_no": "011",
+      "target_code": "70278",
+      "type": "북한어",
+      "pos": "의존 명사"
+     }
+    ]
+   },
+   {
+    "word": "물",
+    "sense": [
+     {
+      "syntacticAnnotation": "((일부 명사나 관형사 ‘이’, ‘그’ 따위, 어미 ‘-은’, ‘-는’, ‘-을’, ‘-던’ 뒤에 쓰여))",
+      "definition": "대략 어떤 시기와 일치하는 즈음.",
+      "link": "https://opendict.korean.go.kr/dictionary/view?sense_no=384614",
+      "sense_no": "012",
+      "target_code": "384614",
+      "type": "일반어",
+      "pos": "의존 명사"
+     }
+    ]
+   },
+   {
+    "word": "물",
+    "sense": [
+     {
+      "definition": "‘여물’의 방언",
+      "link": "https://opendict.korean.go.kr/dictionary/view?sense_no=157329",
+      "sense_no": "013",
+      "target_code": "157329",
+      "type": "방언",
+      "pos": "명사"
+     }
+    ]
+   },
+   {
+    "word": "물",
+    "sense": [
+     {
+      "definition": "‘큰물’의 방언",
+      "link": "https://opendict.korean.go.kr/dictionary/view?sense_no=157330",
+      "sense_no": "014",
+      "target_code": "157330",
+      "type": "방언",
+      "pos": "명사"
+     }
+    ]
+   },
+   {
+    "word": "물",
+    "sense": [
+     {
+      "cat": "철학",
+      "definition": "인간의 감각으로 느낄 수 있는 실재적 사물. 또는 느낄 수 없어도 그 존재를 사유할 수 있는 일체의 것.",
+      "link": "https://opendict.korean.go.kr/dictionary/view?sense_no=157331",
+      "origin": "物",
+      "sense_no": "015",
+      "target_code": "157331",
+      "type": "일반어",
+      "pos": "명사"
+     }
+    ]
+   },
+   {
+    "word": "물",
+    "sense": [
+     {
+      "definition": "‘무리’의 옛말.",
+      "link": "https://opendict.korean.go.kr/dictionary/view?sense_no=157535",
+      "sense_no": "017",
+      "target_code": "157535",
+      "type": "옛말",
+      "pos": "명사"
+     }
+    ]
+   },
+   {
+    "word": "물",
+    "sense": [
+     {
+      "definition": "‘머슴’의 방언",
+      "link": "https://opendict.korean.go.kr/dictionary/view?sense_no=631926",
+      "sense_no": "018",
+      "target_code": "631926",
+      "type": "방언",
+      "pos": "명사"
+     }
+    ]
+   },
+   {
+    "word": "물",
+    "sense": [
+     {
+      "definition": "‘물때’의 방언",
+      "link": "https://opendict.korean.go.kr/dictionary/view?sense_no=789395",
+      "sense_no": "019",
+      "target_code": "789395",
+      "type": "방언",
+      "pos": "명사"
+     }
+    ]
+   },
+   {
+    "word": "물",
+    "sense": [
+     {
+      "cat": "문학",
+      "definition": "소설가 김남천이 1933년 6월 ≪대중(大衆)≫에 발표한 단편 소설. 카프 검거 사건으로 수감 생활을 했던 작가 자신의 체험을 형상화한 작품으로, 한여름 감옥에서 물 부족으로 고통받는 죄수가 물을 얻기 위해 고군분투하는 줄거리이다. 이 작품으로 인해 이른바 ‘물 논쟁’이 촉발되었고, 작가의 세계관과 실천에 대한 논의가 활발하게 이루어졌다.",
+      "link": "https://opendict.korean.go.kr/dictionary/view?sense_no=1345840",
+      "sense_no": "020",
+      "target_code": "1345840",
+      "type": "일반어",
+      "pos": "명사"
+     }
+    ]
+   },
+   {
+    "word": "물",
+    "sense": [
+     {
+      "cat": "문학",
+      "definition": "이태준이 지은 수필. 1941년에 출간된 수필집 ≪무서록≫에 수록되었다.",
+      "link": "https://opendict.korean.go.kr/dictionary/view?sense_no=1435408",
+      "sense_no": "022",
+      "target_code": "1435408",
+      "type": "일반어",
+      "pos": "명사"
+     }
+    ]
+   },
+   {
+    "word": "-물",
+    "sense": [
+     {
+      "syntacticAnnotation": "((일부 명사 뒤에 붙어))",
+      "definition": "‘물건’ 또는 ‘물질’의 뜻을 더하는 접미사.",
+      "link": "https://opendict.korean.go.kr/dictionary/view?sense_no=348266",
+      "origin": "物",
+      "sense_no": "016",
+      "target_code": "348266",
+      "type": "일반어",
+      "pos": "접사"
+     }
+    ]
+   }
+  ],
+  "짜장면": [
+   {
+    "word": "짜장면",
+    "sense": [
+     {
+      "definition": "중국요리의 하나. 고기와 채소를 넣어 볶은 중국 된장에 국수를 비벼 먹는다.",
+      "link": "https://opendict.korean.go.kr/dictionary/view?sense_no=283672",
+      "origin": "←zhajiangmian[炸醬麵]",
+      "sense_no": "001",
+      "target_code": "283672",
+      "type": "일반어",
+      "pos": "명사"
+     }
+    ]
+   }
+  ],
+  "하나": [
+   {
+    "word": "하나",
+    "sense": [
+     {
+      "definition": "수효를 세는 맨 처음 수.",
+      "link": "https://opendict.korean.go.kr/dictionary/view?sense_no=586038",
+      "sense_no": "001",
+      "target_code": "586038",
+      "type": "일반어",
+      "pos": "수사"
+     }
+    ]
+   },
+   {
+    "word": "하나",
+    "sense": [
+     {
+      "definition": "뜻, 마음, 생각 따위가 한결같거나 일치한 상태.",
+      "link": "https://opendict.korean.go.kr/dictionary/view?sense_no=2703",
+      "sense_no": "002",
+      "target_code": "2703",
+      "type": "일반어",
+      "pos": "명사"
+     }
+    ]
+   },
+   {
+    "word": "하나",
+    "sense": [
+     {
+      "definition": "여러 가지로 구분한 것들 가운데 어떤 것을 가리키는 말.",
+      "link": "https://opendict.korean.go.kr/dictionary/view?sense_no=31804",
+      "sense_no": "003",
+      "target_code": "31804",
+      "type": "일반어",
+      "pos": "명사"
+     }
+    ]
+   },
+   {
+    "word": "하나",
+    "sense": [
+     {
+      "syntacticAnnotation": "((주로 ‘하나만’ 꼴로 쓰여))",
+      "definition": "‘오직 그것뿐’의 뜻을 나타내는 말.",
+      "link": "https://opendict.korean.go.kr/dictionary/view?sense_no=62770",
+      "sense_no": "004",
+      "target_code": "62770",
+      "type": "일반어",
+      "pos": "명사"
+     }
+    ]
+   },
+   {
+    "word": "하나",
+    "sense": [
+     {
+      "syntacticAnnotation": "((주로 ‘하나도’ 꼴로 쓰여 뒤에 오는 ‘없다’, ‘않다’ 따위의 부정어와 호응하여))",
+      "definition": "‘전혀’, ‘조금도’의 뜻을 나타내는 말.",
+      "link": "https://opendict.korean.go.kr/dictionary/view?sense_no=69279",
+      "sense_no": "005",
+      "target_code": "69279",
+      "type": "일반어",
+      "pos": "명사"
+     }
+    ]
+   },
+   {
+    "word": "하나",
+    "sense": [
+     {
+      "syntacticAnnotation": "((‘하나의’ 꼴로 쓰여))",
+      "definition": "‘일종의’의 뜻을 나타내는 말.",
+      "link": "https://opendict.korean.go.kr/dictionary/view?sense_no=71351",
+      "sense_no": "006",
+      "target_code": "71351",
+      "type": "일반어",
+      "pos": "명사"
+     }
+    ]
+   },
+   {
+    "word": "하나",
+    "sense": [
+     {
+      "definition": "‘가득’의 방언",
+      "link": "https://opendict.korean.go.kr/dictionary/view?sense_no=624924",
+      "sense_no": "007",
+      "target_code": "624924",
+      "type": "방언",
+      "pos": "부사"
+     }
+    ]
+   },
+   {
+    "word": "하나",
+    "sense": [
+     {
+      "definition": "‘담뿍’의 방언",
+      "link": "https://opendict.korean.go.kr/dictionary/view?sense_no=641472",
+      "sense_no": "008",
+      "target_code": "641472",
+      "type": "방언",
+      "pos": "부사"
+     }
+    ]
+   }
+  ],
+  "우리": [
+   {
+    "word": "우리",
+    "sense": [
+     {
+      "definition": "짐승을 가두어 기르는 곳.",
+      "link": "https://opendict.korean.go.kr/dictionary/view?sense_no=393735",
+      "sense_no": "001",
+      "target_code": "393735",
+      "type": "일반어",
+      "pos": "명사"
+     }
+    ]
+   },
+   {
+    "word": "우리",
+    "sense": [
+     {
+      "definition": "기와를 세는 단위. 한 우리는 기와 2천 장이다.",
+      "link": "https://opendict.korean.go.kr/dictionary/view?sense_no=238545",
+      "sense_no": "002",
+      "target_code": "238545",
+      "type": "일반어",
+      "pos": "의존 명사"
+     }
+    ]
+   },
+   {
+    "word": "우리",
+    "sense": [
+     {
+      "definition": "말하는 이가 자기와 듣는 이, 또는 자기와 듣는 이를 포함한 여러 사람을 가리키는 일인칭 대명사.",
+      "link": "https://opendict.korean.go.kr/dictionary/view?sense_no=369494",
+      "sense_no": "003",
+      "target_code": "369494",
+      "type": "일반어",
+      "pos": "대명사"
+     }
+    ]
+   },
+   {
+    "word": "우리",
+    "sense": [
+     {
+      "definition": "말하는 이가 자기보다 높지 아니한 사람을 상대하여 자기를 포함한 여러 사람을 가리키는 일인칭 대명사.",
+      "link": "https://opendict.korean.go.kr/dictionary/view?sense_no=372972",
+      "sense_no": "004",
+      "target_code": "372972",
+      "type": "일반어",
+      "pos": "대명사"
+     }
+    ]
+   },
+   {
+    "word": "우리",
+    "sense": [
+     {
+      "syntacticAnnotation": "((일부 명사 앞에 쓰여))",
+      "definition": "말하는 이가 자기보다 높지 아니한 사람을 상대하여 어떤 대상이 자기와 친밀한 관계임을 나타낼 때 쓰는 말.",
+      "link": "https://opendict.korean.go.kr/dictionary/view?sense_no=374772",
+      "sense_no": "005",
+      "target_code": "374772",
+      "type": "일반어",
+      "pos": "대명사"
+     }
+    ]
+   },
+   {
+    "word": "우리",
+    "sense": [
+     {
+      "definition": "‘울타리’의 방언",
+      "link": "https://opendict.korean.go.kr/dictionary/view?sense_no=357218",
+      "sense_no": "006",
+      "target_code": "357218",
+      "type": "방언",
+      "pos": "명사"
+     }
+    ]
+   },
+   {
+    "word": "우리",
+    "sense": [
+     {
+      "cat": "식물",
+      "definition": "갈매나뭇과의 낙엽 활엽 관목. 높이는 2~5미터이며, 가지 끝이 가시로 변한다. 잎은 마주나고 톱니가 있으며, 5월에 연한 황록색의 잔꽃이 잎겨드랑이에 한두 송이씩 핀다. 열매는 약용하고 나무껍질은 염료로 쓴다. 골짜기나 개울가에서 자라는데 경북, 충남을 제외한 한국 각지와 우수리강, 일본, 중국 등지에 분포한다.",
+      "link": "https://opendict.korean.go.kr/dictionary/view?sense_no=238546",
+      "origin": "牛李",
+      "sense_no": "007",
+      "target_code": "238546",
+      "type": "일반어",
+      "pos": "명사"
+     }
+    ]
+   },
+   {
+    "word": "우리",
+    "sense": [
+     {
+      "definition": "‘우렁이’의 방언",
+      "link": "https://opendict.korean.go.kr/dictionary/view?sense_no=656195",
+      "sense_no": "008",
+      "target_code": "656195",
+      "type": "방언",
+      "pos": "명사"
+     }
+    ]
+   },
+   {
+    "word": "우리",
+    "sense": [
+     {
+      "definition": "‘우박’의 방언",
+      "link": "https://opendict.korean.go.kr/dictionary/view?sense_no=656413",
+      "sense_no": "009",
+      "target_code": "656413",
+      "type": "방언",
+      "pos": "명사"
+     }
+    ]
+   },
+   {
+    "word": "우리",
+    "sense": [
+     {
+      "definition": "‘칠성장어’의 방언",
+      "link": "https://opendict.korean.go.kr/dictionary/view?sense_no=758349",
+      "sense_no": "010",
+      "target_code": "758349",
+      "type": "방언",
+      "pos": "명사"
+     }
+    ]
+   },
+   {
+    "word": "우리",
+    "sense": [
+     {
+      "cat": "음악",
+      "definition": "지우 작사·작곡의 대중가요. 2005년에 발표된 이수영의 앨범에 수록되어 있다.",
+      "link": "https://opendict.korean.go.kr/dictionary/view?sense_no=1607606",
+      "sense_no": "015",
+      "target_code": "1607606",
+      "type": "일반어",
+      "pos": ""
+     }
+    ]
+   },
+   {
+    "word": "우리",
+    "sense": [
+     {
+      "cat": "음악",
+      "definition": "이민혁 외 2인 작사, 임현식·강화성 작곡의 대중가요. 2022년에 발표된 비투비의 앨범에 수록되어 있다.",
+      "link": "https://opendict.korean.go.kr/dictionary/view?sense_no=1618194",
+      "sense_no": "016",
+      "target_code": "1618194",
+      "type": "일반어",
+      "pos": ""
+     }
+    ]
+   }
+  ],
+  "나무": [
+   {
+    "word": "나무",
+    "sense": [
+     {
+      "definition": "줄기나 가지가 목질로 된 여러해살이 식물.",
+      "link": "https://opendict.korean.go.kr/dictionary/view?sense_no=368281",
+      "sense_no": "001",
+      "target_code": "368281",
+      "type": "일반어",
+      "pos": "명사"
+     }
+    ]
+   },
+   {
+    "word": "나무",
+    "sense": [
+     {
+      "definition": "집을 짓거나 가구, 그릇 따위를 만들 때 재료로 사용하는 재목.",
+      "link": "https://opendict.korean.go.kr/dictionary/view?sense_no=371323",
+      "sense_no": "002",
+      "target_code": "371323",
+      "type": "일반어",
+      "pos": "명사"
+     }
+    ]
+   },
+   {
+    "word": "나무",
+    "sense": [
+     {
+      "definition": "땔감이 되는 나무붙이.",
+      "link": "https://opendict.korean.go.kr/dictionary/view?sense_no=374374",
+      "sense_no": "003",
+      "target_code": "374374",
+      "type": "일반어",
+      "pos": "명사"
+     }
+    ]
+   },
+   {
+    "word": "나무",
+    "sense": [
+     {
+      "definition": "소 장수들의 은어로, 팔백 냥을 이르던 말.",
+      "link": "https://opendict.korean.go.kr/dictionary/view?sense_no=490250",
+      "sense_no": "004",
+      "target_code": "490250",
+      "type": "일반어",
+      "pos": "명사"
+     }
+    ]
+   },
+   {
+    "word": "나무",
+    "sense": [
+     {
+      "cat": "문학",
+      "definition": "이양하가 지은 수필. 안분지족의 현인, 고독의 철인(哲人), 훌륭한 견인주의자(堅忍主義者)로 비유되는 나무의 속성을 통하여 지은이의 인생관을 표현하였다.",
+      "link": "https://opendict.korean.go.kr/dictionary/view?sense_no=526884",
+      "sense_no": "005",
+      "target_code": "526884",
+      "type": "일반어",
+      "pos": "명사"
+     }
+    ]
+   },
+   {
+    "word": "나무",
+    "sense": [
+     {
+      "cat": "불교",
+      "definition": "돌아가 의지한다는 뜻으로, 믿고 받들며 순종함을 이르는 말. 부처나 보살들의 이름 앞에 붙인다.",
+      "link": "https://opendict.korean.go.kr/dictionary/view?sense_no=112036",
+      "origin": "南無",
+      "sense_no": "006",
+      "target_code": "112036",
+      "type": "일반어",
+      "pos": "명사"
+     }
+    ]
+   },
+   {
+    "word": "나무",
+    "sense": [
+     {
+      "cat": "무용",
+      "definition": "마음을 깨끗이 하고, 도를 닦는 장소를 깨끗이 한다는 뜻으로 추는 불교 의식 무용. 양손에 바라를 쥐고 배꼽을 중심으로 하여 머리 위로 들어 올리거나 좌우로 돌리고, 빠른 동작으로 전진, 후퇴, 회전하며 추는 춤으로 천수바라, 명바라, 사다라니바라, 관욕게바라, 막바라, 내림게바라가 있다.",
+      "link": "https://opendict.korean.go.kr/dictionary/view?sense_no=416305",
+      "origin": "鑼舞",
+      "sense_no": "007",
+      "target_code": "416305",
+      "type": "일반어",
+      "pos": "명사"
+     }
+    ]
+   },
+   {
+    "word": "나무",
+    "sense": [
+     {
+      "definition": "‘남짓’의 방언",
+      "link": "https://opendict.korean.go.kr/dictionary/view?sense_no=631553",
+      "sense_no": "008",
+      "target_code": "631553",
+      "type": "방언",
+      "pos": "의존 명사"
+     }
+    ]
+   },
+   {
+    "word": "나무",
+    "sense": [
+     {
+      "cat": "음악",
+      "definition": "자이언티·윤후 작사, 김동휘 외 3인 작곡의 대중가요. 2022년에 발표된 윤후의 앨범에 수록되어 있다.",
+      "link": "https://opendict.korean.go.kr/dictionary/view?sense_no=1634771",
+      "sense_no": "012",
+      "target_code": "1634771",
+      "type": "일반어",
+      "pos": "명사"
+     }
+    ]
+   }
+  ],
+  "미국": [
+   {
+    "word": "미국",
+    "sense": [
+     {
+      "definition": "쌀가루를 쪄서 띄운 누룩.",
+      "link": "https://opendict.korean.go.kr/dictionary/view?sense_no=155532",
+      "origin": "米麴",
+      "sense_no": "002",
+      "target_code": "155532",
+      "type": "일반어",
+      "pos": "명사"
+     }
+    ]
+   },
+   {
+    "word": "미국",
+    "sense": [
+     {
+      "cat": "역사",
+      "definition": "군진(軍陣)의 행렬에서, 그 부대의 뒷부분.",
+      "link": "https://opendict.korean.go.kr/dictionary/view?sense_no=155533",
+      "origin": "尾局",
+      "sense_no": "003",
+      "target_code": "155533",
+      "type": "일반어",
+      "pos": "명사"
+     }
+    ]
+   },
+   {
+    "word": "미국",
+    "sense": [
+     {
+      "cat": "지명",
+      "definition": "북아메리카 대륙의 가운데를 차지하는 연방 공화국. 영국의 식민지였으나 1776년 13주가 독립을 선언하고 독립 전쟁에 승리하여 1783년 각국의 승인을 받았다. 이후 영토를 확장하면서 급속한 경제 성장을 이루어 국제 정치·경제상의 중요한 위치를 차지하고 있다. 50개의 주와 하나의 특별구로 이루어져 있으며, 주민은 대부분이 백인이고 인구의 약 10%가 흑인이며 주요 언어는 영어이다. 수도는 워싱턴, 면적은 937만 5720㎢.",
+      "link": "https://opendict.korean.go.kr/dictionary/view?sense_no=458181",
+      "origin": "美國",
+      "sense_no": "004",
+      "target_code": "458181",
+      "type": "일반어",
+      "pos": "명사"
+     }
+    ]
+   }
+  ],
+  "핸드폰": [
+   {
+    "word": "핸드-폰",
+    "sense": [
+     {
+      "definition": "‘휴대 전화’를 일상적으로 이르는 말.",
+      "link": "https://opendict.korean.go.kr/dictionary/view?sense_no=402573",
+      "origin": "▼hand phone",
+      "sense_no": "001",
+      "target_code": "402573",
+      "type": "일반어",
+      "pos": "명사"
+     }
+    ]
+   }
+  ],
+  "아이스크림": [
+   {
+    "word": "아이스-크림",
+    "sense": [
+     {
+      "definition": "우유, 달걀, 향료, 설탕 따위를 넣어 크림 상태로 얼린 것.",
+      "link": "https://opendict.korean.go.kr/dictionary/view?sense_no=217795",
+      "origin": "ice cream",
+      "sense_no": "001",
+      "target_code": "217795",
+      "type": "일반어",
+      "pos": "명사"
+     }
+    ]
+   }
+  ],
+  "가난뱅이": [
+   {
+    "word": "가난-뱅이",
+    "sense": [
+     {
+      "definition": "가난한 사람을 낮잡아 이르는 말.",
+      "link": "https://opendict.korean.go.kr/dictionary/view?sense_no=73667",
+      "sense_no": "001",
+      "target_code": "73667",
+      "type": "일반어",
+      "pos": "명사"
+     }
+    ]
+   }
+  ],
+  "먹기": [
+   {
+    "word": "먹기",
+    "sense": [
+     {
+      "cat": "의학",
+      "definition": "물고, 씹고, 삼키는 복합적인 과정을 이르는 말.",
+      "link": "https://opendict.korean.go.kr/dictionary/view?sense_no=837967",
+      "sense_no": "002",
+      "target_code": "837967",
+      "type": "일반어",
+      "pos": "명사"
+     }
+    ]
+   },
+   {
+    "word": "먹-기",
+    "sense": [
+     {
+      "definition": "‘귀머거리’의 방언",
+      "link": "https://opendict.korean.go.kr/dictionary/view?sense_no=644266",
+      "sense_no": "001",
+      "target_code": "644266",
+      "type": "방언",
+      "pos": "명사"
+     }
+    ]
+   }
+  ],
+  "리": [
+   {
+    "word": "리",
+    "sense": [
+     {
+      "cat": "음악",
+      "definition": "생황 육자관의 구음(口音).",
+      "link": "https://opendict.korean.go.kr/dictionary/view?sense_no=141896",
+      "origin": "里",
+      "sense_no": "001",
+      "target_code": "141896",
+      "type": "일반어",
+      "pos": "명사"
+     }
+    ]
+   },
+   {
+    "word": "리",
+    "sense": [
+     {
+      "definition": "거리의 단위. 1리는 약 0.393km에 해당한다.",
+      "link": "https://opendict.korean.go.kr/dictionary/view?sense_no=566993",
+      "origin": "里",
+      "sense_no": "002",
+      "target_code": "566993",
+      "type": "일반어",
+      "pos": "의존 명사"
+     }
+    ]
+   },
+   {
+    "word": "리",
+    "sense": [
+     {
+      "definition": "지방 행정의 말단 구역. 몇 개의 촌락이 모여 이루어지며, 읍과 면(面)의 아래에 둔다. 어말에 붙어 특정 동리의 이름을 나타낼 때에는 ‘리’로 바뀐다. ⇒규범 표기는 ‘이’이다.",
+      "link": "https://opendict.korean.go.kr/dictionary/view?sense_no=61",
+      "origin": "里",
+      "sense_no": "003",
+      "target_code": "61",
+      "type": "일반어",
+      "pos": "명사"
+     }
+    ]
+   },
+   {
+    "word": "리",
+    "sense": [
+     {
+      "definition": "북한 행정 구역에서 군 아래 단위의 하나.",
+      "link": "https://opendict.korean.go.kr/dictionary/view?sense_no=40119",
+      "origin": "里",
+      "sense_no": "004",
+      "target_code": "40119",
+      "type": "북한어",
+      "pos": "명사"
+     }
+    ]
+   },
+   {
+    "word": "리",
+    "sense": [
+     {
+      "definition": "예전에, 군 아래에 있던 지방 행정 구역의 하나.",
+      "link": "https://opendict.korean.go.kr/dictionary/view?sense_no=64535",
+      "origin": "里",
+      "sense_no": "005",
+      "target_code": "64535",
+      "type": "북한어",
+      "pos": "명사"
+     }
+    ]
+   },
+   {
+    "word": "리",
+    "sense": [
+     {
+      "definition": "야드파운드법에 의한 거리의 단위. 1리는 약 1.6km에 해당한다. 기호는 mil.",
+      "link": "https://opendict.korean.go.kr/dictionary/view?sense_no=141897",
+      "origin": "哩",
+      "sense_no": "006",
+      "target_code": "141897",
+      "type": "일반어",
+      "pos": "의존 명사"
+     }
+    ]
+   },
+   {
+    "word": "리",
+    "sense": [
+     {
+      "definition": "거리의 단위. 바다 위나 공중에서 긴 거리를 나타낼 때 쓴다. 1리는 1,852미터에 해당하나 나라마다 약간의 차이를 보인다. 배의 속도를 표시할 때는 시속 1리를 1노트(knot)로 한다. 기호는 n mile.",
+      "link": "https://opendict.korean.go.kr/dictionary/view?sense_no=566994",
+      "origin": "浬",
+      "sense_no": "007",
+      "target_code": "566994",
+      "type": "일반어",
+      "pos": "의존 명사"
+     }
+    ]
+   },
+   {
+    "word": "리",
+    "sense": [
+     {
+      "syntacticAnnotation": "((어미 ‘-을’ 뒤에 ‘있다’, ‘없다’ 따위와 함께 쓰여))",
+      "definition": "‘까닭’, ‘이치’의 뜻을 나타내는 말.",
+      "link": "https://opendict.korean.go.kr/dictionary/view?sense_no=419648",
+      "origin": "理",
+      "sense_no": "008",
+      "target_code": "419648",
+      "type": "일반어",
+      "pos": "의존 명사"
+     }
+    ]
+   },
+   {
+    "word": "리",
+    "sense": [
+     {
+      "cat": "철학",
+      "definition": "‘이’의 북한어.",
+      "link": "https://opendict.korean.go.kr/dictionary/view?sense_no=346486",
+      "origin": "理",
+      "sense_no": "009",
+      "target_code": "346486",
+      "type": "북한어",
+      "pos": "명사"
+     }
+    ]
+   },
+   {
+    "word": "리",
+    "sense": [
+     {
+      "cat": "민속",
+      "definition": "‘이’의 북한어.",
+      "link": "https://opendict.korean.go.kr/dictionary/view?sense_no=141898",
+      "origin": "履",
+      "sense_no": "010",
+      "target_code": "141898",
+      "type": "북한어",
+      "pos": "명사"
+     }
+    ]
+   },
+   {
+    "word": "리",
+    "sense": [
+     {
+      "definition": "비율을 나타내는 단위. 1리는 전체 수량의 1,000분의 1로 1푼의 10분의 1이다.",
+      "link": "https://opendict.korean.go.kr/dictionary/view?sense_no=62",
+      "origin": "釐/厘",
+      "sense_no": "011",
+      "target_code": "62",
+      "type": "일반어",
+      "pos": "의존 명사"
+     }
+    ]
+   },
+   {
+    "word": "리",
+    "sense": [
+     {
+      "definition": "길이의 단위. 1리는 1푼의 10분의 1로 0.3mm에 해당한다.",
+      "link": "https://opendict.korean.go.kr/dictionary/view?sense_no=40120",
+      "origin": "釐/厘",
+      "sense_no": "012",
+      "target_code": "40120",
+      "type": "일반어",
+      "pos": "의존 명사"
+     }
+    ]
+   },
+   {
+    "word": "리",
+    "sense": [
+     {
+      "definition": "무게의 단위. 주로 귀금속 따위의 무게를 잴 때 쓴다. 1리는 1푼의 10분의 1로 0.0375그램에 해당한다.",
+      "link": "https://opendict.korean.go.kr/dictionary/view?sense_no=64536",
+      "origin": "釐/厘",
+      "sense_no": "013",
+      "target_code": "64536",
+      "type": "일반어",
+      "pos": "의존 명사"
+     }
+    ]
+   },
+   {
+    "word": "리",
+    "sense": [
+     {
+      "cat": "민속",
+      "definition": "‘이’의 북한어.",
+      "link": "https://opendict.korean.go.kr/dictionary/view?sense_no=403849",
+      "origin": "離",
+      "sense_no": "014",
+      "target_code": "403849",
+      "type": "북한어",
+      "pos": "명사"
+     }
+    ]
+   },
+   {
+    "word": "리",
+    "sense": [
+     {
+      "cat": "민속",
+      "definition": "‘이’의 북한어.",
+      "link": "https://opendict.korean.go.kr/dictionary/view?sense_no=408347",
+      "origin": "離",
+      "sense_no": "015",
+      "target_code": "408347",
+      "type": "북한어",
+      "pos": "명사"
+     }
+    ]
+   },
+   {
+    "word": "리",
+    "sense": [
+     {
+      "cat": "인명",
+      "definition": "로버트 에드워드 리, 미국의 군인(1807~1870). 남북 전쟁 때 남군의 총사령관으로 ‘남부의 영웅’이라 불렸다. 전쟁이 끝난 후 워싱턴 대학 총장을 역임하기도 하였다.",
+      "link": "https://opendict.korean.go.kr/dictionary/view?sense_no=419649",
+      "origin": "Lee, Robert Edward",
+      "sense_no": "016",
+      "target_code": "419649",
+      "type": "일반어",
+      "pos": "명사"
+     }
+    ]
+   },
+   {
+    "word": "리",
+    "sense": [
+     {
+      "cat": "인명",
+      "definition": "비비언 리, 영국의 배우(1913~1967). 강한 자아를 지닌 여성 역으로 진가를 발휘하였으며, 출연 작품에 &amp;lt;바람과 함께 사라지다&amp;gt;, &amp;lt;애수(哀愁)#GT#따위가 있다.",
+      "link": "https://opendict.korean.go.kr/dictionary/view?sense_no=141899",
+      "origin": "Leigh, Vivien",
+      "sense_no": "017",
+      "target_code": "141899",
+      "type": "일반어",
+      "pos": "명사"
+     }
+    ]
+   },
+   {
+    "word": "리",
+    "sense": [
+     {
+      "cat": "인명",
+      "definition": "요나스 리, 노르웨이의 소설가(1833~1908). 해양 소설과 부부·가족의 문제를 다룬 사회 소설을 주로 썼다. 작품에 &amp;lt;수로 안내인과 그의 처&amp;gt;, &amp;lt;길리에(Gilje)의 가족#GT#따위가 있다.",
+      "link": "https://opendict.korean.go.kr/dictionary/view?sense_no=530137",
+      "origin": "Lie, Jonas Lauritz Idemil",
+      "sense_no": "018",
+      "target_code": "530137",
+      "type": "일반어",
+      "pos": "명사"
+     }
+    ]
+   },
+   {
+    "word": "리",
+    "sense": [
+     {
+      "cat": "인명",
+      "definition": "마리우스 솝후스 리, 노르웨이의 수학자(1842~1899). 오슬로 대학 교수로 변환의 일반 이론인 연속군(連續群) 이론의 기초를 확립하여 ‘리군론(Lie群論)’을 창시하였다. 저서에 ≪변환군론≫, ≪미분 방정식론≫ 따위가 있다.",
+      "link": "https://opendict.korean.go.kr/dictionary/view?sense_no=141900",
+      "origin": "Lie, Marius Sophus",
+      "sense_no": "019",
+      "target_code": "141900",
+      "type": "일반어",
+      "pos": "명사"
+     }
+    ]
+   },
+   {
+    "word": "리",
+    "sense": [
+     {
+      "cat": "인명",
+      "definition": "트뤼그베 할브단 리, 노르웨이의 정치가(1896~1968). 법무상·상무상·외상을 지냈으며, 1946년 초대 유엔 사무총장에 취임하여 유엔의 기초를 굳히는 데 공헌하였다.",
+      "link": "https://opendict.korean.go.kr/dictionary/view?sense_no=419678",
+      "origin": "Lie, Trygve Halvdan",
+      "sense_no": "020",
+      "target_code": "419678",
+      "type": "일반어",
+      "pos": "명사"
+     }
+    ]
+   },
+   {
+    "word": "리",
+    "sense": [
+     {
+      "cat": "인명",
+      "definition": "페기 리, 미국의 재즈, 대중음악 가수·작곡가·배우(1920~2002). 작품에 &lt;&lt;FL&gt;이즈 댓 올 데어 이즈&lt;/FL&gt;?(Is That All There Is?)&gt;, &lt;&lt;FL&gt;피버&lt;/FL&gt;(Fever)&gt; 따위가 있다.",
+      "link": "https://opendict.korean.go.kr/dictionary/view?sense_no=989067",
+      "origin": "Lee, Peggy",
+      "sense_no": "031",
+      "target_code": "989067",
+      "type": "일반어",
+      "pos": "명사"
+     }
+    ]
+   },
+   {
+    "word": "-리-",
+    "sense": [
+     {
+      "syntacticAnnotation": "((다른 어미 앞에 붙어))",
+      "definition": "(예스러운 표현으로) 어떤 상황에 대한 화자의 추측을 나타내는 어미. 주로 ‘-다’, ‘-라’, ‘-니’, ‘-니라’, ‘만큼’ 따위와 결합하여 확대된 어미 ‘-리다’, ‘-리라’, ‘-리니’, ‘-리니라’, ‘-리만큼’ 따위를 만들기도 한다.",
+      "link": "https://opendict.korean.go.kr/dictionary/view?sense_no=514505",
+      "sense_no": "021",
+      "target_code": "514505",
+      "type": "일반어",
+      "pos": "어미"
+     }
+    ]
+   },
+   {
+    "word": "-리-",
+    "sense": [
+     {
+      "syntacticAnnotation": "((다른 어미 앞에 붙어))",
+      "definition": "(예스러운 표현으로) 주어가 어떤 일을 할 의향이나 의지가 있음을 나타내는 어미. 주로 ‘-다’, ‘-라’, ‘-니’, ‘-니라’, ‘만큼’ 따위와 결합하여 확대된 어미 ‘-리다’, ‘-리라’, ‘-리니’, ‘-리니라’, ‘-리만큼’ 따위를 만들기도 한다.",
+      "link": "https://opendict.korean.go.kr/dictionary/view?sense_no=518941",
+      "sense_no": "022",
+      "target_code": "518941",
+      "type": "일반어",
+      "pos": "어미"
+     }
+    ]
+   },
+   {
+    "word": "-리",
+    "sense": [
+     {
+      "syntacticAnnotation": "((‘이다’의 어간, 받침 없는 용언의 어간, ‘ㄹ’ 받침인 용언의 어간 또는 어미 ‘-으시-’, ‘-으오-’ 뒤에 붙어))",
+      "definition": "(예스러운 표현으로) 해라할 자리나 혼잣말에 쓰여, 추측의 뜻을 나타내는 종결 어미.",
+      "link": "https://opendict.korean.go.kr/dictionary/view?sense_no=63",
+      "sense_no": "023",
+      "target_code": "63",
+      "type": "일반어",
+      "pos": "어미"
+     }
+    ]
+   },
+   {
+    "word": "-리",
+    "sense": [
+     {
+      "syntacticAnnotation": "((‘이다’의 어간, 받침 없는 용언의 어간, ‘ㄹ’ 받침인 용언의 어간 또는 어미 ‘-으시-’, ‘-으오-’ 뒤에 붙어))",
+      "definition": "해라할 자리나 혼잣말에 쓰여, 어떤 일을 할 자신의 의향을 나타내거나 상대의 의향을 묻는 종결 어미.",
+      "link": "https://opendict.korean.go.kr/dictionary/view?sense_no=40151",
+      "sense_no": "024",
+      "target_code": "40151",
+      "type": "일반어",
+      "pos": "어미"
+     }
+    ]
+   },
+   {
+    "word": "-리",
+    "sense": [
+     {
+      "syntacticAnnotation": "((‘이다’의 어간, 받침 없는 용언의 어간, ‘ㄹ’ 받침인 용언의 어간 또는 어미 ‘-으시-’, ‘-으오-’ 뒤에 붙어))",
+      "definition": "해라할 자리나 혼잣말에 쓰여, 사리로 미루어 판단하건대 어찌 그러할 것이냐고 반문하는 뜻을 나타내는 종결 어미.",
+      "link": "https://opendict.korean.go.kr/dictionary/view?sense_no=64537",
+      "sense_no": "025",
+      "target_code": "64537",
+      "type": "일반어",
+      "pos": "어미"
+     }
+    ]
+   },
+   {
+    "word": "-리-",
+    "sense": [
+     {
+      "syntacticAnnotation": "((일부 동사 어간 뒤에 붙어))",
+      "definition": "‘사동’의 뜻을 더하는 접미사.",
+      "link": "https://opendict.korean.go.kr/dictionary/view?sense_no=367373",
+      "sense_no": "026",
+      "target_code": "367373",
+      "type": "일반어",
+      "pos": "접사"
+     }
+    ]
+   },
+   {
+    "word": "-리-",
+    "sense": [
+     {
+      "syntacticAnnotation": "((일부 동사 어간 뒤에 붙어))",
+      "definition": "‘피동’의 뜻을 더하는 접미사.",
+      "link": "https://opendict.korean.go.kr/dictionary/view?sense_no=371834",
+      "sense_no": "027",
+      "target_code": "371834",
+      "type": "일반어",
+      "pos": "접사"
+     }
+    ]
+   },
+   {
+    "word": "-리",
+    "sense": [
+     {
+      "syntacticAnnotation": "((몇몇 명사 뒤에 붙어))",
+      "definition": "‘가운데’ 또는 ‘속’의 뜻을 더하는 접미사.",
+      "link": "https://opendict.korean.go.kr/dictionary/view?sense_no=456686",
+      "origin": "裡/裏",
+      "sense_no": "028",
+      "target_code": "456686",
+      "type": "일반어",
+      "pos": "접사"
+     }
+    ]
+   },
+   {
+    "word": "-리",
+    "sense": [
+     {
+      "syntacticAnnotation": "((동사, 형용사 어간 뒤에 붙어))",
+      "cat": "인명",
+      "definition": "-ㄹ 것입니다.",
+      "link": "https://opendict.korean.go.kr/dictionary/view?sense_no=142176",
+      "sense_no": "029",
+      "target_code": "142176",
+      "type": "옛말",
+      "pos": "어미"
+     }
+    ]
+   },
+   {
+    "word": "-리",
+    "sense": [
+     {
+      "syntacticAnnotation": "((동사, 형용사 어간이나 어미 뒤에 붙어))",
+      "cat": "인명",
+      "definition": "-ㄹ 것입니까.",
+      "link": "https://opendict.korean.go.kr/dictionary/view?sense_no=142177",
+      "sense_no": "030",
+      "target_code": "142177",
+      "type": "옛말",
+      "pos": "어미"
+     }
+    ]
+   }
+  ],
+  "오뚜기": [
+   {
+    "word": "오뚜기",
+    "sense": [
+     {
+      "definition": "밑을 무겁게 하여 아무렇게나 쓰러뜨려도 오뚝오뚝 일어서는 장난감 인형. ⇒규범 표기는 ‘오뚝이’이다.",
+      "link": "https://opendict.korean.go.kr/dictionary/view?sense_no=235802",
+      "sense_no": "001",
+      "target_code": "235802",
+      "type": "일반어",
+      "pos": "명사"
+     }
+    ]
+   }
+  ],
+  "돐": [
+   {
+    "word": "돐",
+    "sense": [
+     {
+      "definition": "어린아이가 태어난 날로부터 한 해가 되는 날. ⇒규범 표기는 ‘돌’이다.",
+      "link": "https://opendict.korean.go.kr/dictionary/view?sense_no=529127",
+      "sense_no": "001",
+      "target_code": "529127",
+      "type": "일반어",
+      "pos": "명사"
+     }
+    ]
+   },
+   {
+    "word": "돐",
+    "sense": [
+     {
+      "definition": "‘돌’의 북한어.",
+      "link": "https://opendict.korean.go.kr/dictionary/view?sense_no=597680",
+      "sense_no": "002",
+      "target_code": "597680",
+      "type": "북한어",
+      "pos": "명사"
+     }
+    ]
+   },
+   {
+    "word": "돐",
+    "sense": [
+     {
+      "definition": "일주년.",
+      "link": "https://opendict.korean.go.kr/dictionary/view?sense_no=132772",
+      "sense_no": "003",
+      "target_code": "132772",
+      "type": "옛말",
+      "pos": "명사"
+     }
+    ]
+   }
+  ],
+  "발자욱": [
+   {
+    "word": "발자욱",
+    "sense": [
+     {
+      "definition": "‘발자국’의 북한어.",
+      "link": "https://opendict.korean.go.kr/dictionary/view?sense_no=408489",
+      "sense_no": "002",
+      "target_code": "408489",
+      "type": "북한어",
+      "pos": "명사"
+     }
+    ]
+   },
+   {
+    "word": "발-자욱",
+    "sense": [
+     {
+      "definition": "발로 밟은 자리에 남은 모양. ⇒규범 표기는 ‘발자국’이다.",
+      "link": "https://opendict.korean.go.kr/dictionary/view?sense_no=403940",
+      "sense_no": "001",
+      "target_code": "403940",
+      "type": "일반어",
+      "pos": "명사"
+     }
+    ]
+   },
+   {
+    "word": "발-자욱",
+    "sense": [
+     {
+      "syntacticAnnotation": "((수량을 나타내는 말 뒤에 쓰여))",
+      "definition": "발을 한 번 떼어 놓는 걸음을 세는 단위. ⇒규범 표기는 ‘발자국’이다.",
+      "link": "https://opendict.korean.go.kr/dictionary/view?sense_no=1276732",
+      "sense_no": "003",
+      "target_code": "1276732",
+      "type": "일반어",
+      "pos": "명사"
+     }
+    ]
+   }
+  ],
+  "아지랭이": [
+   {
+    "word": "아지랭이",
+    "sense": [
+     {
+      "definition": "주로 봄날 햇빛이 강하게 쬘 때 공기가 공중에서 아른아른 움직이는 현상. ⇒규범 표기는 ‘아지랑이’이다.",
+      "link": "https://opendict.korean.go.kr/dictionary/view?sense_no=217996",
+      "sense_no": "001",
+      "target_code": "217996",
+      "type": "일반어",
+      "pos": "명사"
+     }
+    ]
+   }
+  ],
+  "케익": [
+   {
+    "word": "케익",
+    "sense": [
+     {
+      "definition": "밀가루, 달걀, 버터, 우유, 설탕 따위를 주원료로 하여 오븐 따위에 구운 서양 음식. ⇒규범 표기는 ‘케이크’이다.",
+      "link": "https://opendict.korean.go.kr/dictionary/view?sense_no=296907",
+      "sense_no": "001",
+      "target_code": "296907",
+      "type": "일반어",
+      "pos": "명사"
+     }
+    ]
+   }
+  ],
+  "쪼끔": [
+   {
+    "word": "쪼끔",
+    "sense": [
+     {
+      "definition": "‘조금’의 센말.",
+      "link": "https://opendict.korean.go.kr/dictionary/view?sense_no=407404",
+      "sense_no": "001",
+      "target_code": "407404",
+      "type": "일반어",
+      "pos": "명사"
+     }
+    ]
+   },
+   {
+    "word": "쪼끔",
+    "sense": [
+     {
+      "definition": "‘조금’의 센말.",
+      "link": "https://opendict.korean.go.kr/dictionary/view?sense_no=404115",
+      "sense_no": "002",
+      "target_code": "404115",
+      "type": "일반어",
+      "pos": "명사"
+     }
+    ]
+   },
+   {
+    "word": "쪼끔",
+    "sense": [
+     {
+      "definition": "정도나 분량이 적게. ‘조금’보다 아주 센 느낌을 준다.",
+      "link": "https://opendict.korean.go.kr/dictionary/view?sense_no=2650",
+      "sense_no": "003",
+      "target_code": "2650",
+      "type": "일반어",
+      "pos": "부사"
+     }
+    ]
+   },
+   {
+    "word": "쪼끔",
+    "sense": [
+     {
+      "definition": "시간적으로 짧게. ‘조금’보다 아주 센 느낌을 준다.",
+      "link": "https://opendict.korean.go.kr/dictionary/view?sense_no=31724",
+      "sense_no": "004",
+      "target_code": "31724",
+      "type": "일반어",
+      "pos": "부사"
+     }
+    ]
+   }
+  ],
+  "택시": [
+   {
+    "word": "택시",
+    "sense": [
+     {
+      "definition": "요금을 받고 손님이 원하는 곳까지 태워다 주는 영업용 승용차.",
+      "link": "https://opendict.korean.go.kr/dictionary/view?sense_no=305264",
+      "origin": "taxi",
+      "sense_no": "001",
+      "target_code": "305264",
+      "type": "일반어",
+      "pos": "명사"
+     }
+    ]
+   }
+  ],
+  "빵": [
+   {
+    "word": "빵",
+    "sense": [
+     {
+      "definition": "밀가루를 주원료로 하여 소금, 설탕, 버터, 효모 따위를 섞어 반죽하여 발효한 뒤에 불에 굽거나 찐 음식. 서양 사람들의 주 음식이다.",
+      "link": "https://opendict.korean.go.kr/dictionary/view?sense_no=332106",
+      "sense_no": "001",
+      "target_code": "332106",
+      "type": "일반어",
+      "pos": "명사"
+     }
+    ]
+   },
+   {
+    "word": "빵",
+    "sense": [
+     {
+      "definition": "먹고살 양식.",
+      "link": "https://opendict.korean.go.kr/dictionary/view?sense_no=335600",
+      "sense_no": "002",
+      "target_code": "335600",
+      "type": "일반어",
+      "pos": "명사"
+     }
+    ]
+   },
+   {
+    "word": "빵",
+    "sense": [
+     {
+      "definition": "풍선이나 폭탄 따위가 갑자기 터지는 소리.",
+      "link": "https://opendict.korean.go.kr/dictionary/view?sense_no=552504",
+      "sense_no": "003",
+      "target_code": "552504",
+      "type": "일반어",
+      "pos": "부사"
+     }
+    ]
+   },
+   {
+    "word": "빵",
+    "sense": [
+     {
+      "definition": "작은 구멍이 뚫리는 소리. 또는 그 모양.",
+      "link": "https://opendict.korean.go.kr/dictionary/view?sense_no=556080",
+      "sense_no": "004",
+      "target_code": "556080",
+      "type": "일반어",
+      "pos": "부사"
+     }
+    ]
+   },
+   {
+    "word": "빵",
+    "sense": [
+     {
+      "definition": "공 따위를 세게 차는 소리. 또는 그 모양.",
+      "link": "https://opendict.korean.go.kr/dictionary/view?sense_no=558328",
+      "sense_no": "005",
+      "target_code": "558328",
+      "type": "일반어",
+      "pos": "부사"
+     }
+    ]
+   },
+   {
+    "word": "빵",
+    "sense": [
+     {
+      "definition": "자동차 따위의 경적이 울리는 소리.",
+      "link": "https://opendict.korean.go.kr/dictionary/view?sense_no=558979",
+      "sense_no": "006",
+      "target_code": "558979",
+      "type": "일반어",
+      "pos": "부사"
+     }
+    ]
+   },
+   {
+    "word": "빵",
+    "sense": [
+     {
+      "definition": "죄수들의 은어로, ‘감방’을 이르는 말.",
+      "link": "https://opendict.korean.go.kr/dictionary/view?sense_no=387425",
+      "sense_no": "007",
+      "target_code": "387425",
+      "type": "일반어",
+      "pos": "명사"
+     }
+    ]
+   },
+   {
+    "word": "빵",
+    "sense": [
+     {
+      "definition": "‘영’을 속되게 이르는 말.",
+      "link": "https://opendict.korean.go.kr/dictionary/view?sense_no=1103128",
+      "sense_no": "008",
+      "target_code": "1103128",
+      "type": "일반어",
+      "pos": "명사"
+     }
+    ]
+   },
+   {
+    "word": "빵",
+    "sense": [
+     {
+      "definition": "걸어 놓은 금품이나 일정한 약속 뒤에 쓰여 ‘내기’를 뜻하는 말.",
+      "link": "https://opendict.korean.go.kr/dictionary/view?sense_no=1369125",
+      "sense_no": "009",
+      "target_code": "1369125",
+      "type": "일반어",
+      "pos": "의존 명사"
+     }
+    ]
+   }
+  ],
+  "담배": [
+   {
+    "word": "담배",
+    "sense": [
+     {
+      "cat": "식물",
+      "definition": "가짓과의 담배 따위를 통틀어 이르는 말. 모두 60종 30여 변종(變種)이 알려져 있다.",
+      "link": "https://opendict.korean.go.kr/dictionary/view?sense_no=7663",
+      "sense_no": "001",
+      "target_code": "7663",
+      "type": "일반어",
+      "pos": "명사"
+     }
+    ]
+   },
+   {
+    "word": "담배",
+    "sense": [
+     {
+      "cat": "식물",
+      "definition": "가짓과의 한해살이 식물. 높이는 1.5~2미터이며, 40여 개의 넓고 길쭉한 잎은 어긋나고 줄기에 촘촘히 난다. 여름에 깔때기 모양의 연분홍 꽃이 줄기 끝에 원추(圓錐) 화서로 피고, 열매는 달걀 모양의 삭과(蒴果)로 10월에 맺는다. 공예 작물로 재배하는데 잎을 건조시켜 담배를 만든다. 남아메리카가 원산지이다.",
+      "link": "https://opendict.korean.go.kr/dictionary/view?sense_no=37144",
+      "sense_no": "002",
+      "target_code": "37144",
+      "type": "일반어",
+      "pos": "명사"
+     }
+    ]
+   },
+   {
+    "word": "담배",
+    "sense": [
+     {
+      "definition": "담뱃잎을 말려서 가공한 기호품. 살담배, 잎담배, 궐련 따위가 있다.",
+      "link": "https://opendict.korean.go.kr/dictionary/view?sense_no=64554",
+      "sense_no": "003",
+      "target_code": "64554",
+      "type": "일반어",
+      "pos": "명사"
+     }
+    ]
+   }
+  ],
+  "구두": [
+   {
+    "word": "구두",
+    "sense": [
+     {
+      "definition": "주로 가죽을 재료로 하여 만든 서양식 신.",
+      "link": "https://opendict.korean.go.kr/dictionary/view?sense_no=414679",
+      "sense_no": "001",
+      "target_code": "414679",
+      "type": "일반어",
+      "pos": "명사"
+     }
+    ]
+   },
+   {
+    "word": "구두",
+    "sense": [
+     {
+      "definition": "돈이나 재물 따위를 쓰는 데에 몹시 인색한 사람.",
+      "link": "https://opendict.korean.go.kr/dictionary/view?sense_no=414680",
+      "sense_no": "002",
+      "target_code": "414680",
+      "type": "일반어",
+      "pos": "명사"
+     }
+    ]
+   },
+   {
+    "word": "구두",
+    "sense": [
+     {
+      "syntacticAnnotation": "((주로 일부 명사 앞에 쓰이거나 ‘구두로’ 꼴로 쓰여))",
+      "definition": "마주 대하여 입으로 하는 말.",
+      "link": "https://opendict.korean.go.kr/dictionary/view?sense_no=97473",
+      "origin": "口頭",
+      "sense_no": "003",
+      "target_code": "97473",
+      "type": "일반어",
+      "pos": "명사"
+     }
+    ]
+   },
+   {
+    "word": "구두",
+    "sense": [
+     {
+      "cat": "언어",
+      "definition": "글을 쓸 때 문장 부호를 쓰는 방법.",
+      "link": "https://opendict.korean.go.kr/dictionary/view?sense_no=97474",
+      "origin": "句讀",
+      "sense_no": "004",
+      "target_code": "97474",
+      "type": "일반어",
+      "pos": "명사"
+     }
+    ]
+   },
+   {
+    "word": "구두",
+    "sense": [
+     {
+      "definition": "맞대어 놓고 언짢게 꾸짖거나 비꼬아 꾸짖는 일.",
+      "link": "https://opendict.korean.go.kr/dictionary/view?sense_no=525324",
+      "sense_no": "005",
+      "target_code": "525324",
+      "type": "일반어",
+      "pos": "명사"
+     }
+    ]
+   }
+  ],
+  "가방": [
+   {
+    "word": "가방",
+    "sense": [
+     {
+      "definition": "물건을 넣어 들거나 메고 다닐 수 있게 만든 용구. 가죽이나 천, 비닐 따위로 만든다.",
+      "link": "https://opendict.korean.go.kr/dictionary/view?sense_no=486006",
+      "sense_no": "001",
+      "target_code": "486006",
+      "type": "일반어",
+      "pos": "명사"
+     }
+    ]
+   },
+   {
+    "word": "가방",
+    "sense": [
+     {
+      "cat": "건설",
+      "definition": "문설주 안으로 덧댄 문지방.",
+      "link": "https://opendict.korean.go.kr/dictionary/view?sense_no=74631",
+      "origin": "加枋",
+      "sense_no": "002",
+      "target_code": "74631",
+      "type": "일반어",
+      "pos": "명사"
+     }
+    ]
+   },
+   {
+    "word": "가방",
+    "sense": [
+     {
+      "definition": "좋은 향기.",
+      "link": "https://opendict.korean.go.kr/dictionary/view?sense_no=412139",
+      "origin": "佳芳",
+      "sense_no": "003",
+      "target_code": "412139",
+      "type": "일반어",
+      "pos": "명사"
+     }
+    ]
+   },
+   {
+    "word": "가방",
+    "sense": [
+     {
+      "definition": "연꽃의 열매. 식용하거나 약용한다.",
+      "link": "https://opendict.korean.go.kr/dictionary/view?sense_no=74679",
+      "origin": "茄房",
+      "sense_no": "004",
+      "target_code": "74679",
+      "type": "일반어",
+      "pos": "명사"
+     }
+    ]
+   },
+   {
+    "word": "가방",
+    "sense": [
+     {
+      "definition": "자기의 집안과 나라를 아울러 이르는 말.",
+      "link": "https://opendict.korean.go.kr/dictionary/view?sense_no=74680",
+      "origin": "家邦",
+      "sense_no": "005",
+      "target_code": "74680",
+      "type": "일반어",
+      "pos": "명사"
+     }
+    ]
+   },
+   {
+    "word": "가방",
+    "sense": [
+     {
+      "definition": "큰 방 안에 따로 규모가 작게 만든 아랫방. 겨울에 외풍을 막으려고 방 안에 장지를 들여 만든다.",
+      "link": "https://opendict.korean.go.kr/dictionary/view?sense_no=338926",
+      "origin": "假房",
+      "sense_no": "006",
+      "target_code": "338926",
+      "type": "일반어",
+      "pos": "명사"
+     }
+    ]
+   },
+   {
+    "word": "가방",
+    "sense": [
+     {
+      "definition": "가게가 죽 늘어서 있는 거리.",
+      "link": "https://opendict.korean.go.kr/dictionary/view?sense_no=2548",
+      "origin": "街坊",
+      "sense_no": "007",
+      "target_code": "2548",
+      "type": "일반어",
+      "pos": "명사"
+     }
+    ]
+   },
+   {
+    "word": "가방",
+    "sense": [
+     {
+      "definition": "도시의 큰 길거리.",
+      "link": "https://opendict.korean.go.kr/dictionary/view?sense_no=32541",
+      "origin": "街坊",
+      "sense_no": "008",
+      "target_code": "32541",
+      "type": "일반어",
+      "pos": "명사"
+     }
+    ]
+   },
+   {
+    "word": "가방",
+    "sense": [
+     {
+      "cat": "불교",
+      "definition": "인가에 다니면서 사람들로 하여금 법연(法緣)을 맺게 하고, 시주를 받아 절의 양식을 대는 승려.",
+      "link": "https://opendict.korean.go.kr/dictionary/view?sense_no=449283",
+      "origin": "街坊",
+      "sense_no": "009",
+      "target_code": "449283",
+      "type": "일반어",
+      "pos": "명사"
+     }
+    ]
+   },
+   {
+    "word": "가방",
+    "sense": [
+     {
+      "definition": "잔치 때 만들어 놓은 음식을 보관하거나 손님들에게 내어주는 공간",
+      "link": "https://opendict.korean.go.kr/dictionary/view?sense_no=654494",
+      "sense_no": "010",
+      "target_code": "654494",
+      "type": "방언",
+      "pos": "명사"
+     }
+    ]
+   },
+   {
+    "word": "가방",
+    "sense": [
+     {
+      "definition": "‘과방’의 방언",
+      "link": "https://opendict.korean.go.kr/dictionary/view?sense_no=781065",
+      "sense_no": "011",
+      "target_code": "781065",
+      "type": "방언",
+      "pos": "명사"
+     }
+    ]
+   },
+   {
+    "word": "가방",
+    "sense": [
+     {
+      "cat": "지명",
+      "definition": "경상남도 진주시 금산면에 있는 이. 금산면의 북부에 위치해 있으며, 대부분 평지이다. 북쪽과 동쪽 경계를 따라 남강이 마을을 휘돌아 흐르고, 현지천이 흘러 남강으로 합류한다. 국가유산으로 ‘진주 부사정(晉州浮奢亭)’이 있다.",
+      "link": "https://opendict.korean.go.kr/dictionary/view?sense_no=1482117",
+      "origin": "加芳",
+      "sense_no": "012",
+      "target_code": "1482117",
+      "type": "일반어",
+      "pos": "명사"
+     }
+    ]
+   }
+  ],
+  "커피": [
+   {
+    "word": "커피",
+    "sense": [
+     {
+      "definition": "커피나무의 열매를 볶아서 간 가루. 카페인을 함유하고 있으며, 독특한 향기가 있어 차의 원료로 널리 애용되고, 과자나 음료수의 복합 원료로도 많이 쓴다.",
+      "link": "https://opendict.korean.go.kr/dictionary/view?sense_no=443685",
+      "origin": "coffee",
+      "sense_no": "001",
+      "target_code": "443685",
+      "type": "일반어",
+      "pos": "명사"
+     }
+    ]
+   },
+   {
+    "word": "커피",
+    "sense": [
+     {
+      "definition": "커피 가루를 끓인 물에 타서 마시는 차. 그냥 마시기도 하지만 설탕이나 우유 따위를 첨가하여 마시기도 한다.",
+      "link": "https://opendict.korean.go.kr/dictionary/view?sense_no=447355",
+      "origin": "coffee",
+      "sense_no": "002",
+      "target_code": "447355",
+      "type": "일반어",
+      "pos": "명사"
+     }
+    ]
+   },
+   {
+    "word": "커피",
+    "sense": [
+     {
+      "cat": "음악",
+      "definition": "켄지 작사·작곡의 대중가요. 2021년에 발표된 규현의 앨범에 수록되어 있다.",
+      "link": "https://opendict.korean.go.kr/dictionary/view?sense_no=1614768",
+      "origin": "coffee",
+      "sense_no": "006",
+      "target_code": "1614768",
+      "type": "일반어",
+      "pos": "명사"
+     }
+    ]
+   }
+  ],
+  "스마트폰": [
+   {
+    "word": "스마트-폰",
+    "sense": [
+     {
+      "cat": "정보·통신",
+      "definition": "휴대 전화에 여러 컴퓨터 지원 기능을 추가한 지능형 단말기. 사용자가 원하는 응용 프로그램을 설치할 수 있는 것이 특징이다.",
+      "link": "https://opendict.korean.go.kr/dictionary/view?sense_no=1358672",
+      "origin": "smartphone",
+      "sense_no": "001",
+      "target_code": "1358672",
+      "type": "일반어",
+      "pos": "명사"
+     }
+    ]
+   }
+  ],
+  "각": [
+   {
+    "word": "각",
+    "sense": [
+     {
+      "definition": "낱낱의.",
+      "link": "https://opendict.korean.go.kr/dictionary/view?sense_no=339063",
+      "origin": "各",
+      "sense_no": "001",
+      "target_code": "339063",
+      "type": "일반어",
+      "pos": "관형사"
+     }
+    ]
+   },
+   {
+    "word": "각",
+    "sense": [
+     {
+      "definition": "면과 면이 만나 이루어지는 모서리.",
+      "link": "https://opendict.korean.go.kr/dictionary/view?sense_no=2329",
+      "origin": "角",
+      "sense_no": "002",
+      "target_code": "2329",
+      "type": "일반어",
+      "pos": "명사"
+     }
+    ]
+   },
+   {
+    "word": "각",
+    "sense": [
+     {
+      "cat": "수학",
+      "definition": "한 점에서 갈리어 나간 두 직선의 벌어진 정도. 원의 중심에서 원의 둘레를 360으로 등분한 것을 1도로 나타내고 이를 단위로 측정한다.",
+      "link": "https://opendict.korean.go.kr/dictionary/view?sense_no=32145",
+      "origin": "角",
+      "sense_no": "003",
+      "target_code": "32145",
+      "type": "일반어",
+      "pos": "명사"
+     }
+    ]
+   },
+   {
+    "word": "각",
+    "sense": [
+     {
+      "cat": "수학",
+      "definition": "한 점에서 나간 두 개의 반직선이 이루는 도형. 둔각, 직각, 예각 따위가 있다.",
+      "link": "https://opendict.korean.go.kr/dictionary/view?sense_no=62283",
+      "origin": "角",
+      "sense_no": "004",
+      "target_code": "62283",
+      "type": "일반어",
+      "pos": "명사"
+     }
+    ]
+   },
+   {
+    "word": "각",
+    "sense": [
+     {
+      "cat": "동물",
+      "definition": "소, 염소, 사슴 따위의 머리에 솟은 단단하고 뾰족한 구조. 동물이 자위(自衛)와 투쟁에 쓰는 중요한 무기인데 여러 가지 공예재나 약재로도 쓴다.",
+      "link": "https://opendict.korean.go.kr/dictionary/view?sense_no=367617",
+      "origin": "角",
+      "sense_no": "005",
+      "target_code": "367617",
+      "type": "일반어",
+      "pos": "명사"
+     }
+    ]
+   },
+   {
+    "word": "각",
+    "sense": [
+     {
+      "cat": "음악",
+      "definition": "예전에, 뿔로 만들어 국악 연주에서 쓰던 나발. 대각, 중각, 소각 따위로 나눈다.",
+      "link": "https://opendict.korean.go.kr/dictionary/view?sense_no=370918",
+      "origin": "角",
+      "sense_no": "006",
+      "target_code": "370918",
+      "type": "일반어",
+      "pos": "명사"
+     }
+    ]
+   },
+   {
+    "word": "각",
+    "sense": [
+     {
+      "cat": "음악",
+      "definition": "동양 음악에서, 오음계 가운데 궁에서 셋째 음.",
+      "link": "https://opendict.korean.go.kr/dictionary/view?sense_no=374261",
+      "origin": "角",
+      "sense_no": "007",
+      "target_code": "374261",
+      "type": "일반어",
+      "pos": "명사"
+     }
+    ]
+   },
+   {
+    "word": "각",
+    "sense": [
+     {
+      "cat": "음악",
+      "definition": "동양 음악에서, 칠음계 가운데 궁에서 셋째 음.",
+      "link": "https://opendict.korean.go.kr/dictionary/view?sense_no=375050",
+      "origin": "角",
+      "sense_no": "008",
+      "target_code": "375050",
+      "type": "일반어",
+      "pos": "명사"
+     }
+    ]
+   },
+   {
+    "word": "각",
+    "sense": [
+     {
+      "cat": "천문",
+      "definition": "이십팔수의 첫째 별자리에 있는 별들. 청명절의 0시 23분에 정남쪽에 보인다.",
+      "link": "https://opendict.korean.go.kr/dictionary/view?sense_no=367620",
+      "origin": "角",
+      "sense_no": "009",
+      "target_code": "367620",
+      "type": "일반어",
+      "pos": "명사"
+     }
+    ]
+   },
+   {
+    "word": "각",
+    "sense": [
+     {
+      "cat": "천문",
+      "definition": "이십팔수의 첫째 별자리.",
+      "link": "https://opendict.korean.go.kr/dictionary/view?sense_no=370923",
+      "origin": "角",
+      "sense_no": "010",
+      "target_code": "370923",
+      "type": "일반어",
+      "pos": "명사"
+     }
+    ]
+   },
+   {
+    "word": "각",
+    "sense": [
+     {
+      "definition": "‘자오’를 우리 한자음으로 읽은 이름.",
+      "link": "https://opendict.korean.go.kr/dictionary/view?sense_no=522826",
+      "origin": "角",
+      "sense_no": "011",
+      "target_code": "522826",
+      "type": "일반어",
+      "pos": "의존 명사"
+     }
+    ]
+   },
+   {
+    "word": "각",
+    "sense": [
+     {
+      "definition": "나무나 돌 따위에 글이나 그림을 새기는 일.",
+      "link": "https://opendict.korean.go.kr/dictionary/view?sense_no=514740",
+      "origin": "刻",
+      "sense_no": "012",
+      "target_code": "514740",
+      "type": "일반어",
+      "pos": "명사"
+     }
+    ]
+   },
+   {
+    "word": "각",
+    "sense": [
+     {
+      "cat": "미술",
+      "definition": "재료를 새기거나 깎아서 입체 형상을 만듦. 또는 그런 미술 분야. 주로 나무, 돌, 금속 따위로 만든다.",
+      "link": "https://opendict.korean.go.kr/dictionary/view?sense_no=518076",
+      "origin": "刻",
+      "sense_no": "013",
+      "target_code": "518076",
+      "type": "일반어",
+      "pos": "명사"
+     }
+    ]
+   },
+   {
+    "word": "각",
+    "sense": [
+     {
+      "definition": "누호(漏壺) 안에 세운 누전(漏箭)에 새긴 눈금.",
+      "link": "https://opendict.korean.go.kr/dictionary/view?sense_no=521429",
+      "origin": "刻",
+      "sense_no": "014",
+      "target_code": "521429",
+      "type": "일반어",
+      "pos": "명사"
+     }
+    ]
+   },
+   {
+    "word": "각",
+    "sense": [
+     {
+      "cat": "음악",
+      "definition": "국악에서, 일정한 박자 수에 따라 되풀이되는 한 장단.",
+      "link": "https://opendict.korean.go.kr/dictionary/view?sense_no=2335",
+      "origin": "刻",
+      "sense_no": "015",
+      "target_code": "2335",
+      "type": "일반어",
+      "pos": "명사"
+     }
+    ]
+   },
+   {
+    "word": "각",
+    "sense": [
+     {
+      "syntacticAnnotation": "((수량을 나타내는 말 뒤에 쓰여))",
+      "cat": "음악",
+      "definition": "국악에서, 장단을 세는 단위.",
+      "link": "https://opendict.korean.go.kr/dictionary/view?sense_no=32203",
+      "origin": "刻",
+      "sense_no": "016",
+      "target_code": "32203",
+      "type": "일반어",
+      "pos": "명사"
+     }
+    ]
+   },
+   {
+    "word": "각",
+    "sense": [
+     {
+      "definition": "시간의 단위. 1각은 약 15분 동안으로, 본래 시헌력(時憲曆)을 채택하기 이전에 하루의 100분의 1이 되는 14분 24초 동안을 나타내던 단위였다.",
+      "link": "https://opendict.korean.go.kr/dictionary/view?sense_no=75810",
+      "origin": "刻",
+      "sense_no": "017",
+      "target_code": "75810",
+      "type": "일반어",
+      "pos": "의존 명사"
+     }
+    ]
+   },
+   {
+    "word": "각",
+    "sense": [
+     {
+      "definition": "사람이나 동물의 몸통 아래 붙어 있는 신체의 부분.",
+      "link": "https://opendict.korean.go.kr/dictionary/view?sense_no=478016",
+      "origin": "脚",
+      "sense_no": "018",
+      "target_code": "478016",
+      "type": "일반어",
+      "pos": "명사"
+     }
+    ]
+   },
+   {
+    "word": "각",
+    "sense": [
+     {
+      "definition": "짐승을 잡아 그 고기를 나눌 때, 전체를 몇 등분한 것 가운데 한 부분.",
+      "link": "https://opendict.korean.go.kr/dictionary/view?sense_no=481317",
+      "origin": "脚",
+      "sense_no": "019",
+      "target_code": "481317",
+      "type": "일반어",
+      "pos": "명사"
+     }
+    ]
+   },
+   {
+    "word": "각",
+    "sense": [
+     {
+      "definition": "달걀이나 조개 따위의 겉을 싸고 있는 단단한 물질.",
+      "link": "https://opendict.korean.go.kr/dictionary/view?sense_no=75811",
+      "origin": "殼",
+      "sense_no": "020",
+      "target_code": "75811",
+      "type": "일반어",
+      "pos": "명사"
+     }
+    ]
+   },
+   {
+    "word": "각",
+    "sense": [
+     {
+      "definition": "크고 높다랗게 지은 집.",
+      "link": "https://opendict.korean.go.kr/dictionary/view?sense_no=75812",
+      "origin": "閣",
+      "sense_no": "021",
+      "target_code": "75812",
+      "type": "일반어",
+      "pos": "명사"
+     }
+    ]
+   },
+   {
+    "word": "각",
+    "sense": [
+     {
+      "cat": "역사",
+      "definition": "조선 후기에 둔 규장각의 벼슬아치.",
+      "link": "https://opendict.korean.go.kr/dictionary/view?sense_no=75813",
+      "origin": "閣",
+      "sense_no": "022",
+      "target_code": "75813",
+      "type": "일반어",
+      "pos": "명사"
+     }
+    ]
+   },
+   {
+    "word": "각",
+    "sense": [
+     {
+      "cat": "불교",
+      "definition": "부처의 경지.",
+      "link": "https://opendict.korean.go.kr/dictionary/view?sense_no=2336",
+      "origin": "覺",
+      "sense_no": "023",
+      "target_code": "2336",
+      "type": "일반어",
+      "pos": "명사"
+     }
+    ]
+   },
+   {
+    "word": "각",
+    "sense": [
+     {
+      "cat": "불교",
+      "definition": "삼라만상의 실상과 마음의 근본을 깨달아 앎.",
+      "link": "https://opendict.korean.go.kr/dictionary/view?sense_no=32204",
+      "origin": "覺",
+      "sense_no": "024",
+      "target_code": "32204",
+      "type": "일반어",
+      "pos": "명사"
+     }
+    ]
+   },
+   {
+    "word": "각",
+    "sense": [
+     {
+      "definition": "‘갑’의 방언",
+      "link": "https://opendict.korean.go.kr/dictionary/view?sense_no=653660",
+      "sense_no": "026",
+      "target_code": "653660",
+      "type": "방언",
+      "pos": "명사"
+     }
+    ]
+   },
+   {
+    "word": "각",
+    "sense": [
+     {
+      "definition": "‘그물코’의 방언",
+      "link": "https://opendict.korean.go.kr/dictionary/view?sense_no=716798",
+      "sense_no": "027",
+      "target_code": "716798",
+      "type": "방언",
+      "pos": "명사"
+     }
+    ]
+   },
+   {
+    "word": "각",
+    "sense": [
+     {
+      "cat": "농업",
+      "definition": "곡물의 겉을 싸고 있는 거친 껍질이나 껍데기.",
+      "link": "https://opendict.korean.go.kr/dictionary/view?sense_no=902352",
+      "origin": "殼",
+      "sense_no": "028",
+      "target_code": "902352",
+      "type": "일반어",
+      "pos": "명사"
+     }
+    ]
+   },
+   {
+    "word": "각",
+    "sense": [
+     {
+      "cat": "복식",
+      "definition": "윗옷에서, 겨드랑이 밑의 소매와 몸통이 맞붙어 있는 부분.",
+      "link": "https://opendict.korean.go.kr/dictionary/view?sense_no=960977",
+      "origin": "袼",
+      "sense_no": "029",
+      "target_code": "960977",
+      "type": "일반어",
+      "pos": "명사"
+     }
+    ]
+   },
+   {
+    "word": "각",
+    "sense": [
+     {
+      "syntacticAnnotation": "((주로 명사나 어미 ‘-을’ 뒤에 쓰여))",
+      "definition": "어떤 일을 하기에 적절한 상황. 또는 어떤 일이 일어날 상황.",
+      "link": "https://opendict.korean.go.kr/dictionary/view?sense_no=1368246",
+      "origin": "角",
+      "sense_no": "030",
+      "target_code": "1368246",
+      "type": "일반어",
+      "pos": "의존 명사"
+     }
+    ]
+   },
+   {
+    "word": "각",
+    "sense": [
+     {
+      "definition": "어떤 일에 대한 대강의 계산이나 견적을 비유적으로 이르는 말.",
+      "link": "https://opendict.korean.go.kr/dictionary/view?sense_no=1711114",
+      "origin": "角",
+      "sense_no": "041",
+      "target_code": "1711114",
+      "type": "일반어",
+      "pos": "명사"
+     }
+    ]
+   },
+   {
+    "word": "-각",
+    "sense": [
+     {
+      "syntacticAnnotation": "((일부 명사 뒤에 붙어))",
+      "definition": "‘크고 높다랗게 지은 집’의 뜻을 더하는 접미사.",
+      "link": "https://opendict.korean.go.kr/dictionary/view?sense_no=75850",
+      "origin": "閣",
+      "sense_no": "025",
+      "target_code": "75850",
+      "type": "일반어",
+      "pos": "접사"
+     }
+    ]
+   }
+  ],
+  "전": [
+   {
+    "word": "전",
+    "sense": [
+     {
+      "definition": "물건의 위쪽 가장자리가 조금 넓적하게 된 부분.",
+      "link": "https://opendict.korean.go.kr/dictionary/view?sense_no=580568",
+      "sense_no": "001",
+      "target_code": "580568",
+      "type": "일반어",
+      "pos": "명사"
+     }
+    ]
+   },
+   {
+    "word": "전",
+    "sense": [
+     {
+      "definition": "갈퀴와 손으로 한 번에 껴안을 정도의 땔나무의 양.",
+      "link": "https://opendict.korean.go.kr/dictionary/view?sense_no=360047",
+      "sense_no": "002",
+      "target_code": "360047",
+      "type": "일반어",
+      "pos": "명사"
+     }
+    ]
+   },
+   {
+    "word": "전",
+    "sense": [
+     {
+      "definition": "땔나무를 갈퀴와 손으로 한 번에 껴안을 만한 분량을 세는 단위.",
+      "link": "https://opendict.korean.go.kr/dictionary/view?sense_no=264089",
+      "sense_no": "003",
+      "target_code": "264089",
+      "type": "일반어",
+      "pos": "의존 명사"
+     }
+    ]
+   },
+   {
+    "word": "전",
+    "sense": [
+     {
+      "definition": "‘융’의 방언",
+      "link": "https://opendict.korean.go.kr/dictionary/view?sense_no=507056",
+      "sense_no": "004",
+      "target_code": "507056",
+      "type": "방언",
+      "pos": "명사"
+     }
+    ]
+   },
+   {
+    "word": "전",
+    "sense": [
+     {
+      "definition": "물을 대지 아니하거나 필요한 때에만 물을 대어서 채소나 곡류를 심어 농사를 짓는 땅.",
+      "link": "https://opendict.korean.go.kr/dictionary/view?sense_no=360048",
+      "origin": "田",
+      "sense_no": "005",
+      "target_code": "360048",
+      "type": "일반어",
+      "pos": "명사"
+     }
+    ]
+   },
+   {
+    "word": "전",
+    "sense": [
+     {
+      "definition": "우리나라 성(姓)의 하나. 본관은 담양(潭陽), 남양(南陽), 연안(延安) 등 30여 본이 현존한다.",
+      "link": "https://opendict.korean.go.kr/dictionary/view?sense_no=264090",
+      "origin": "田",
+      "sense_no": "006",
+      "target_code": "264090",
+      "type": "일반어",
+      "pos": "명사"
+     }
+    ]
+   },
+   {
+    "word": "전",
+    "sense": [
+     {
+      "definition": "우리나라 성(姓)의 하나. 본관은 경성(鏡城), 보성(寶城) 등이 현존한다.",
+      "link": "https://opendict.korean.go.kr/dictionary/view?sense_no=264091",
+      "origin": "全",
+      "sense_no": "007",
+      "target_code": "264091",
+      "type": "일반어",
+      "pos": "명사"
+     }
+    ]
+   },
+   {
+    "word": "전",
+    "sense": [
+     {
+      "syntacticAnnotation": "((한자어 명사 앞에 쓰여))",
+      "definition": "‘모든’ 또는 ‘전체’의 뜻을 나타내는 말.",
+      "link": "https://opendict.korean.go.kr/dictionary/view?sense_no=264092",
+      "origin": "全",
+      "sense_no": "008",
+      "target_code": "264092",
+      "type": "일반어",
+      "pos": "관형사"
+     }
+    ]
+   },
+   {
+    "word": "전",
+    "sense": [
+     {
+      "definition": "막연한 과거의 어느 때를 가리키는 말.",
+      "link": "https://opendict.korean.go.kr/dictionary/view?sense_no=2525",
+      "origin": "前",
+      "sense_no": "009",
+      "target_code": "2525",
+      "type": "일반어",
+      "pos": "명사"
+     }
+    ]
+   },
+   {
+    "word": "전",
+    "sense": [
+     {
+      "syntacticAnnotation": "((일부 명사나 ‘-기’ 다음에 쓰여))",
+      "definition": "‘앞’의 뜻을 나타내는 말.",
+      "link": "https://opendict.korean.go.kr/dictionary/view?sense_no=31710",
+      "origin": "前",
+      "sense_no": "010",
+      "target_code": "31710",
+      "type": "일반어",
+      "pos": "명사"
+     }
+    ]
+   },
+   {
+    "word": "전",
+    "sense": [
+     {
+      "definition": "‘앞’의 높임말.",
+      "link": "https://opendict.korean.go.kr/dictionary/view?sense_no=62556",
+      "origin": "前",
+      "sense_no": "011",
+      "target_code": "62556",
+      "type": "일반어",
+      "pos": "명사"
+     }
+    ]
+   },
+   {
+    "word": "전",
+    "sense": [
+     {
+      "syntacticAnnotation": "((직함이나 자격을 뜻하는 명사 앞에 쓰여))",
+      "definition": "이전의 경력을 나타내는 말.",
+      "link": "https://opendict.korean.go.kr/dictionary/view?sense_no=2600",
+      "origin": "前",
+      "sense_no": "012",
+      "target_code": "2600",
+      "type": "일반어",
+      "pos": "관형사"
+     }
+    ]
+   },
+   {
+    "word": "전",
+    "sense": [
+     {
+      "syntacticAnnotation": "((일부 명사 앞에 쓰여))",
+      "definition": "‘이전’ 또는 ‘앞’, ‘전반기’ 따위의 뜻을 나타내는 말.",
+      "link": "https://opendict.korean.go.kr/dictionary/view?sense_no=31719",
+      "origin": "前",
+      "sense_no": "013",
+      "target_code": "31719",
+      "type": "일반어",
+      "pos": "관형사"
+     }
+    ]
+   },
+   {
+    "word": "전",
+    "sense": [
+     {
+      "definition": "장례 전 영좌(靈座) 앞에 간단한 술과 과일을 차려 놓는 예식.",
+      "link": "https://opendict.korean.go.kr/dictionary/view?sense_no=264093",
+      "origin": "奠",
+      "sense_no": "014",
+      "target_code": "264093",
+      "type": "일반어",
+      "pos": "명사"
+     }
+    ]
+   },
+   {
+    "word": "전",
+    "sense": [
+     {
+      "cat": "문학",
+      "definition": "중국 문체의 하나. 한(漢)나라·위(魏)나라 때에 천자·태자·제왕 들에게 올린 글을 이르며, 후세에는 황후·태자에게 올리는 상주문을 일컬었다.",
+      "link": "https://opendict.korean.go.kr/dictionary/view?sense_no=406211",
+      "origin": "牋",
+      "sense_no": "015",
+      "target_code": "406211",
+      "type": "일반어",
+      "pos": "명사"
+     }
+    ]
+   },
+   {
+    "word": "전",
+    "sense": [
+     {
+      "cat": "문학",
+      "definition": "간단한 시 한 수나 편지를 적는 데 쓰는, 폭이 좁은 종이.",
+      "link": "https://opendict.korean.go.kr/dictionary/view?sense_no=409758",
+      "origin": "牋",
+      "sense_no": "016",
+      "target_code": "409758",
+      "type": "일반어",
+      "pos": "명사"
+     }
+    ]
+   },
+   {
+    "word": "전",
+    "sense": [
+     {
+      "cat": "문학",
+      "definition": "경서에 대한 학자들의 전통적인 주해(註解). ≪시경≫의 &amp;lt;모전(毛傳)&amp;gt;, ≪서경≫의 &amp;lt;공전(孔傳)&amp;gt;, ≪춘추≫의 &amp;lt;좌전#GT#따위가 여기에 속한다.",
+      "link": "https://opendict.korean.go.kr/dictionary/view?sense_no=21301",
+      "origin": "傳",
+      "sense_no": "017",
+      "target_code": "21301",
+      "type": "일반어",
+      "pos": "명사"
+     }
+    ]
+   },
+   {
+    "word": "전",
+    "sense": [
+     {
+      "cat": "문학",
+      "definition": "한문 문체의 하나. 어떤 사람의 독특한 행적을 기록하고, 여기에 교훈적인 내용이나 비판을 덧붙인 글이다. 크게 열전, 사전(私傳), 탁전(托傳), 가전(假傳)으로 나뉜다.",
+      "link": "https://opendict.korean.go.kr/dictionary/view?sense_no=52934",
+      "origin": "傳",
+      "sense_no": "018",
+      "target_code": "52934",
+      "type": "일반어",
+      "pos": "명사"
+     }
+    ]
+   },
+   {
+    "word": "전",
+    "sense": [
+     {
+      "cat": "역사",
+      "definition": "중국에서, 관문(關門)을 지날 때에 내어 보이던 표적.",
+      "link": "https://opendict.korean.go.kr/dictionary/view?sense_no=264094",
+      "origin": "傳",
+      "sense_no": "019",
+      "target_code": "264094",
+      "type": "일반어",
+      "pos": "명사"
+     }
+    ]
+   },
+   {
+    "word": "전",
+    "sense": [
+     {
+      "definition": "‘전하다’의 어근.",
+      "link": "https://opendict.korean.go.kr/dictionary/view?sense_no=264095",
+      "origin": "傳",
+      "sense_no": "020",
+      "target_code": "264095",
+      "type": "일반어",
+      "pos": ""
+     }
+    ]
+   },
+   {
+    "word": "전",
+    "sense": [
+     {
+      "cat": "역사",
+      "definition": "조선 시대에, 관찰사가 고을 수령의 실적을 조사하여 중앙에 보고할 때에, 매긴 성적이 하(下)인 등급.",
+      "link": "https://opendict.korean.go.kr/dictionary/view?sense_no=433334",
+      "origin": "殿",
+      "sense_no": "021",
+      "target_code": "433334",
+      "type": "일반어",
+      "pos": "명사"
+     }
+    ]
+   },
+   {
+    "word": "전",
+    "sense": [
+     {
+      "cat": "역사",
+      "definition": "중국 한(漢)나라 때, 윈난성(雲南省)에 있었던 변방 민족의 부족 국가. 기원전 109년에 전한의 무제에게 항복하여 한나라의 속국이 되었다.",
+      "link": "https://opendict.korean.go.kr/dictionary/view?sense_no=264098",
+      "origin": "滇",
+      "sense_no": "022",
+      "target_code": "264098",
+      "type": "일반어",
+      "pos": "명사"
+     }
+    ]
+   },
+   {
+    "word": "전",
+    "sense": [
+     {
+      "definition": "생선이나 고기, 채소 따위를 얇게 썰거나 다져 양념을 한 뒤, 밀가루를 묻혀 기름에 지진 음식을 통틀어 이르는 말.",
+      "link": "https://opendict.korean.go.kr/dictionary/view?sense_no=22171",
+      "origin": "煎",
+      "sense_no": "023",
+      "target_code": "22171",
+      "type": "일반어",
+      "pos": "명사"
+     }
+    ]
+   },
+   {
+    "word": "전",
+    "sense": [
+     {
+      "definition": "전병이나 누름적 따위를 기름을 친 번철이나 프라이팬 따위에 놓고 지져서 익히는 일. 또는 그런 음식.",
+      "link": "https://opendict.korean.go.kr/dictionary/view?sense_no=52935",
+      "origin": "煎",
+      "sense_no": "024",
+      "target_code": "52935",
+      "type": "일반어",
+      "pos": "명사"
+     }
+    ]
+   },
+   {
+    "word": "전",
+    "sense": [
+     {
+      "cat": "한의",
+      "definition": "한약에 물을 넣고 달이는 일.",
+      "link": "https://opendict.korean.go.kr/dictionary/view?sense_no=22172",
+      "origin": "煎",
+      "sense_no": "025",
+      "target_code": "22172",
+      "type": "일반어",
+      "pos": "명사"
+     }
+    ]
+   },
+   {
+    "word": "전",
+    "sense": [
+     {
+      "cat": "한의",
+      "definition": "오래 달인 탕약.",
+      "link": "https://opendict.korean.go.kr/dictionary/view?sense_no=52936",
+      "origin": "煎",
+      "sense_no": "026",
+      "target_code": "52936",
+      "type": "일반어",
+      "pos": "명사"
+     }
+    ]
+   },
+   {
+    "word": "전",
+    "sense": [
+     {
+      "cat": "문학",
+      "definition": "경전이나 옛 책 가운데 이해하기 어려운 곳을 해설하여 옛 지은이의 뜻을 밝히거나 자신의 견해를 써넣은 것.",
+      "link": "https://opendict.korean.go.kr/dictionary/view?sense_no=22173",
+      "origin": "箋",
+      "sense_no": "027",
+      "target_code": "22173",
+      "type": "일반어",
+      "pos": "명사"
+     }
+    ]
+   },
+   {
+    "word": "전",
+    "sense": [
+     {
+      "cat": "문학",
+      "definition": "간단한 시 한 수나 편지를 적는 데 쓰는, 폭이 좁은 종이.",
+      "link": "https://opendict.korean.go.kr/dictionary/view?sense_no=52937",
+      "origin": "箋",
+      "sense_no": "028",
+      "target_code": "52937",
+      "type": "일반어",
+      "pos": "명사"
+     }
+    ]
+   },
+   {
+    "word": "전",
+    "sense": [
+     {
+      "cat": "문학",
+      "definition": "중국 문체의 하나. 한(漢)나라·위(魏)나라 때에 천자·태자·제왕 들에게 올린 상주문(上奏文)을 이르며, 후세에는 황후·태자에게 올리는 상주문을 일컬었다.",
+      "link": "https://opendict.korean.go.kr/dictionary/view?sense_no=66609",
+      "origin": "箋",
+      "sense_no": "029",
+      "target_code": "66609",
+      "type": "일반어",
+      "pos": "명사"
+     }
+    ]
+   },
+   {
+    "word": "전",
+    "sense": [
+     {
+      "definition": "물건을 벌여 놓고 파는 가게.",
+      "link": "https://opendict.korean.go.kr/dictionary/view?sense_no=22174",
+      "origin": "廛",
+      "sense_no": "030",
+      "target_code": "22174",
+      "type": "일반어",
+      "pos": "명사"
+     }
+    ]
+   },
+   {
+    "word": "전",
+    "sense": [
+     {
+      "cat": "역사",
+      "definition": "조선 시대에 있던, 시전(市廛)보다 작고 가가(假家)보다 큰 가게.",
+      "link": "https://opendict.korean.go.kr/dictionary/view?sense_no=52938",
+      "origin": "廛",
+      "sense_no": "031",
+      "target_code": "52938",
+      "type": "일반어",
+      "pos": "명사"
+     }
+    ]
+   },
+   {
+    "word": "전",
+    "sense": [
+     {
+      "cat": "매체",
+      "definition": "한자 서체의 하나. 대전(大篆)과 소전(小篆)의 두 가지가 있다.",
+      "link": "https://opendict.korean.go.kr/dictionary/view?sense_no=264099",
+      "origin": "篆",
+      "sense_no": "032",
+      "target_code": "264099",
+      "type": "일반어",
+      "pos": "명사"
+     }
+    ]
+   },
+   {
+    "word": "전",
+    "sense": [
+     {
+      "definition": "흙을 구워 정사각형 또는 직사각형의 납작한 벽돌 모양으로 만든, 동양의 전통적 건축 재료. 여러 가지 모양과 무늬가 있으며 주로 바닥과 벽의 재료로 쓴다.",
+      "link": "https://opendict.korean.go.kr/dictionary/view?sense_no=433335",
+      "origin": "甎/塼",
+      "sense_no": "033",
+      "target_code": "433335",
+      "type": "일반어",
+      "pos": "명사"
+     }
+    ]
+   },
+   {
+    "word": "전",
+    "sense": [
+     {
+      "definition": "운동 경기에서, 싸운 횟수를 세는 단위.",
+      "link": "https://opendict.korean.go.kr/dictionary/view?sense_no=596395",
+      "origin": "戰",
+      "sense_no": "034",
+      "target_code": "596395",
+      "type": "일반어",
+      "pos": "의존 명사"
+     }
+    ]
+   },
+   {
+    "word": "전",
+    "sense": [
+     {
+      "definition": "우리나라 성(姓)의 하나. 본관은 문경(聞慶), 지례(知禮) 등이 현존한다.",
+      "link": "https://opendict.korean.go.kr/dictionary/view?sense_no=396538",
+      "origin": "錢",
+      "sense_no": "035",
+      "target_code": "396538",
+      "type": "일반어",
+      "pos": "명사"
+     }
+    ]
+   },
+   {
+    "word": "전",
+    "sense": [
+     {
+      "definition": "예전에, 중국에서 쓰던 농기구의 하나.",
+      "link": "https://opendict.korean.go.kr/dictionary/view?sense_no=369816",
+      "origin": "錢",
+      "sense_no": "036",
+      "target_code": "369816",
+      "type": "일반어",
+      "pos": "명사"
+     }
+    ]
+   },
+   {
+    "word": "전",
+    "sense": [
+     {
+      "cat": "불교",
+      "definition": "넋이 의지할 곳으로 삼는다고 하여, 시식대(施食臺)에 걸어 놓는 종이 인형.",
+      "link": "https://opendict.korean.go.kr/dictionary/view?sense_no=373224",
+      "origin": "錢",
+      "sense_no": "037",
+      "target_code": "373224",
+      "type": "일반어",
+      "pos": "명사"
+     }
+    ]
+   },
+   {
+    "word": "전",
+    "sense": [
+     {
+      "definition": "우리나라의 화폐 단위. 1전은 1원의 100분의 1로, 실제 쓰이지 않는 보조 단위이다.",
+      "link": "https://opendict.korean.go.kr/dictionary/view?sense_no=22175",
+      "origin": "錢",
+      "sense_no": "038",
+      "target_code": "22175",
+      "type": "일반어",
+      "pos": "의존 명사"
+     }
+    ]
+   },
+   {
+    "word": "전",
+    "sense": [
+     {
+      "definition": "우리나라의 옛 화폐 단위. 1전은 1원(圓)이나 1환(圜)의 100분의 1이다.",
+      "link": "https://opendict.korean.go.kr/dictionary/view?sense_no=52939",
+      "origin": "錢",
+      "sense_no": "039",
+      "target_code": "52939",
+      "type": "일반어",
+      "pos": "의존 명사"
+     }
+    ]
+   },
+   {
+    "word": "전",
+    "sense": [
+     {
+      "syntacticAnnotation": "((한자어 수 다음에 쓰여))",
+      "definition": "예전에, 엽전을 묶어 세던 단위. 1전은 열 푼을 이른다.",
+      "link": "https://opendict.korean.go.kr/dictionary/view?sense_no=66610",
+      "origin": "錢",
+      "sense_no": "040",
+      "target_code": "66610",
+      "type": "일반어",
+      "pos": "의존 명사"
+     }
+    ]
+   },
+   {
+    "word": "전",
+    "sense": [
+     {
+      "definition": "중국 당나라 때의 화폐 단위.",
+      "link": "https://opendict.korean.go.kr/dictionary/view?sense_no=70827",
+      "origin": "錢",
+      "sense_no": "041",
+      "target_code": "70827",
+      "type": "일반어",
+      "pos": "의존 명사"
+     }
+    ]
+   },
+   {
+    "word": "전",
+    "sense": [
+     {
+      "definition": "국보다 국물을 적게 잡아 짭짤하게 끓인 음식.",
+      "link": "https://opendict.korean.go.kr/dictionary/view?sense_no=264100",
+      "origin": "臇",
+      "sense_no": "042",
+      "target_code": "264100",
+      "type": "일반어",
+      "pos": "명사"
+     }
+    ]
+   },
+   {
+    "word": "전",
+    "sense": [
+     {
+      "definition": "짐승의 털로 아무 무늬가 없이 두껍게 짠 천.",
+      "link": "https://opendict.korean.go.kr/dictionary/view?sense_no=433336",
+      "origin": "氈",
+      "sense_no": "043",
+      "target_code": "433336",
+      "type": "일반어",
+      "pos": "명사"
+     }
+    ]
+   },
+   {
+    "word": "전",
+    "sense": [
+     {
+      "cat": "문학",
+      "definition": "어떤 글의 체계를 기승전결로 구분할 때의 셋째 단계. 글의 흐름이 결정적인 방향으로 바뀐다.",
+      "link": "https://opendict.korean.go.kr/dictionary/view?sense_no=264101",
+      "origin": "轉",
+      "sense_no": "044",
+      "target_code": "264101",
+      "type": "일반어",
+      "pos": "명사"
+     }
+    ]
+   },
+   {
+    "word": "전",
+    "sense": [
+     {
+      "cat": "역사",
+      "definition": "고려 시대에 쓰던 의장(儀仗)의 하나.",
+      "link": "https://opendict.korean.go.kr/dictionary/view?sense_no=264102",
+      "origin": "旜",
+      "sense_no": "045",
+      "target_code": "264102",
+      "type": "일반어",
+      "pos": "명사"
+     }
+    ]
+   },
+   {
+    "word": "전",
+    "sense": [
+     {
+      "cat": "불교",
+      "definition": "마음을 구속하여 수행을 가로막는 번뇌를 이르는 말.",
+      "link": "https://opendict.korean.go.kr/dictionary/view?sense_no=264313",
+      "origin": "纏",
+      "sense_no": "046",
+      "target_code": "264313",
+      "type": "일반어",
+      "pos": "명사"
+     }
+    ]
+   },
+   {
+    "word": "전",
+    "sense": [
+     {
+      "definition": "‘저는’이 줄어든 말.",
+      "link": "https://opendict.korean.go.kr/dictionary/view?sense_no=264315",
+      "sense_no": "052",
+      "target_code": "264315",
+      "type": "일반어",
+      "pos": ""
+     }
+    ]
+   },
+   {
+    "word": "-전",
+    "sense": [
+     {
+      "syntacticAnnotation": "((주로 인명 뒤에 붙어))",
+      "definition": "‘전기(傳記)’의 뜻을 더하는 접미사.",
+      "link": "https://opendict.korean.go.kr/dictionary/view?sense_no=600083",
+      "origin": "傳",
+      "sense_no": "047",
+      "target_code": "600083",
+      "type": "일반어",
+      "pos": "접사"
+     }
+    ]
+   },
+   {
+    "word": "-전",
+    "sense": [
+     {
+      "syntacticAnnotation": "((일부 명사 뒤에 붙어))",
+      "definition": "‘전시회’의 뜻을 더하는 접미사.",
+      "link": "https://opendict.korean.go.kr/dictionary/view?sense_no=507087",
+      "origin": "展",
+      "sense_no": "048",
+      "target_code": "507087",
+      "type": "일반어",
+      "pos": "접사"
+     }
+    ]
+   },
+   {
+    "word": "-전",
+    "sense": [
+     {
+      "syntacticAnnotation": "((고유 명사를 포함한 일부 명사 뒤에 붙어))",
+      "definition": "‘큰 집’의 뜻을 더하는 접미사.",
+      "link": "https://opendict.korean.go.kr/dictionary/view?sense_no=264314",
+      "origin": "殿",
+      "sense_no": "049",
+      "target_code": "264314",
+      "type": "일반어",
+      "pos": "접사"
+     }
+    ]
+   },
+   {
+    "word": "-전",
+    "sense": [
+     {
+      "syntacticAnnotation": "((일부 명사 뒤에 붙어))",
+      "definition": "‘전투’ 또는 ‘전쟁’의 뜻을 더하는 접미사.",
+      "link": "https://opendict.korean.go.kr/dictionary/view?sense_no=22294",
+      "origin": "戰",
+      "sense_no": "050",
+      "target_code": "22294",
+      "type": "일반어",
+      "pos": "접사"
+     }
+    ]
+   },
+   {
+    "word": "-전",
+    "sense": [
+     {
+      "syntacticAnnotation": "((일부 명사 뒤에 붙어))",
+      "definition": "‘시합’이나 ‘경기’의 뜻을 더하는 접미사.",
+      "link": "https://opendict.korean.go.kr/dictionary/view?sense_no=53109",
+      "origin": "戰",
+      "sense_no": "051",
+      "target_code": "53109",
+      "type": "일반어",
+      "pos": "접사"
+     }
+    ]
+   }
+  ],
+  "삼춘": [
+   {
+    "word": "삼춘",
+    "sense": [
+     {
+      "definition": "아버지의 형제를 이르거나 부르는 말. 특히 결혼하지 않은 남자 형제를 이르거나 부른다. ⇒규범 표기는 ‘삼촌’이다.",
+      "link": "https://opendict.korean.go.kr/dictionary/view?sense_no=462079",
+      "origin": "三춘",
+      "sense_no": "001",
+      "target_code": "462079",
+      "type": "일반어",
+      "pos": "명사"
+     }
+    ]
+   },
+   {
+    "word": "삼춘",
+    "sense": [
+     {
+      "definition": "봄의 석 달. 맹춘(孟春), 중춘(仲春), 계춘(季春)을 이른다.",
+      "link": "https://opendict.korean.go.kr/dictionary/view?sense_no=12800",
+      "origin": "三春",
+      "sense_no": "002",
+      "target_code": "12800",
+      "type": "일반어",
+      "pos": "명사"
+     }
+    ]
+   },
+   {
+    "word": "삼춘",
+    "sense": [
+     {
+      "definition": "세 해의 봄.",
+      "link": "https://opendict.korean.go.kr/dictionary/view?sense_no=44765",
+      "origin": "三春",
+      "sense_no": "003",
+      "target_code": "44765",
+      "type": "일반어",
+      "pos": "명사"
+     }
+    ]
+   },
+   {
+    "word": "삼춘",
+    "sense": [
+     {
+      "definition": "방계로는 부모와 같은 항렬의 백부모․숙부모 또는 형제의 자녀와의 촌수. ⇒규범 표기는 ‘삼촌’이다.",
+      "link": "https://opendict.korean.go.kr/dictionary/view?sense_no=1268939",
+      "origin": "三춘",
+      "sense_no": "004",
+      "target_code": "1268939",
+      "type": "일반어",
+      "pos": "명사"
+     }
+    ]
+   },
+   {
+    "word": "삼춘",
+    "sense": [
+     {
+      "cat": "지명",
+      "definition": "경상북도 의성군 안평면에 있는 이. 안평면의 북부에 위치해 있다. 북쪽에 삼표당이 걸쳐 있으며, 중앙부에 산지 사이로 안평천이 흐른다. 중송지·안솔치지·내춘생지·춘생지·삼춘 저수지 등의 크고 작은 저수지가 자리하고 있으며, 하천과 저수지 주변으로 주거지와 농경지가 형성되어 있다. 당진 영덕 고속 도로가 지나며, 국가유산으로 ‘의성 옥련사 목조 아미타여래 좌상(義城玉連寺木造阿彌陀如來坐象)’이 있다.",
+      "link": "https://opendict.korean.go.kr/dictionary/view?sense_no=1480292",
+      "origin": "三春",
+      "sense_no": "005",
+      "target_code": "1480292",
+      "type": "일반어",
+      "pos": "명사"
+     }
+    ]
+   }
+  ],
+  "겨땀": [
+   {
+    "word": "겨-땀",
+    "sense": [
+     {
+      "definition": "겨드랑이에서 나는 땀.  ⇒규범 표기는 ‘곁땀’이다.",
+      "link": "https://opendict.korean.go.kr/dictionary/view?sense_no=1370105",
+      "sense_no": "001",
+      "target_code": "1370105",
+      "type": "일반어",
+      "pos": "명사"
+     }
+    ]
+   }
+  ],
+  "설거지": [
+   {
+    "word": "설거지",
+    "sense": [
+     {
+      "definition": "먹고 난 뒤의 그릇을 씻어 정리하는 일.",
+      "link": "https://opendict.korean.go.kr/dictionary/view?sense_no=552737",
+      "sense_no": "001",
+      "target_code": "552737",
+      "type": "일반어",
+      "pos": "명사"
+     }
+    ]
+   },
+   {
+    "word": "설거지",
+    "sense": [
+     {
+      "definition": "비가 오려고 하거나 올 때, 비에 맞으면 안 되는 물건을 치우거나 덮는 일.",
+      "link": "https://opendict.korean.go.kr/dictionary/view?sense_no=556181",
+      "sense_no": "002",
+      "target_code": "556181",
+      "type": "일반어",
+      "pos": "명사"
+     }
+    ]
+   }
+  ],
+  "사글세": [
+   {
+    "word": "사글-세",
+    "sense": [
+     {
+      "definition": "집이나 방을 다달이 빌려 쓰는 일. 또는 그 돈.",
+      "link": "https://opendict.korean.go.kr/dictionary/view?sense_no=599531",
+      "origin": "사글貰",
+      "sense_no": "001",
+      "target_code": "599531",
+      "type": "일반어",
+      "pos": "명사"
+     }
+    ]
+   },
+   {
+    "word": "사글-세",
+    "sense": [
+     {
+      "definition": "다달이 돈을 내고 빌려 쓰는 방이나 집.",
+      "link": "https://opendict.korean.go.kr/dictionary/view?sense_no=424422",
+      "origin": "사글貰",
+      "sense_no": "002",
+      "target_code": "424422",
+      "type": "일반어",
+      "pos": "명사"
+     }
+    ]
+   }
+  ],
+  "고무": [
+   {
+    "word": "고무",
+    "sense": [
+     {
+      "definition": "고무나무의 껍질에서 분비하는 액체를 응고시켜 만든 생고무를 주원료로 하는 물질. 탄력성이 강하고 신축성이 좋으며 전기나 물, 가스를 통과시키지 않아 공업용품이나 생활용품으로 널리 쓰인다.",
+      "link": "https://opendict.korean.go.kr/dictionary/view?sense_no=4696",
+      "sense_no": "001",
+      "target_code": "4696",
+      "type": "일반어",
+      "pos": "명사"
+     }
+    ]
+   },
+   {
+    "word": "고무",
+    "sense": [
+     {
+      "definition": "아라비아고무 따위의 식물 분비액에서 얻어지는 무정형(無定型)의 고분자 다당류. 아이스크림의 첨가물이나 풀, 잉크 따위에 쓴다.",
+      "link": "https://opendict.korean.go.kr/dictionary/view?sense_no=32744",
+      "sense_no": "002",
+      "target_code": "32744",
+      "type": "일반어",
+      "pos": "명사"
+     }
+    ]
+   },
+   {
+    "word": "고무",
+    "sense": [
+     {
+      "definition": "고무로 만든 지우개. 연필 따위로 쓴 것을 지우는 데에 쓴다.",
+      "link": "https://opendict.korean.go.kr/dictionary/view?sense_no=63189",
+      "sense_no": "003",
+      "target_code": "63189",
+      "type": "일반어",
+      "pos": "명사"
+     }
+    ]
+   },
+   {
+    "word": "고무",
+    "sense": [
+     {
+      "definition": "창고 사무. 또는 창고 사무소.",
+      "link": "https://opendict.korean.go.kr/dictionary/view?sense_no=487586",
+      "origin": "庫務",
+      "sense_no": "004",
+      "target_code": "487586",
+      "type": "일반어",
+      "pos": "명사"
+     }
+    ]
+   },
+   {
+    "word": "고무",
+    "sense": [
+     {
+      "definition": "북을 치고 춤을 춤.",
+      "link": "https://opendict.korean.go.kr/dictionary/view?sense_no=4697",
+      "origin": "鼓舞",
+      "sense_no": "005",
+      "target_code": "4697",
+      "type": "일반어",
+      "pos": "명사"
+     }
+    ]
+   },
+   {
+    "word": "고무",
+    "sense": [
+     {
+      "definition": "힘을 내도록 격려하여 용기를 북돋움.",
+      "link": "https://opendict.korean.go.kr/dictionary/view?sense_no=32745",
+      "origin": "鼓舞",
+      "sense_no": "006",
+      "target_code": "32745",
+      "type": "일반어",
+      "pos": "명사"
+     }
+    ]
+   },
+   {
+    "word": "고무",
+    "sense": [
+     {
+      "definition": "‘고모’의 방언",
+      "link": "https://opendict.korean.go.kr/dictionary/view?sense_no=653705",
+      "sense_no": "007",
+      "target_code": "653705",
+      "type": "방언",
+      "pos": "명사"
+     }
+    ]
+   },
+   {
+    "word": "고무",
+    "sense": [
+     {
+      "definition": "‘거미’의 방언",
+      "link": "https://opendict.korean.go.kr/dictionary/view?sense_no=686067",
+      "sense_no": "008",
+      "target_code": "686067",
+      "type": "방언",
+      "pos": "명사"
+     }
+    ]
+   },
+   {
+    "word": "고무",
+    "sense": [
+     {
+      "definition": "‘고미’의 방언",
+      "link": "https://opendict.korean.go.kr/dictionary/view?sense_no=889043",
+      "sense_no": "009",
+      "target_code": "889043",
+      "type": "방언",
+      "pos": "명사"
+     }
+    ]
+   },
+   {
+    "word": "고-무",
+    "sense": [
+     {
+      "cat": "인명",
+      "definition": "고구려의 왕족(?~?). 미천왕의 아들이고, 고국원왕의 동생이다. 고국원왕 12년(342)에, 북도(北道)를 방어하여, 전연(前燕) 장수 왕우(王寓)의 군대를 격파하였다.",
+      "link": "https://opendict.korean.go.kr/dictionary/view?sense_no=985504",
+      "origin": "高武",
+      "sense_no": "010",
+      "target_code": "985504",
+      "type": "일반어",
+      "pos": "명사"
+     }
+    ]
+   }
+  ],
+  "아파트": [
+   {
+    "word": "아파트",
+    "sense": [
+     {
+      "definition": "한 채의 높고 큰 건물 안에 여러 가구가 독립하여 살 수 있게 지은 주택.",
+      "link": "https://opendict.korean.go.kr/dictionary/view?sense_no=218559",
+      "origin": "←apartment",
+      "sense_no": "001",
+      "target_code": "218559",
+      "type": "일반어",
+      "pos": "명사"
+     }
+    ]
+   },
+   {
+    "word": "아파트",
+    "sense": [
+     {
+      "cat": "음악",
+      "definition": "윤수일 작사·작곡의 대중가요. 1982년에 발표된 윤수일의 앨범에 수록되어 있다.",
+      "link": "https://opendict.korean.go.kr/dictionary/view?sense_no=1495092",
+      "origin": "←apartment",
+      "sense_no": "002",
+      "target_code": "1495092",
+      "type": "일반어",
+      "pos": "명사"
+     }
+    ]
+   }
+  ],
+  "금메달": [
+   {
+    "word": "금-메달",
+    "sense": [
+     {
+      "definition": "금으로 만들거나 금으로 도금한 메달. 주로 운동 경기나 그 밖의 각종 대회에서 우승한 사람에게 준다.",
+      "link": "https://opendict.korean.go.kr/dictionary/view?sense_no=452530",
+      "origin": "金medal",
+      "sense_no": "001",
+      "target_code": "452530",
+      "type": "일반어",
+      "pos": "명사"
+     }
+    ]
+   }
+  ],
+  "컵": [
+   {
+    "word": "컵",
+    "sense": [
+     {
+      "definition": "물이나 음료 따위를 따라 마시려고 만든 그릇.",
+      "link": "https://opendict.korean.go.kr/dictionary/view?sense_no=24978",
+      "origin": "cup",
+      "sense_no": "001",
+      "target_code": "24978",
+      "type": "일반어",
+      "pos": "명사"
+     }
+    ]
+   },
+   {
+    "word": "컵",
+    "sense": [
+     {
+      "syntacticAnnotation": "((수량을 나타내는 말 뒤에 쓰여))",
+      "definition": "음료 따위를 ‘컵’에 담아 그 분량을 세는 단위.",
+      "link": "https://opendict.korean.go.kr/dictionary/view?sense_no=56368",
+      "origin": "cup",
+      "sense_no": "002",
+      "target_code": "56368",
+      "type": "일반어",
+      "pos": "명사"
+     }
+    ]
+   },
+   {
+    "word": "컵",
+    "sense": [
+     {
+      "definition": "운동 경기에서 상으로 주는 큰 잔.",
+      "link": "https://opendict.korean.go.kr/dictionary/view?sense_no=67934",
+      "origin": "cup",
+      "sense_no": "003",
+      "target_code": "67934",
+      "type": "일반어",
+      "pos": "명사"
+     }
+    ]
+   },
+   {
+    "word": "컵",
+    "sense": [
+     {
+      "definition": "브래지어에서, 양 젖가슴이 닿는 부분에 대는 반구형의 물건.",
+      "link": "https://opendict.korean.go.kr/dictionary/view?sense_no=71095",
+      "origin": "cup",
+      "sense_no": "004",
+      "target_code": "71095",
+      "type": "일반어",
+      "pos": "명사"
+     }
+    ]
+   },
+   {
+    "word": "컵",
+    "sense": [
+     {
+      "cat": "체육",
+      "definition": "골프에서, 그린 위에 설치한 지름 10.8cm 정도의 구멍.",
+      "link": "https://opendict.korean.go.kr/dictionary/view?sense_no=71843",
+      "origin": "cup",
+      "sense_no": "005",
+      "target_code": "71843",
+      "type": "일반어",
+      "pos": "명사"
+     }
+    ]
+   },
+   {
+    "word": "컵",
+    "sense": [
+     {
+      "cat": "영상",
+      "definition": "부탄의 노르부(Norbu, K.) 감독이 만든 영화. 1999년에 제작되었다.",
+      "link": "https://opendict.korean.go.kr/dictionary/view?sense_no=1548074",
+      "origin": "cup",
+      "sense_no": "007",
+      "target_code": "1548074",
+      "type": "일반어",
+      "pos": "명사"
+     }
+    ]
+   }
+  ],
+  "가스": [
+   {
+    "word": "가스",
+    "sense": [
+     {
+      "definition": "기체 물질을 통틀어 이르는 말.",
+      "link": "https://opendict.korean.go.kr/dictionary/view?sense_no=551423",
+      "origin": "gas",
+      "sense_no": "001",
+      "target_code": "551423",
+      "type": "일반어",
+      "pos": "명사"
+     }
+    ]
+   },
+   {
+    "word": "가스",
+    "sense": [
+     {
+      "definition": "연료로 사용되는 기체.",
+      "link": "https://opendict.korean.go.kr/dictionary/view?sense_no=554771",
+      "origin": "gas",
+      "sense_no": "002",
+      "target_code": "554771",
+      "type": "일반어",
+      "pos": "명사"
+     }
+    ]
+   },
+   {
+    "word": "가스",
+    "sense": [
+     {
+      "definition": "살상 무기로 사용되는 유독한 기체.",
+      "link": "https://opendict.korean.go.kr/dictionary/view?sense_no=558134",
+      "origin": "gas",
+      "sense_no": "003",
+      "target_code": "558134",
+      "type": "일반어",
+      "pos": "명사"
+     }
+    ]
+   },
+   {
+    "word": "가스",
+    "sense": [
+     {
+      "definition": "소화 기관 내에서 내용물이 부패·발효하여 생긴 기체.",
+      "link": "https://opendict.korean.go.kr/dictionary/view?sense_no=558861",
+      "origin": "gas",
+      "sense_no": "004",
+      "target_code": "558861",
+      "type": "일반어",
+      "pos": "명사"
+     }
+    ]
+   },
+   {
+    "word": "가스",
+    "sense": [
+     {
+      "cat": "자연 일반",
+      "definition": "산속의 안개. 대기 중의 수증기로 인해 발생한다.",
+      "link": "https://opendict.korean.go.kr/dictionary/view?sense_no=1331417",
+      "origin": "gas",
+      "sense_no": "005",
+      "target_code": "1331417",
+      "type": "일반어",
+      "pos": "명사"
+     }
+    ]
+   }
+  ],
+  "부대": [
+   {
+    "word": "부대",
+    "sense": [
+     {
+      "cat": "농업",
+      "definition": "주로 산간 지대에서 풀과 나무를 불살라 버리고 그 자리를 파 일구어 농사를 짓는 밭. ⇒규범 표기는 ‘화전’이다.",
+      "link": "https://opendict.korean.go.kr/dictionary/view?sense_no=332055",
+      "sense_no": "001",
+      "target_code": "332055",
+      "type": "일반어",
+      "pos": "명사"
+     }
+    ]
+   },
+   {
+    "word": "부대",
+    "sense": [
+     {
+      "cat": "농업",
+      "definition": "‘화전’의 북한어.",
+      "link": "https://opendict.korean.go.kr/dictionary/view?sense_no=335373",
+      "sense_no": "002",
+      "target_code": "335373",
+      "type": "북한어",
+      "pos": "명사"
+     }
+    ]
+   },
+   {
+    "word": "부대",
+    "sense": [
+     {
+      "definition": "‘부디’의 방언",
+      "link": "https://opendict.korean.go.kr/dictionary/view?sense_no=171853",
+      "sense_no": "003",
+      "target_code": "171853",
+      "type": "방언",
+      "pos": "부사"
+     }
+    ]
+   },
+   {
+    "word": "부대",
+    "sense": [
+     {
+      "syntacticAnnotation": "((주로 명사 앞에 쓰여))",
+      "definition": "기본이 되는 것에 곁달아 덧붙임.",
+      "link": "https://opendict.korean.go.kr/dictionary/view?sense_no=423083",
+      "origin": "附帶",
+      "sense_no": "004",
+      "target_code": "423083",
+      "type": "일반어",
+      "pos": "명사"
+     }
+    ]
+   },
+   {
+    "word": "부대",
+    "sense": [
+     {
+      "definition": "종이, 천, 가죽 따위로 만든 큰 자루.",
+      "link": "https://opendict.korean.go.kr/dictionary/view?sense_no=171854",
+      "origin": "負袋",
+      "sense_no": "005",
+      "target_code": "171854",
+      "type": "일반어",
+      "pos": "명사"
+     }
+    ]
+   },
+   {
+    "word": "부대",
+    "sense": [
+     {
+      "definition": "짐을 지고 임.",
+      "link": "https://opendict.korean.go.kr/dictionary/view?sense_no=515782",
+      "origin": "負戴",
+      "sense_no": "006",
+      "target_code": "515782",
+      "type": "일반어",
+      "pos": "명사"
+     }
+    ]
+   },
+   {
+    "word": "부대",
+    "sense": [
+     {
+      "definition": "매우 힘든 일을 함을 비유적으로 이르는 말.",
+      "link": "https://opendict.korean.go.kr/dictionary/view?sense_no=519207",
+      "origin": "負戴",
+      "sense_no": "007",
+      "target_code": "519207",
+      "type": "일반어",
+      "pos": "명사"
+     }
+    ]
+   },
+   {
+    "word": "부대",
+    "sense": [
+     {
+      "definition": "헤엄을 칠 때 몸이 잘 뜨게 하는 기구. 고무나 방수포로 만들어 바람을 넣는다.",
+      "link": "https://opendict.korean.go.kr/dictionary/view?sense_no=533524",
+      "origin": "浮袋",
+      "sense_no": "008",
+      "target_code": "533524",
+      "type": "일반어",
+      "pos": "명사"
+     }
+    ]
+   },
+   {
+    "word": "부대",
+    "sense": [
+     {
+      "cat": "경제",
+      "definition": "금융 기관, 회사 따위의 회계원이 직무를 이용하여 부정 대출을 하는 일.",
+      "link": "https://opendict.korean.go.kr/dictionary/view?sense_no=332056",
+      "origin": "浮貸",
+      "sense_no": "009",
+      "target_code": "332056",
+      "type": "일반어",
+      "pos": "명사"
+     }
+    ]
+   },
+   {
+    "word": "부대",
+    "sense": [
+     {
+      "cat": "경제",
+      "definition": "은행 직원이 창구에서 손님으로부터 받아들인 예금을 소정의 장부에 기입하지 않고 타인에게 대부하여 이자를 받는 행위.",
+      "link": "https://opendict.korean.go.kr/dictionary/view?sense_no=335374",
+      "origin": "浮貸",
+      "sense_no": "010",
+      "target_code": "335374",
+      "type": "일반어",
+      "pos": "명사"
+     }
+    ]
+   },
+   {
+    "word": "부대",
+    "sense": [
+     {
+      "cat": "군사",
+      "definition": "일정한 규모로 편성된 군대 조직을 일반적으로 이르는 말.",
+      "link": "https://opendict.korean.go.kr/dictionary/view?sense_no=515783",
+      "origin": "部隊",
+      "sense_no": "011",
+      "target_code": "515783",
+      "type": "일반어",
+      "pos": "명사"
+     }
+    ]
+   },
+   {
+    "word": "부대",
+    "sense": [
+     {
+      "definition": "어떠한 공통의 목적을 위하여 한데 모여 행동을 취하는 무리.",
+      "link": "https://opendict.korean.go.kr/dictionary/view?sense_no=519208",
+      "origin": "部隊",
+      "sense_no": "012",
+      "target_code": "519208",
+      "type": "일반어",
+      "pos": "명사"
+     }
+    ]
+   },
+   {
+    "word": "부대",
+    "sense": [
+     {
+      "definition": "‘부대하다’의 어근.",
+      "link": "https://opendict.korean.go.kr/dictionary/view?sense_no=171855",
+      "origin": "富大",
+      "sense_no": "013",
+      "target_code": "171855",
+      "type": "일반어",
+      "pos": ""
+     }
+    ]
+   }
+  ],
+  "닭도리탕": [
+   {
+    "word": "닭도리-탕",
+    "sense": [
+     {
+      "definition": "닭고기를 토막 쳐서 양념과 물을 넣고 끓인 음식. 경우에 따라 토막 친 닭고기에 갖은양념과 채소를 넣고 먼저 볶다가 물을 넣고 끓이기도 한다.",
+      "link": "https://opendict.korean.go.kr/dictionary/view?sense_no=565063",
+      "origin": "닭tori[鳥]湯",
+      "sense_no": "001",
+      "target_code": "565063",
+      "type": "일반어",
+      "pos": "명사"
+     }
+    ]
+   }
+  ],
+  "니체": [
+   {
+    "word": "니체",
+    "sense": [
+     {
+      "cat": "인명",
+      "definition": "프리드리히 빌헬름 니체, 독일의 철학자·시인(1844~1900). 실존 철학의 선구자로, 기독교적·민주주의적 윤리를 약자의 노예 도덕으로 간주하고 강자의 군주 도덕을 찬미하였으며, 그 구현자를 초인(超人)이라 명명하였다. 근대의 극복을 위하여 ‘신은 죽었다’고 선언하고, 피안적인 것에 대신하여 차안적인 것을 본질로 하는 생을 주장하는 허무주의에 의하여 모든 것의 가치 전환을 시도하였다. 저서에 ≪비극의 탄생≫, ≪자라투스트라는 이렇게 말했다≫ 따위가 있다.",
+      "link": "https://opendict.korean.go.kr/dictionary/view?sense_no=122834",
+      "origin": "Nietzsche, Friedrich Wilhelm",
+      "sense_no": "001",
+      "target_code": "122834",
+      "type": "일반어",
+      "pos": "명사"
+     }
+    ]
+   },
+   {
+    "word": "니체",
+    "sense": [
+     {
+      "cat": "책명",
+      "definition": "독일의 철학자 하이데거(Heidegger, M.)가 지은 철학서. 우리나라에는 2010년에 간행되었다.",
+      "link": "https://opendict.korean.go.kr/dictionary/view?sense_no=1525546",
+      "origin": "Nietzsche",
+      "sense_no": "002",
+      "target_code": "1525546",
+      "type": "일반어",
+      "pos": "명사"
+     }
+    ]
+   }
+  ],
+  "래스터": [
+   {
+    "word": "래스터",
+    "sense": [
+     {
+      "cat": "물리",
+      "definition": "텔레비전 브라운관의 형광면 위에 나타나는 주사선에 의한 가로줄 무늬. 오래된 수상기의 전원을 켰을 때 나타난다.",
+      "link": "https://opendict.korean.go.kr/dictionary/view?sense_no=419482",
+      "origin": "raster",
+      "sense_no": "001",
+      "target_code": "419482",
+      "type": "일반어",
+      "pos": "명사"
+     }
+    ]
+   }
+  ],
+  "강생이": [
+   {
+    "word": "강생이",
+    "sense": [
+     {
+      "definition": "‘강아지’의 방언",
+      "link": "https://opendict.korean.go.kr/dictionary/view?sense_no=486494",
+      "sense_no": "001",
+      "target_code": "486494",
+      "type": "방언",
+      "pos": "명사"
+     }
+    ]
+   },
+   {
+    "word": "강생이",
+    "sense": [
+     {
+      "definition": "‘강아지’의 방언",
+      "link": "https://opendict.korean.go.kr/dictionary/view?sense_no=863556",
+      "sense_no": "002",
+      "target_code": "863556",
+      "type": "방언",
+      "pos": "명사"
+     }
+    ]
+   }
+  ],
+  "래일": [
+   {
+    "word": "래일",
+    "sense": [
+     {
+      "definition": "‘내일’의 북한어.",
+      "link": "https://opendict.korean.go.kr/dictionary/view?sense_no=367429",
+      "origin": "來日",
+      "sense_no": "001",
+      "target_code": "367429",
+      "type": "북한어",
+      "pos": "명사"
+     }
+    ]
+   },
+   {
+    "word": "래일",
+    "sense": [
+     {
+      "definition": "‘내일’의 북한어.",
+      "link": "https://opendict.korean.go.kr/dictionary/view?sense_no=371760",
+      "origin": "來日",
+      "sense_no": "002",
+      "target_code": "371760",
+      "type": "북한어",
+      "pos": "명사"
+     }
+    ]
+   }
+  ],
+  "금붕어": [
+   {
+    "word": "금-붕어",
+    "sense": [
+     {
+      "cat": "동물",
+      "definition": "잉엇과의 민물고기. 붕어를 관상용(觀賞用)으로 개량한 사육종으로 모양과 빛깔이 다른 많은 품종이 있다.",
+      "link": "https://opendict.korean.go.kr/dictionary/view?sense_no=104381",
+      "origin": "金붕어",
+      "sense_no": "001",
+      "target_code": "104381",
+      "type": "일반어",
+      "pos": "명사"
+     }
+    ]
+   },
+   {
+    "word": "금-붕어",
+    "sense": [
+     {
+      "cat": "문학",
+      "definition": "최서해가 지은 단편 소설. 1926년 ≪조선 문단≫에 발표되었다.",
+      "link": "https://opendict.korean.go.kr/dictionary/view?sense_no=1547574",
+      "origin": "金붕어",
+      "sense_no": "002",
+      "target_code": "1547574",
+      "type": "일반어",
+      "pos": "명사"
+     }
+    ]
+   },
+   {
+    "word": "금-붕어",
+    "sense": [
+     {
+      "cat": "영상",
+      "definition": "나운규 감독이 만든 영화. 1927년에 개봉하였다.",
+      "link": "https://opendict.korean.go.kr/dictionary/view?sense_no=1615640",
+      "origin": "金붕어",
+      "sense_no": "003",
+      "target_code": "1615640",
+      "type": "일반어",
+      "pos": "명사"
+     }
+    ]
+   },
+   {
+    "word": "금-붕어",
+    "sense": [
+     {
+      "cat": "음악",
+      "definition": "심현보 작사·작곡의 대중가요. 2007년에 발표된 심현보의 앨범에 수록되어 있다.",
+      "link": "https://opendict.korean.go.kr/dictionary/view?sense_no=1625230",
+      "origin": "金붕어",
+      "sense_no": "004",
+      "target_code": "1625230",
+      "type": "일반어",
+      "pos": "명사"
+     }
+    ]
+   }
+  ],
+  "강물": [
+   {
+    "word": "강-물",
+    "sense": [
+     {
+      "definition": "강에 흐르는 물.",
+      "link": "https://opendict.korean.go.kr/dictionary/view?sense_no=523198",
+      "origin": "江물",
+      "sense_no": "001",
+      "target_code": "523198",
+      "type": "일반어",
+      "pos": "명사"
+     }
+    ]
+   },
+   {
+    "word": "강-물",
+    "sense": [
+     {
+      "definition": "‘바닷물’의 방언",
+      "link": "https://opendict.korean.go.kr/dictionary/view?sense_no=624974",
+      "origin": "江물",
+      "sense_no": "002",
+      "target_code": "624974",
+      "type": "방언",
+      "pos": "명사"
+     }
+    ]
+   }
+  ],
+  "늠름": [
+   {
+    "word": "늠름",
+    "sense": [
+     {
+      "definition": "‘늠름하다’의 어근.",
+      "link": "https://opendict.korean.go.kr/dictionary/view?sense_no=122231",
+      "origin": "凜凜",
+      "sense_no": "001",
+      "target_code": "122231",
+      "type": "일반어",
+      "pos": ""
+     }
+    ]
+   },
+   {
+    "word": "늠름",
+    "sense": [
+     {
+      "definition": "‘늠름하다’의 어근.",
+      "link": "https://opendict.korean.go.kr/dictionary/view?sense_no=380764",
+      "origin": "懍懍",
+      "sense_no": "002",
+      "target_code": "380764",
+      "type": "일반어",
+      "pos": ""
+     }
+    ]
+   }
+  ],
+  "동무": [
+   {
+    "word": "동무",
+    "sense": [
+     {
+      "definition": "늘 친하게 어울리는 사람.",
+      "link": "https://opendict.korean.go.kr/dictionary/view?sense_no=514543",
+      "sense_no": "001",
+      "target_code": "514543",
+      "type": "일반어",
+      "pos": "명사"
+     }
+    ]
+   },
+   {
+    "word": "동무",
+    "sense": [
+     {
+      "definition": "어떤 일을 짝이 되어 함께 하는 사람.",
+      "link": "https://opendict.korean.go.kr/dictionary/view?sense_no=518727",
+      "sense_no": "002",
+      "target_code": "518727",
+      "type": "일반어",
+      "pos": "명사"
+     }
+    ]
+   },
+   {
+    "word": "동무",
+    "sense": [
+     {
+      "cat": "광업",
+      "definition": "한 덕대 아래에서 광석을 파는 일꾼.",
+      "link": "https://opendict.korean.go.kr/dictionary/view?sense_no=521644",
+      "sense_no": "003",
+      "target_code": "521644",
+      "type": "일반어",
+      "pos": "명사"
+     }
+    ]
+   },
+   {
+    "word": "동무",
+    "sense": [
+     {
+      "definition": "혁명을 위하여 함께 싸우는 사람을 친근하게 이르는 말.",
+      "link": "https://opendict.korean.go.kr/dictionary/view?sense_no=522151",
+      "sense_no": "004",
+      "target_code": "522151",
+      "type": "북한어",
+      "pos": "명사"
+     }
+    ]
+   },
+   {
+    "word": "동무",
+    "sense": [
+     {
+      "definition": "일반적으로 남을 친근하게 부르는 말.",
+      "link": "https://opendict.korean.go.kr/dictionary/view?sense_no=522437",
+      "sense_no": "005",
+      "target_code": "522437",
+      "type": "북한어",
+      "pos": "명사"
+     }
+    ]
+   },
+   {
+    "word": "동무",
+    "sense": [
+     {
+      "cat": "인명",
+      "definition": "‘이제마’의 호.",
+      "link": "https://opendict.korean.go.kr/dictionary/view?sense_no=455452",
+      "origin": "東武",
+      "sense_no": "006",
+      "target_code": "455452",
+      "type": "일반어",
+      "pos": "명사"
+     }
+    ]
+   },
+   {
+    "word": "동무",
+    "sense": [
+     {
+      "cat": "역사",
+      "definition": "조선 시대에, 문묘(文廟) 안의 동쪽에 있던 행각(行閣). 여러 유현(儒賢)의 위패를 서무(西廡)와 나누어 모셨다.",
+      "link": "https://opendict.korean.go.kr/dictionary/view?sense_no=131011",
+      "origin": "東廡",
+      "sense_no": "007",
+      "target_code": "131011",
+      "type": "일반어",
+      "pos": "명사"
+     }
+    ]
+   },
+   {
+    "word": "동무",
+    "sense": [
+     {
+      "definition": "아이들이 추는 춤.",
+      "link": "https://opendict.korean.go.kr/dictionary/view?sense_no=131012",
+      "origin": "童舞",
+      "sense_no": "008",
+      "target_code": "131012",
+      "type": "일반어",
+      "pos": "명사"
+     }
+    ]
+   },
+   {
+    "word": "동무",
+    "sense": [
+     {
+      "cat": "지명",
+      "definition": "전라남도 영암군 영암읍에 있는 이. 영암읍의 서부에 위치해 있으며, 주거 지역과 상업 시설이 밀집해 있다. 군청, 읍사무소, 중학교, 고등학교 등의 공공 기관과 영암 공원, 실내 체육관 따위의 시설이 들어서 있다.",
+      "link": "https://opendict.korean.go.kr/dictionary/view?sense_no=1454861",
+      "origin": "東武",
+      "sense_no": "009",
+      "target_code": "1454861",
+      "type": "일반어",
+      "pos": "명사"
+     }
+    ]
+   }
+  ],
+  "일없다": [
+   {
+    "word": "일-없다",
+    "sense": [
+     {
+      "syntacticArgument": "【…에/에게】",
+      "definition": "소용이나 필요가 없다.",
+      "link": "https://opendict.korean.go.kr/dictionary/view?sense_no=332943",
+      "sense_no": "001",
+      "target_code": "332943",
+      "type": "일반어",
+      "pos": "형용사"
+     }
+    ]
+   },
+   {
+    "word": "일-없다",
+    "sense": [
+     {
+      "definition": "걱정하거나 개의할 필요가 없다.",
+      "link": "https://opendict.korean.go.kr/dictionary/view?sense_no=336344",
+      "sense_no": "002",
+      "target_code": "336344",
+      "type": "일반어",
+      "pos": "형용사"
+     }
+    ]
+   },
+   {
+    "word": "일-없다",
+    "sense": [
+     {
+      "definition": "‘초연하다’의 옛말.",
+      "link": "https://opendict.korean.go.kr/dictionary/view?sense_no=358856",
+      "sense_no": "003",
+      "target_code": "358856",
+      "type": "옛말",
+      "pos": "형용사"
+     }
+    ]
+   }
+  ],
+  "로동": [
+   {
+    "word": "로동",
+    "sense": [
+     {
+      "definition": "‘노동’의 북한어.",
+      "link": "https://opendict.korean.go.kr/dictionary/view?sense_no=140996",
+      "origin": "勞動",
+      "sense_no": "001",
+      "target_code": "140996",
+      "type": "북한어",
+      "pos": "명사"
+     }
+    ]
+   },
+   {
+    "word": "로동",
+    "sense": [
+     {
+      "cat": "경제",
+      "definition": "‘노동’의 북한어.",
+      "link": "https://opendict.korean.go.kr/dictionary/view?sense_no=598316",
+      "origin": "勞動",
+      "sense_no": "002",
+      "target_code": "598316",
+      "type": "북한어",
+      "pos": "명사"
+     }
+    ]
+   }
+  ],
+  "귤": [
+   {
+    "word": "귤",
+    "sense": [
+     {
+      "definition": "귤나무의 열매. 모양은 둥글납작하고 빛깔은 노란빛을 띤 주황빛이다. 물이 많고 맛은 새콤달콤하며, 껍질은 말려서 약재로 쓴다.",
+      "link": "https://opendict.korean.go.kr/dictionary/view?sense_no=515245",
+      "origin": "橘",
+      "sense_no": "001",
+      "target_code": "515245",
+      "type": "일반어",
+      "pos": "명사"
+     }
+    ]
+   },
+   {
+    "word": "귤",
+    "sense": [
+     {
+      "definition": "귤, 밀감, 유자 따위를 통틀어 이르는 말.",
+      "link": "https://opendict.korean.go.kr/dictionary/view?sense_no=518347",
+      "origin": "橘",
+      "sense_no": "002",
+      "target_code": "518347",
+      "type": "일반어",
+      "pos": "명사"
+     }
+    ]
+   },
+   {
+    "word": "귤",
+    "sense": [
+     {
+      "definition": "‘굴’의 방언",
+      "link": "https://opendict.korean.go.kr/dictionary/view?sense_no=633373",
+      "sense_no": "003",
+      "target_code": "633373",
+      "type": "방언",
+      "pos": "명사"
+     }
+    ]
+   }
+  ],
+  "얼음보숭이": []
+ }
+}
