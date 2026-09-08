@@ -1,0 +1,17 @@
+{
+  "name": "kkeutmal-itgi",
+  "version": "1.0.0",
+  "description": "우리말샘 Open API 기반 끝말잇기 게임 (끄투 스타일)",
+  "private": true,
+  "type": "module",
+  "main": "server.js",
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "start": "node server.js",
+    "dev": "MOCK_DICT=1 DEBUG=1 node server.js",
+    "test": "node --test test/*.test.js"
+  },
+  "license": "MIT"
+}

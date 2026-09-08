@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>끝말잇기 · 우리말샘</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/style.css">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E🔗%3C/text%3E%3C/svg%3E">
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="/"><span class="brand-mark">끝</span>끝말잇기</a>
+    <div class="rule-chips" id="rule-chips" title="적용 중인 규칙">
+      <span class="chip">명사만</span>
+      <span class="chip">표준어만</span>
+      <span class="chip">북한어·외래어 ✕</span>
+      <span class="chip">합성어 ✕</span>
+      <span class="chip">고유명사 ✕</span>
+      <span class="chip">2글자 이상</span>
+      <span class="chip chip-dueum" id="chip-dueum">두음법칙 ○</span>
+    </div>
+    <span class="dict-badge" id="dict-badge" title="사전 출처">우리말샘</span>
+  </header>
+
+  <main>
+    <!-- ───────── 설정 화면 ───────── -->
+    <section class="screen" id="screen-setup">
+      <div class="card setup-card">
+        <h1>게임 설정</h1>
+        <form id="setup-form">
+          <fieldset>
+            <legend>모드</legend>
+            <div class="seg" role="radiogroup">
+              <label><input type="radio" name="mode" value="bot" checked><span>🤖 컴퓨터와 대전</span></label>
+              <label><input type="radio" name="mode" value="local"><span>👥 친구와 번갈아</span></label>
+            </div>
+          </fieldset>
+
+          <div class="grid2">
+            <label class="field">
+              <span>내 이름</span>
+              <input type="text" name="p1" value="나" maxlength="10" autocomplete="off">
+            </label>
+            <label class="field" id="field-p2">
+              <span>상대 이름</span>
+              <input type="text" name="p2" value="친구" maxlength="10" autocomplete="off">
+            </label>
+            <label class="field" id="field-level">
+              <span>컴퓨터 난이도</span>
+              <select name="level">
+                <option value="easy">쉬움</option>
+                <option value="normal" selected>보통</option>
+                <option value="hard">어려움</option>
+              </select>
+            </label>
+            <label class="field">
+              <span>턴 제한 시간</span>
+              <select name="turnSec">
+                <option value="10">10초</option>
+                <option value="15" selected>15초</option>
+                <option value="20">20초</option>
+                <option value="30">30초</option>
+                <option value="60">60초</option>
+              </select>
+            </label>
+            <label class="field">
+              <span>라운드 수</span>
+              <select name="rounds">
+                <option value="1">1라운드</option>
+                <option value="3" selected>3라운드</option>
+                <option value="5">5라운드</option>
+              </select>
+            </label>
+          </div>
+
+          <div class="rules-box">
+            <h2>규칙</h2>
+            <ul>
+              <li>앞 단어의 <b>마지막 글자</b>로 시작하는 단어를 이어 말해요. <span class="muted" id="dueum-note">두음법칙이 적용된 글자도 허용돼요. (력 → 역, 로 → 노)</span></li>
+              <li><b>우리말샘</b>에 실린 <b>명사</b>만 인정해요. 표준어가 아닌 말, 북한어, 외래어, 합성어·파생어, 고유 명사, 한 글자 단어는 안 돼요.</li>
+              <li>이미 나온 단어는 다시 쓸 수 없어요. 제한 시간 안에 못 잇거나 틀린 단어만 내면 그 라운드에서 져요.</li>
+              <li>점수 = 글자 수 × 10 + 남은 시간 보너스</li>
+            </ul>
+          </div>
+
+          <button type="submit" class="btn btn-primary btn-lg">게임 시작</button>
+        </form>
+      </div>
+    </section>
+
+    <!-- ───────── 게임 화면 ───────── -->
+    <section class="screen" id="screen-game" hidden>
+      <div class="game-layout">
+        <aside class="card players-card">
+          <div class="round-indicator" id="round-indicator">1 / 3 라운드</div>
+          <ul class="players" id="players"></ul>
+          <button type="button" class="btn btn-ghost" id="btn-quit">그만두기</button>
+        </aside>
+
+        <div class="card board-card">
+          <div class="prompt-area">
+            <div class="prompt-label" id="prompt-label">이 글자로 시작하는 단어를 말하세요</div>
+            <div class="prompt-word" id="prompt-word"></div>
+            <div class="prompt-starts" id="prompt-starts"></div>
+          </div>
+
+          <div class="timer">
+            <div class="timer-bar"><div class="timer-fill" id="timer-fill"></div></div>
+            <div class="timer-text" id="timer-text">15.0</div>
+          </div>
+
+          <form id="word-form" class="word-form" autocomplete="off">
+            <input type="text" id="word-input" placeholder="단어를 입력하고 Enter" maxlength="20" inputmode="text" lang="ko" autocapitalize="off" spellcheck="false">
+            <button type="submit" class="btn btn-primary" id="btn-submit">제출</button>
+          </form>
+          <div class="message" id="message" aria-live="polite"></div>
+
+          <div class="bot-thinking" id="bot-thinking" hidden>
+            <span class="dots"><i></i><i></i><i></i></span> 컴퓨터가 생각하는 중…
+          </div>
+        </div>
+
+        <aside class="card history-card">
+          <h2>단어 기록 <span class="muted" id="history-count">0</span></h2>
+          <ol class="history" id="history" reversed></ol>
+        </aside>
+      </div>
+
+      <div class="overlay" id="round-overlay" hidden>
+        <div class="overlay-box">
+          <div class="overlay-title" id="overlay-title"></div>
+          <div class="overlay-desc" id="overlay-desc"></div>
+          <button type="button" class="btn btn-primary" id="btn-next-round">다음 라운드</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ───────── 결과 화면 ───────── -->
+    <section class="screen" id="screen-result" hidden>
+      <div class="card result-card">
+        <div class="result-title" id="result-title"></div>
+        <table class="result-table">
+          <thead><tr><th>플레이어</th><th>라운드 승</th><th>점수</th><th>단어 수</th></tr></thead>
+          <tbody id="result-body"></tbody>
+        </table>
+        <div class="result-best" id="result-best"></div>
+        <div class="row">
+          <button type="button" class="btn btn-primary" id="btn-again">같은 설정으로 다시</button>
+          <button type="button" class="btn btn-ghost" id="btn-setup">설정으로</button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="foot">단어 뜻풀이 출처: <a href="https://opendict.korean.go.kr/" target="_blank" rel="noopener">국립국어원 우리말샘</a> (CC BY-SA 2.0 KR)</footer>
+
+  <script type="module" src="/app.js"></script>
+</body>
+</html>
