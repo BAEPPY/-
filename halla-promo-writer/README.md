@@ -59,10 +59,11 @@ Google Apps Script 웹앱이던 것을 **내 컴퓨터에 설치해서 쓰는 �
 
 설치 파일은 GitHub Actions가 만들어 줍니다. (소스만 있으면 누구나 같은 파일을 다시 만들 수 있습니다.)
 
-**방법 A — 바로 만들기**
-1. GitHub 저장소 > **Actions** > 왼쪽 목록에서 **한라초 홍보글 작성 앱 빌드**
-2. 오른쪽 **Run workflow** > 운영체제 선택(windows / mac / both) > **Run workflow**
-3. 5~10분 뒤 실행이 끝나면, 그 실행 페이지 맨 아래 **Artifacts**에서 `windows` 을 내려받아 압축을 풉니다.
+**방법 A — 자동 빌드 결과 내려받기**
+`halla-promo-writer/` 안의 파일이 바뀌어 푸시되면 자동으로 빌드가 돕니다.
+1. GitHub 저장소 > **Actions** > **한라초 홍보글 작성 앱 빌드** 의 가장 최근 실행을 엽니다.
+2. 페이지 맨 아래 **Artifacts**에서 `windows`(또는 `mac`)를 내려받아 압축을 풉니다.
+   (Artifacts 는 90일 뒤 지워지니, 오래 두려면 방법 B로 Releases 에 올려 두세요.)
 
 **방법 B — Releases 에 올려 두기**
 `promo-v1.0.0` 같은 태그를 붙여 푸시하면 Windows·macOS 파일이 모두 만들어져 **Releases** 페이지에 올라갑니다.
@@ -71,7 +72,10 @@ git tag promo-v1.0.0
 git push origin promo-v1.0.0
 ```
 
-**방법 C — 내 컴퓨터에서 직접 만들기** (Node.js 20 이상 필요)
+**방법 C — Actions 탭에서 수동 실행**
+이 워크플로 파일이 저장소의 기본 브랜치에 있으면 **Actions > 한라초 홍보글 작성 앱 빌드 > Run workflow** 버튼으로 운영체제를 골라 만들 수 있습니다.
+
+**방법 D — 내 컴퓨터에서 직접 만들기** (Node.js 20 이상 필요)
 ```
 cd halla-promo-writer
 npm install

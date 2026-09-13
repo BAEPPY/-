@@ -1,12 +1,20 @@
 # 한라초 홍보글 작성 — 데스크톱 앱 설치 파일 만들기
 #
-# 실행 방법
-#   1) GitHub 저장소 > Actions > "한라초 홍보글 작성 앱 빌드" > Run workflow
-#      → 끝나면 그 실행 페이지 아래 Artifacts 에서 설치 파일(zip)을 내려받습니다.
-#   2) 또는 태그를 붙여 푸시하면 (예: promo-v1.0.0) Releases 페이지에 설치 파일이 올라갑니다.
+# 언제 실행되나
+#   - halla-promo-writer/ 안의 파일이 바뀌어 푸시되면 자동으로 (Actions 탭 > 해당 실행 > Artifacts 에서 내려받기)
+#   - promo-v1.0.0 같은 태그를 푸시하면 빌드 후 Releases 페이지에 설치 파일 업로드
+#   - 기본 브랜치에 이 파일이 있으면 Actions 탭에서 "Run workflow" 로 수동 실행도 가능
 name: 한라초 홍보글 작성 앱 빌드
 
 on:
+  push:
+    branches:
+      - '**'
+    paths:
+      - 'halla-promo-writer/**'
+      - '.github/workflows/halla-promo-writer.yml'
+    tags:
+      - 'promo-v*'
   workflow_dispatch:
     inputs:
       platforms:
@@ -17,9 +25,6 @@ on:
           - windows
           - mac
           - both
-  push:
-    tags:
-      - 'promo-v*'
 
 defaults:
   run:
@@ -28,7 +33,7 @@ defaults:
 jobs:
   windows:
     name: Windows 설치 파일
-    if: ${{ github.event_name == 'push' || inputs.platforms != 'mac' }}
+    if: ${{ github.event_name != 'workflow_dispatch' || inputs.platforms != 'mac' }}
     runs-on: windows-latest
     steps:
       - uses: actions/checkout@v4
@@ -45,13 +50,12 @@ jobs:
       - uses: actions/upload-artifact@v4
         with:
           name: windows
-          path: |
-            halla-promo-writer/dist/*.exe
+          path: halla-promo-writer/dist/*.exe
           if-no-files-found: error
 
   mac:
     name: macOS 설치 파일
-    if: ${{ github.event_name == 'push' || inputs.platforms != 'windows' }}
+    if: ${{ github.event_name != 'workflow_dispatch' || inputs.platforms != 'windows' }}
     runs-on: macos-latest
     steps:
       - uses: actions/checkout@v4
@@ -68,13 +72,12 @@ jobs:
       - uses: actions/upload-artifact@v4
         with:
           name: mac
-          path: |
-            halla-promo-writer/dist/*.dmg
+          path: halla-promo-writer/dist/*.dmg
           if-no-files-found: error
 
   release:
     name: Releases 에 올리기
-    if: ${{ github.event_name == 'push' }}
+    if: ${{ startsWith(github.ref, 'refs/tags/promo-v') }}
     needs: [windows, mac]
     runs-on: ubuntu-latest
     permissions:
@@ -92,5 +95,5 @@ jobs:
           ls -la
           gh release create "${GITHUB_REF_NAME}" --repo "${GITHUB_REPOSITORY}" \
             --title "한라초 홍보글 작성 ${GITHUB_REF_NAME#promo-v}" \
-            --notes "Windows: *Setup*.exe(설치) 또는 *무설치*.exe / macOS: *.dmg" \
+            --notes "Windows: *-win-x64.exe(설치판) 또는 *-무설치.exe / macOS: *.dmg" \
             *.exe *.dmg
