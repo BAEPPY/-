@@ -1,7 +1,5 @@
 # 끝말잇기 (우리말샘 Open API)
 
-> 이 저장소에는 다른 프로젝트도 있습니다: [`halla-promo-writer/`](halla-promo-writer/) — 한라초 홍보글 작성 데스크톱 앱 (Windows·macOS).
-
 끄투 온라인 스타일의 끝말잇기 웹 게임입니다. 단어 검증은 국립국어원 **우리말샘 Open API**로 하고, 외부 패키지 없이 Node.js 내장 모듈만 사용합니다.
 
 ## 규칙
