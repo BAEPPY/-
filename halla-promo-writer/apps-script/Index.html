@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<base target="_top">
+<meta charset="utf-8">
+<style>
+@import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.css');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@400;600&display=swap');
+
+:root{--ink:#16262E;--mut:#63787F;--acc:#2E6B62;--soft:#E4EDEA;--rule:#CCD9DA;--page:#E9EEEF;--pnl:#FCFCFB;}
+*{box-sizing:border-box;}
+body{margin:0;background:var(--page);color:var(--ink);
+  font-family:'Pretendard',-apple-system,'Malgun Gothic',sans-serif;font-size:15px;line-height:1.6;}
+.wrap{max-width:1180px;margin:0 auto;padding:28px 22px 60px;}
+.mast{display:flex;align-items:baseline;gap:12px;flex-wrap:wrap;
+  border-bottom:2px solid var(--acc);padding-bottom:10px;margin-bottom:26px;}
+.mast h1{font-size:21px;font-weight:700;margin:0;letter-spacing:-.02em;}
+.mast span{font-size:13px;color:var(--mut);}
+.grid{display:grid;grid-template-columns:5fr 7fr;gap:26px;align-items:start;}
+@media(max-width:900px){.grid{grid-template-columns:1fr;}}
+
+.form{background:var(--pnl);border:1px solid var(--rule);padding:22px;}
+.sec{font-size:12px;font-weight:600;color:var(--acc);margin:26px 0 14px;padding-bottom:6px;border-bottom:1px solid var(--rule);}
+.sec:first-child{margin-top:0;}
+.f{margin-bottom:15px;}
+.f label{display:block;font-size:13px;font-weight:600;margin-bottom:5px;}
+.hint{font-weight:400;color:var(--mut);margin-left:6px;font-size:12px;}
+.small{font-size:12px;color:var(--mut);margin-top:6px;}
+input[type=text],input[type=date],textarea{width:100%;background:transparent;border:none;
+  border-bottom:1px solid var(--rule);padding:7px 2px;font:inherit;font-size:14px;color:var(--ink);border-radius:0;}
+textarea{border:1px solid var(--rule);padding:9px;resize:vertical;line-height:1.6;}
+input:focus,textarea:focus{outline:none;border-color:var(--acc);box-shadow:0 1px 0 var(--acc);}
+textarea:focus{box-shadow:0 0 0 1px var(--acc);}
+input::placeholder,textarea::placeholder{color:#9DAEB3;}
+
+.seg{display:flex;border:1px solid var(--rule);width:fit-content;max-width:100%;flex-wrap:wrap;}
+.seg button{background:transparent;border:none;border-right:1px solid var(--rule);padding:6px 13px;
+  font:inherit;font-size:13px;color:var(--mut);cursor:pointer;}
+.seg button:last-child{border-right:none;}
+.seg button.on{background:var(--acc);color:#fff;font-weight:600;}
+.chips{display:flex;flex-wrap:wrap;gap:6px;margin-top:8px;}
+.chips button{background:transparent;border:1px solid var(--rule);padding:3px 10px;font:inherit;
+  font-size:12px;color:var(--mut);cursor:pointer;border-radius:999px;}
+.chips button:hover{border-color:var(--acc);color:var(--acc);}
+.row{display:flex;gap:14px;flex-wrap:wrap;}
+.row>*{flex:1;min-width:135px;}
+.tog{display:flex;gap:8px;align-items:center;font-size:13px;cursor:pointer;margin-bottom:12px;}
+.tog input{accent-color:var(--acc);}
+
+.go{width:100%;margin-top:24px;background:var(--acc);color:#fff;border:none;padding:13px;
+  font:inherit;font-size:15px;font-weight:700;cursor:pointer;transition:background .15s;}
+.go:disabled{background:#B6C6C6;cursor:not-allowed;}
+.err{margin-top:10px;font-size:13px;color:#9A3B2E;}
+
+.doc{background:#fff;border:1px solid var(--rule);padding:34px 36px;min-height:540px;}
+@media(max-width:900px){.doc{padding:24px 20px;min-height:340px;}}
+.doc .t{font-family:'Noto Serif KR',serif;font-size:19px;font-weight:600;line-height:1.45;
+  padding-bottom:14px;border-bottom:1px solid var(--rule);margin-bottom:20px;}
+.doc .b{font-family:'Noto Serif KR',serif;font-size:15px;line-height:1.95;
+  width:100%;border:none;background:transparent;resize:vertical;min-height:380px;color:var(--ink);padding:0;}
+.doc .b:focus{outline:none;box-shadow:none;}
+.empty{color:#A9B8BC;}
+.empty .sk{height:11px;background:var(--page);margin:0 0 13px;}
+.empty p{font-size:13px;margin:0 0 26px;}
+
+.bar{display:flex;gap:8px;flex-wrap:wrap;margin-top:16px;padding-top:16px;border-top:1px solid var(--rule);}
+.bar button{background:transparent;border:1px solid var(--acc);color:var(--acc);padding:7px 14px;
+  font:inherit;font-size:13px;font-weight:600;cursor:pointer;}
+.bar button:hover{background:var(--soft);}
+.bar .ghost{border-color:var(--rule);color:var(--mut);}
+.note{margin-top:14px;font-size:12.5px;color:var(--mut);line-height:1.7;}
+.check{margin-top:26px;background:var(--pnl);border:1px solid var(--rule);padding:20px 22px;}
+.check h2{font-size:13px;font-weight:700;margin:0 0 12px;}
+.check ul{margin:0;padding:0;}
+.check li{list-style:none;margin:0 0 9px;font-size:13.5px;display:flex;gap:9px;align-items:flex-start;cursor:pointer;}
+.check li.done{color:#A2B2B6;text-decoration:line-through;}
+.check input{margin-top:4px;accent-color:var(--acc);}
+.hide{display:none;}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="mast">
+    <h1>한라초 홍보글 작성</h1>
+    <span>알림마당 공지사항 · 학교소식용</span>
+  </div>
+
+  <div class="grid">
+    <!-- 입력 -->
+    <div class="form">
+      <p class="sec">활동</p>
+
+      <div class="f">
+        <label>날짜</label>
+        <div class="seg" id="segDate" style="margin-bottom:8px">
+          <button data-v="single" class="on">하루</button>
+          <button data-v="range">기간</button>
+          <button data-v="free">직접 입력</button>
+        </div>
+        <div id="dateSingle"><input type="date" id="d1"></div>
+        <div id="dateRange" class="hide row"><input type="date" id="d1b"><input type="date" id="d2"></div>
+        <div id="dateFree" class="hide"><input type="text" id="dFree" placeholder="예) 지난 14일(일) / 지난 3월부터 7월까지"></div>
+        <div class="small" id="datePreview"></div>
+      </div>
+
+      <div class="f">
+        <label>대상</label>
+        <input type="text" id="target" placeholder="예) 5학년 / 4학년 13개 학급 / 본교 교원">
+        <div class="chips" id="targetChips"></div>
+      </div>
+
+      <div class="f">
+        <label>활동명</label>
+        <input type="text" id="activity" placeholder="예) 또래관계 증진 사이다 프로그램">
+      </div>
+
+      <div class="f">
+        <label>활동 내용<span class="hint">메모하듯 편하게</span></label>
+        <textarea id="detail" rows="5" placeholder="예)
+- 친구인터뷰로 서로 알아가기
+- 나와 너의 연결고리 활동으로 공통점 찾기
+- 감정 경험 나누기, 칭찬샤워
+- 얼기설기 프로그램으로 마무리"></textarea>
+      </div>
+
+      <p class="sec">세부 사항 <span class="hint" style="font-weight:400">아는 것만 적으세요</span></p>
+
+      <div class="f">
+        <label>규모 · 시수 · 장소</label>
+        <input type="text" id="scale" placeholder="예) 13개 학급, 학급당 2시간 / 108명 / 본교 시청각실">
+      </div>
+
+      <div class="f">
+        <label>협력기관 · 강사</label>
+        <input type="text" id="partner" placeholder="예) 청소년상담복지센터 외부 전문 강사">
+      </div>
+
+      <div class="f">
+        <label>강조할 목적<span class="hint">비우면 활동 내용에서 알아서 씁니다</span></label>
+        <textarea id="effect" rows="2" placeholder="꼭 들어가야 할 목적이나 상위 사업명이 있을 때만"></textarea>
+      </div>
+
+      <div class="f">
+        <label>참가자 소감</label>
+        <div class="seg" id="segVoice" style="margin-bottom:8px">
+          <button data-v="none" class="on">넣지 않음</button>
+          <button data-v="polish">말 다듬기</button>
+          <button data-v="quote">그대로 인용</button>
+        </div>
+        <textarea id="voice" rows="2" class="hide"></textarea>
+        <div class="small" id="voiceHelp">소감 문장 없이 서술로 마무리합니다.</div>
+      </div>
+
+      <div class="f">
+        <label>대표자 발언<span class="hint">선택 · 학부모회장, 부장교사 등</span></label>
+        <textarea id="quote2" rows="2" placeholder="예) 학부모회장(이세희) — 소통을 돈독히 하는 계기가 되었기를 바란다"></textarea>
+      </div>
+
+      <p class="sec">형식</p>
+      <div class="row">
+        <div class="f">
+          <label>문체</label>
+          <div class="seg" id="segTone">
+            <button data-v="report" class="on">~하였다</button>
+            <button data-v="polite">~했습니다</button>
+          </div>
+          <div class="small">학생회·선거 글은 보통 존댓말체입니다.</div>
+        </div>
+        <div class="f">
+          <label>시점</label>
+          <div class="seg" id="segTense">
+            <button data-v="done" class="on">끝난 활동</button>
+            <button data-v="plan">예정·진행중</button>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="f">
+          <label>문단 기호</label>
+          <div class="seg" id="segMark">
+            <button data-v="□" class="on">□</button>
+            <button data-v="○">○</button>
+            <button data-v="*">*</button>
+          </div>
+        </div>
+        <div class="f">
+          <label>문단 수</label>
+          <div class="seg" id="segParas">
+            <button data-v="3" class="on">3</button>
+            <button data-v="4">4</button>
+            <button data-v="5">5</button>
+          </div>
+        </div>
+      </div>
+      <label class="tog"><input type="checkbox" id="subhead"> 문단마다 소제목 넣기 <span class="hint">텃밭 활동 글처럼</span></label>
+      <label class="tog"><input type="checkbox" id="iem"> 진로연계교육 연구학교 역량 I·U·M 넣기</label>
+      <div class="f">
+        <label>끝에 담당자 표기<span class="hint">선택</span></label>
+        <input type="text" id="signer" placeholder="예) 교감 김영숙">
+      </div>
+
+      <button class="go" id="go" disabled>홍보글 만들기</button>
+      <div class="note" id="readyNote">대상 · 활동명 · 활동 내용을 채우면 만들 수 있습니다.</div>
+      <div class="err hide" id="err"></div>
+    </div>
+
+    <!-- 결과 -->
+    <div>
+      <div class="doc">
+        <div id="empty" class="empty">
+          <div class="t" style="color:#A9B8BC">제목이 여기에 만들어집니다</div>
+          <p>왼쪽에 활동을 적고 <strong>홍보글 만들기</strong>를 누르세요. 만든 뒤에도 이 화면에서 바로 고칠 수 있습니다.</p>
+          <div class="sk" style="width:92%"></div><div class="sk" style="width:100%"></div>
+          <div class="sk" style="width:100%"></div><div class="sk" style="width:74%"></div>
+          <div class="sk" style="width:100%;margin-top:26px"></div><div class="sk" style="width:96%"></div>
+          <div class="sk" style="width:62%"></div>
+        </div>
+        <div id="result" class="hide">
+          <div class="t" id="outTitle" contenteditable="true"></div>
+          <textarea class="b" id="outBody"></textarea>
+        </div>
+      </div>
+
+      <div class="bar hide" id="bar">
+        <button data-c="all">제목+본문 복사</button>
+        <button data-c="title">제목만</button>
+        <button data-c="body">본문만</button>
+        <button class="ghost" id="again">다시 쓰기</button>
+      </div>
+      <div class="note hide" id="factNote">
+        게시 전에 날짜, 인원, 학급 수, 기관명, 강사와 학생 이름이 사실과 맞는지 확인하세요. 목적과 기대효과는 활동 내용에서 만들어 낸 문장입니다.
+      </div>
+
+      <div class="check">
+        <h2>홈페이지 게시 순서</h2>
+        <ul id="checklist"></ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+var WEEK = ['일','월','화','수','목','금','토'];
+var state = { dateMode:'single', voiceMode:'none', tone:'report', tense:'done', mark:'□', paras:'3' };
+
+function $(id){ return document.getElementById(id); }
+
+function fmt(iso, withYear){
+  if(!iso) return '';
+  var p = iso.split('-'), Y=+p[0], M=+p[1], D=+p[2];
+  var w = WEEK[new Date(Y, M-1, D).getDay()];
+  return (withYear===false ? '' : Y+'년 ') + M+'월 '+D+'일('+w+')';
+}
+function dayOnly(iso){
+  var p = iso.split('-'), Y=+p[0], M=+p[1], D=+p[2];
+  return D+'일('+WEEK[new Date(Y, M-1, D).getDay()]+')';
+}
+function dateText(){
+  if(state.dateMode==='free') return $('dFree').value.trim();
+  if(state.dateMode==='single') return fmt($('d1').value);
+  var a=$('d1b').value, b=$('d2').value;
+  if(!a) return '';
+  if(!b) return fmt(a);
+  var pa=a.split('-'), pb=b.split('-');
+  if(pa[0]!==pb[0]) return fmt(a)+'부터 '+fmt(b)+'까지';
+  if(pa[1]!==pb[1]) return fmt(a)+'부터 '+fmt(b,false)+'까지';
+  return fmt(a)+'부터 '+dayOnly(b)+'까지';
+}
+
+/* 세그먼트 버튼 */
+function seg(id, key, after){
+  var box = $(id);
+  box.addEventListener('click', function(e){
+    var b = e.target.closest('button'); if(!b) return;
+    Array.prototype.forEach.call(box.querySelectorAll('button'), function(x){ x.classList.remove('on'); });
+    b.classList.add('on');
+    state[key] = b.getAttribute('data-v');
+    if(after) after();
+  });
+}
+seg('segDate','dateMode', function(){
+  $('dateSingle').classList.toggle('hide', state.dateMode!=='single');
+  $('dateRange').classList.toggle('hide', state.dateMode!=='range');
+  $('dateFree').classList.toggle('hide', state.dateMode!=='free');
+  refresh();
+});
+seg('segVoice','voiceMode', function(){
+  var on = state.voiceMode!=='none';
+  $('voice').classList.toggle('hide', !on);
+  $('voice').placeholder = state.voiceMode==='polish'
+    ? '실제로 나온 말을 짧게 (예: 공책 이렇게 정리해볼래요, 재밌었어요)'
+    : '실제 발언을 그대로';
+  $('voiceHelp').textContent =
+    state.voiceMode==='none' ? '소감 문장 없이 서술로 마무리합니다.'
+    : state.voiceMode==='polish' ? '특정 인물을 지목하지 않는 간접 요약으로 정리합니다.'
+    : '큰따옴표 직접 인용으로 들어갑니다. 실제 발언만 넣으세요.';
+});
+seg('segTone','tone'); seg('segTense','tense'); seg('segMark','mark'); seg('segParas','paras');
+
+/* 대상 칩 */
+['1학년','2학년','3학년','4학년','5학년','6학년','전교생','본교 교원','학부모','전교학생회','학부모회'].forEach(function(t){
+  var b = document.createElement('button');
+  b.textContent = t;
+  b.onclick = function(){ $('target').value = t; refresh(); };
+  $('targetChips').appendChild(b);
+});
+
+/* 게시 체크리스트 */
+['학교 홈페이지 접속 후 인증서로 로그인',
+ '알림마당 > 공지사항 에 등록',
+ '알림마당 > 학교소식 에 같은 내용으로 한 번 더 등록',
+ '사진 4~5장 첨부 (카톡방 사진 중 아이들 얼굴이 크게 나오지 않은 것)'
+].forEach(function(t){
+  var li = document.createElement('li');
+  li.innerHTML = '<input type="checkbox"><span></span>';
+  li.querySelector('span').textContent = t;
+  li.onclick = function(e){
+    var cb = li.querySelector('input');
+    if(e.target !== cb) cb.checked = !cb.checked;
+    li.classList.toggle('done', cb.checked);
+  };
+  $('checklist').appendChild(li);
+});
+
+function refresh(){
+  $('datePreview').textContent = dateText() ? '본문 표기: '+dateText() : '';
+  var ok = $('target').value.trim() && $('activity').value.trim() && $('detail').value.trim();
+  $('go').disabled = !ok;
+  $('readyNote').classList.toggle('hide', !!ok);
+}
+['d1','d1b','d2','dFree','target','activity','detail'].forEach(function(id){
+  $(id).addEventListener('input', refresh);
+});
+refresh();
+
+function generate(){
+  $('go').disabled = true;
+  $('go').textContent = '쓰는 중…';
+  $('err').classList.add('hide');
+
+  google.script.run
+    .withSuccessHandler(function(r){
+      $('empty').classList.add('hide');
+      $('result').classList.remove('hide');
+      $('bar').classList.remove('hide');
+      $('factNote').classList.remove('hide');
+      $('outTitle').textContent = r.title;
+      $('outBody').value = r.body;
+      $('outBody').style.height = 'auto';
+      $('outBody').style.height = ($('outBody').scrollHeight + 20) + 'px';
+      // google.script.run.saveLog(r.title, r.body);   // 스프레드시트 기록을 쓰려면 주석 해제
+      done();
+    })
+    .withFailureHandler(function(e){
+      $('err').textContent = e.message || '글을 만들지 못했습니다. 잠시 후 다시 눌러 주세요.';
+      $('err').classList.remove('hide');
+      done();
+    })
+    .generateArticle({
+      dateText: dateText(),
+      target: $('target').value.trim(),
+      activity: $('activity').value.trim(),
+      detail: $('detail').value.trim(),
+      scale: $('scale').value.trim(),
+      partner: $('partner').value.trim(),
+      effect: $('effect').value.trim(),
+      voiceMode: state.voiceMode,
+      voice: $('voice').value.trim(),
+      quote2: $('quote2').value.trim(),
+      tone: state.tone,
+      tense: state.tense,
+      paras: state.paras,
+      mark: state.mark,
+      subhead: $('subhead').checked,
+      iem: $('iem').checked,
+      signer: $('signer').value.trim()
+    });
+}
+function done(){ $('go').textContent = '홍보글 만들기'; refresh(); }
+
+$('go').onclick = generate;
+$('again').onclick = generate;
+
+$('bar').addEventListener('click', function(e){
+  var b = e.target.closest('button[data-c]'); if(!b) return;
+  var what = b.getAttribute('data-c');
+  var t = $('outTitle').textContent, y = $('outBody').value;
+  var text = what==='title' ? t : what==='body' ? y : t+'\n\n'+y;
+  var ta = document.createElement('textarea');
+  ta.value = text; ta.style.position='fixed'; ta.style.left='-9999px';
+  document.body.appendChild(ta); ta.select();
+  try { document.execCommand('copy'); } catch(err) {}
+  document.body.removeChild(ta);
+  var old = b.textContent;
+  b.textContent = '복사했습니다';
+  setTimeout(function(){ b.textContent = old; }, 1600);
+});
+</script>
+</body>
+</html>

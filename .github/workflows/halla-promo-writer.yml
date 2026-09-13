@@ -1,0 +1,96 @@
+# 한라초 홍보글 작성 — 데스크톱 앱 설치 파일 만들기
+#
+# 실행 방법
+#   1) GitHub 저장소 > Actions > "한라초 홍보글 작성 앱 빌드" > Run workflow
+#      → 끝나면 그 실행 페이지 아래 Artifacts 에서 설치 파일(zip)을 내려받습니다.
+#   2) 또는 태그를 붙여 푸시하면 (예: promo-v1.0.0) Releases 페이지에 설치 파일이 올라갑니다.
+name: 한라초 홍보글 작성 앱 빌드
+
+on:
+  workflow_dispatch:
+    inputs:
+      platforms:
+        description: '만들 운영체제'
+        type: choice
+        default: windows
+        options:
+          - windows
+          - mac
+          - both
+  push:
+    tags:
+      - 'promo-v*'
+
+defaults:
+  run:
+    working-directory: halla-promo-writer
+
+jobs:
+  windows:
+    name: Windows 설치 파일
+    if: ${{ github.event_name == 'push' || inputs.platforms != 'mac' }}
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+          cache-dependency-path: halla-promo-writer/package-lock.json
+      - run: npm ci
+      - run: npm test
+      - run: npm run dist:win
+        env:
+          CSC_IDENTITY_AUTO_DISCOVERY: 'false'
+      - uses: actions/upload-artifact@v4
+        with:
+          name: windows
+          path: |
+            halla-promo-writer/dist/*.exe
+          if-no-files-found: error
+
+  mac:
+    name: macOS 설치 파일
+    if: ${{ github.event_name == 'push' || inputs.platforms != 'windows' }}
+    runs-on: macos-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+          cache-dependency-path: halla-promo-writer/package-lock.json
+      - run: npm ci
+      - run: npm test
+      - run: npm run dist:mac
+        env:
+          CSC_IDENTITY_AUTO_DISCOVERY: 'false'
+      - uses: actions/upload-artifact@v4
+        with:
+          name: mac
+          path: |
+            halla-promo-writer/dist/*.dmg
+          if-no-files-found: error
+
+  release:
+    name: Releases 에 올리기
+    if: ${{ github.event_name == 'push' }}
+    needs: [windows, mac]
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/download-artifact@v4
+        with:
+          path: files
+          merge-multiple: true
+      - name: 릴리스 만들기
+        working-directory: files
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          ls -la
+          gh release create "${GITHUB_REF_NAME}" --repo "${GITHUB_REPOSITORY}" \
+            --title "한라초 홍보글 작성 ${GITHUB_REF_NAME#promo-v}" \
+            --notes "Windows: *Setup*.exe(설치) 또는 *무설치*.exe / macOS: *.dmg" \
+            *.exe *.dmg
