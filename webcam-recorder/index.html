@@ -1,0 +1,508 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>웹캠 녹화기</title>
+<style>
+  :root {
+    --bg: #f5f6f8; --panel: #fff; --text: #1d2129; --muted: #6b7280;
+    --line: #e3e5e9; --accent: #2563eb; --rec: #dc2626; --ok: #16a34a;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #111317; --panel: #1b1e24; --text: #e7e9ee; --muted: #9aa1ad;
+      --line: #2c313a; --accent: #4f8cff; --rec: #ef4444; --ok: #22c55e;
+    }
+  }
+  * { box-sizing: border-box; }
+  [hidden] { display: none !important; }
+  body {
+    margin: 0; background: var(--bg); color: var(--text);
+    font: 15px/1.5 system-ui, -apple-system, "Segoe UI", "Malgun Gothic", sans-serif;
+  }
+  main { max-width: 960px; margin: 0 auto; padding: 24px 16px 48px; }
+  h1 { font-size: 22px; margin: 0 0 16px; }
+  h2 { font-size: 16px; margin: 0 0 12px; }
+  .panel { background: var(--panel); border: 1px solid var(--line); border-radius: 12px; padding: 16px; margin-bottom: 16px; }
+
+  .stage { position: relative; background: #000; border-radius: 10px; overflow: hidden; aspect-ratio: 16 / 9; }
+  .stage video { width: 100%; height: 100%; object-fit: contain; display: block; }
+  .stage video.mirror { transform: scaleX(-1); }
+  .stage .placeholder { position: absolute; inset: 0; display: grid; place-items: center; color: #9aa1ad; text-align: center; padding: 16px; }
+  .badge {
+    position: absolute; top: 12px; left: 12px; display: none; align-items: center; gap: 8px;
+    background: rgba(0,0,0,.6); color: #fff; padding: 4px 10px; border-radius: 999px;
+    font-variant-numeric: tabular-nums; font-weight: 600;
+  }
+  .badge.on { display: inline-flex; }
+  .badge .dot { width: 10px; height: 10px; border-radius: 50%; background: var(--rec); animation: blink 1s infinite; }
+  .badge.paused .dot { animation: none; background: #f59e0b; }
+  @keyframes blink { 50% { opacity: .2; } }
+  .meter { position: absolute; left: 12px; right: 12px; bottom: 12px; height: 4px; background: rgba(255,255,255,.2); border-radius: 2px; overflow: hidden; display: none; }
+  .meter.on { display: block; }
+  .meter > div { height: 100%; width: 0; background: var(--ok); transition: width .08s linear; }
+
+  .controls { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 12px; }
+  button {
+    font: inherit; border: 1px solid var(--line); background: var(--panel); color: var(--text);
+    padding: 8px 14px; border-radius: 8px; cursor: pointer;
+  }
+  button:hover:not(:disabled) { border-color: var(--accent); }
+  button:disabled { opacity: .45; cursor: not-allowed; }
+  button.primary { background: var(--accent); border-color: var(--accent); color: #fff; }
+  button.rec { background: var(--rec); border-color: var(--rec); color: #fff; }
+
+  .settings { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 12px; }
+  label { display: flex; flex-direction: column; gap: 4px; font-size: 13px; color: var(--muted); }
+  label.check { grid-column: 1 / -1; flex-direction: row; align-items: center; gap: 8px; color: var(--text); font-size: 14px; }
+  select { font: inherit; padding: 7px 8px; border-radius: 8px; border: 1px solid var(--line); background: var(--panel); color: var(--text); }
+
+  .status { margin-top: 10px; font-size: 13px; color: var(--muted); min-height: 1.5em; }
+  .status.error { color: var(--rec); }
+
+  .list { display: grid; gap: 12px; }
+  .item { display: grid; grid-template-columns: 200px 1fr; gap: 12px; align-items: start; border-top: 1px solid var(--line); padding-top: 12px; }
+  .item:first-child { border-top: 0; padding-top: 0; }
+  .item video, .item img { width: 100%; border-radius: 8px; background: #000; display: block; }
+  .item .meta { font-size: 13px; color: var(--muted); }
+  .item .name { font-weight: 600; color: var(--text); word-break: break-all; }
+  .item .actions { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 8px; }
+  .item .actions a, .item .actions button { font-size: 13px; padding: 5px 10px; }
+  a.btn { text-decoration: none; color: #fff; background: var(--accent); border-radius: 8px; display: inline-block; }
+  .empty { color: var(--muted); font-size: 14px; }
+
+  @media (max-width: 560px) {
+    .item { grid-template-columns: 1fr; }
+  }
+</style>
+</head>
+<body>
+<main>
+  <h1>웹캠 녹화기</h1>
+
+  <section class="panel">
+    <div class="stage">
+      <video id="preview" class="mirror" autoplay playsinline muted></video>
+      <div id="placeholder" class="placeholder">‘카메라 켜기’를 누르면 미리보기가 나타납니다.</div>
+      <div id="badge" class="badge"><span class="dot"></span><span id="timer">00:00</span></div>
+      <div id="meter" class="meter"><div id="meterBar"></div></div>
+    </div>
+
+    <div class="controls">
+      <button id="btnCamera" class="primary">카메라 켜기</button>
+      <button id="btnRecord" disabled>● 녹화 시작</button>
+      <button id="btnPause" disabled>일시정지</button>
+      <button id="btnSnapshot" disabled>사진 찍기</button>
+    </div>
+    <div id="status" class="status" role="status"></div>
+  </section>
+
+  <section class="panel">
+    <h2>설정</h2>
+    <div class="settings">
+      <label>카메라
+        <select id="videoSource"><option value="">기본 카메라</option></select>
+      </label>
+      <label>마이크
+        <select id="audioSource">
+          <option value="">기본 마이크</option>
+          <option value="none">오디오 끄기</option>
+        </select>
+      </label>
+      <label>해상도
+        <select id="resolution">
+          <option value="640x480">640 × 480</option>
+          <option value="1280x720" selected>1280 × 720 (HD)</option>
+          <option value="1920x1080">1920 × 1080 (Full HD)</option>
+          <option value="3840x2160">3840 × 2160 (4K)</option>
+        </select>
+      </label>
+      <label>녹화 형식
+        <select id="format"></select>
+      </label>
+      <label class="check"><input type="checkbox" id="mirror" checked> 미리보기 좌우 반전 (녹화 파일엔 영향 없음)</label>
+    </div>
+  </section>
+
+  <section class="panel">
+    <h2>녹화 목록</h2>
+    <div id="list" class="list"><p class="empty">아직 녹화한 영상이 없습니다.</p></div>
+  </section>
+</main>
+
+<script>
+(() => {
+  'use strict';
+
+  const $ = (id) => document.getElementById(id);
+  const preview = $('preview');
+  const placeholder = $('placeholder');
+  const badge = $('badge');
+  const timerEl = $('timer');
+  const meter = $('meter');
+  const meterBar = $('meterBar');
+  const btnCamera = $('btnCamera');
+  const btnRecord = $('btnRecord');
+  const btnPause = $('btnPause');
+  const btnSnapshot = $('btnSnapshot');
+  const statusEl = $('status');
+  const videoSource = $('videoSource');
+  const audioSource = $('audioSource');
+  const resolution = $('resolution');
+  const formatSel = $('format');
+  const mirror = $('mirror');
+  const list = $('list');
+
+  // 브라우저마다 지원하는 코덱이 달라서 지원되는 것만 보여준다.
+  const CANDIDATE_TYPES = [
+    { mime: 'video/webm;codecs=vp9,opus', label: 'WebM (VP9)', ext: 'webm' },
+    { mime: 'video/webm;codecs=vp8,opus', label: 'WebM (VP8)', ext: 'webm' },
+    { mime: 'video/webm;codecs=h264,opus', label: 'WebM (H.264)', ext: 'webm' },
+    { mime: 'video/mp4;codecs=avc1,mp4a', label: 'MP4 (H.264)', ext: 'mp4' },
+    { mime: 'video/mp4', label: 'MP4', ext: 'mp4' },
+    { mime: 'video/webm', label: 'WebM', ext: 'webm' },
+  ];
+
+  let stream = null;
+  let recorder = null;
+  let chunks = [];
+  let elapsedMs = 0;
+  let segmentStart = 0;
+  let tickId = 0;
+  let audioCtx = null;
+  let meterRaf = 0;
+
+  function setStatus(msg, isError = false) {
+    statusEl.textContent = msg;
+    statusEl.classList.toggle('error', isError);
+  }
+
+  function fmtTime(ms) {
+    const s = Math.floor(ms / 1000);
+    const h = Math.floor(s / 3600);
+    const m = Math.floor((s % 3600) / 60);
+    const ss = String(s % 60).padStart(2, '0');
+    return h ? `${h}:${String(m).padStart(2, '0')}:${ss}` : `${String(m).padStart(2, '0')}:${ss}`;
+  }
+
+  function fmtSize(bytes) {
+    if (bytes < 1024 * 1024) return `${(bytes / 1024).toFixed(1)} KB`;
+    return `${(bytes / 1024 / 1024).toFixed(1)} MB`;
+  }
+
+  function timestamp() {
+    const d = new Date();
+    const p = (n) => String(n).padStart(2, '0');
+    return `${d.getFullYear()}${p(d.getMonth() + 1)}${p(d.getDate())}_${p(d.getHours())}${p(d.getMinutes())}${p(d.getSeconds())}`;
+  }
+
+  function initFormats() {
+    if (typeof MediaRecorder === 'undefined') return;
+    const supported = CANDIDATE_TYPES.filter((t) => MediaRecorder.isTypeSupported(t.mime));
+    for (const t of supported) {
+      const opt = document.createElement('option');
+      opt.value = t.mime;
+      opt.textContent = t.label;
+      formatSel.append(opt);
+    }
+    if (!supported.length) {
+      const opt = document.createElement('option');
+      opt.value = '';
+      opt.textContent = '브라우저 기본값';
+      formatSel.append(opt);
+    }
+  }
+
+  async function refreshDevices() {
+    const devices = await navigator.mediaDevices.enumerateDevices();
+    fillSelect(videoSource, devices.filter((d) => d.kind === 'videoinput'), '카메라', [{ value: '', text: '기본 카메라' }]);
+    fillSelect(audioSource, devices.filter((d) => d.kind === 'audioinput'), '마이크', [
+      { value: '', text: '기본 마이크' },
+      { value: 'none', text: '오디오 끄기' },
+    ]);
+  }
+
+  function fillSelect(select, devices, kindLabel, fixed) {
+    const prev = select.value;
+    select.textContent = '';
+    for (const f of fixed) select.append(new Option(f.text, f.value));
+    devices.forEach((d, i) => {
+      if (!d.deviceId) return;
+      select.append(new Option(d.label || `${kindLabel} ${i + 1}`, d.deviceId));
+    });
+    if ([...select.options].some((o) => o.value === prev)) select.value = prev;
+  }
+
+  function buildConstraints() {
+    const [w, h] = resolution.value.split('x').map(Number);
+    const video = { width: { ideal: w }, height: { ideal: h } };
+    if (videoSource.value) video.deviceId = { exact: videoSource.value };
+    let audio = true;
+    if (audioSource.value === 'none') audio = false;
+    else if (audioSource.value) audio = { deviceId: { exact: audioSource.value } };
+    if (audio) {
+      audio = typeof audio === 'object' ? audio : {};
+      Object.assign(audio, { echoCancellation: true, noiseSuppression: true });
+    }
+    return { video, audio };
+  }
+
+  async function startCamera() {
+    if (!navigator.mediaDevices?.getUserMedia) {
+      setStatus('이 브라우저는 카메라 접근을 지원하지 않습니다. 최신 Chrome / Edge / Firefox / Safari를 사용하세요.', true);
+      return;
+    }
+    stopCamera();
+    setStatus('카메라를 여는 중…');
+    try {
+      stream = await navigator.mediaDevices.getUserMedia(buildConstraints());
+    } catch (err) {
+      stream = null;
+      setStatus(cameraErrorMessage(err), true);
+      return;
+    }
+    preview.srcObject = stream;
+    placeholder.hidden = true;
+    btnCamera.textContent = '카메라 끄기';
+    btnCamera.classList.remove('primary');
+    btnRecord.disabled = typeof MediaRecorder === 'undefined';
+    btnSnapshot.disabled = false;
+
+    // 권한을 받은 뒤에야 장치 이름이 보이므로 목록을 다시 채운다.
+    await refreshDevices().catch(() => {});
+    startMeter();
+
+    const vt = stream.getVideoTracks()[0];
+    const s = vt?.getSettings() ?? {};
+    const hasAudio = stream.getAudioTracks().length > 0;
+    setStatus(`카메라 준비됨 · ${s.width ?? '?'}×${s.height ?? '?'}${s.frameRate ? ` · ${Math.round(s.frameRate)}fps` : ''}${hasAudio ? ' · 오디오 켜짐' : ' · 오디오 꺼짐'}`);
+    if (typeof MediaRecorder === 'undefined') setStatus('이 브라우저는 MediaRecorder를 지원하지 않아 녹화할 수 없습니다.', true);
+  }
+
+  function cameraErrorMessage(err) {
+    switch (err?.name) {
+      case 'NotAllowedError': return '카메라/마이크 권한이 거부되었습니다. 주소창의 권한 설정에서 허용해 주세요.';
+      case 'NotFoundError': return '연결된 카메라나 마이크를 찾을 수 없습니다.';
+      case 'NotReadableError': return '다른 프로그램이 카메라를 사용 중입니다. 해당 프로그램을 닫고 다시 시도하세요.';
+      case 'OverconstrainedError': return '선택한 장치나 해상도를 지원하지 않습니다. 다른 설정을 골라 주세요.';
+      case 'SecurityError': return '보안 정책 때문에 카메라를 열 수 없습니다. https 또는 localhost 에서 열어 주세요.';
+      default: return `카메라를 열지 못했습니다: ${err?.message || err}`;
+    }
+  }
+
+  function stopCamera() {
+    stopRecording();
+    stopMeter();
+    if (stream) stream.getTracks().forEach((t) => t.stop());
+    stream = null;
+    preview.srcObject = null;
+    placeholder.hidden = false;
+    btnCamera.textContent = '카메라 켜기';
+    btnCamera.classList.add('primary');
+    btnRecord.disabled = true;
+    btnPause.disabled = true;
+    btnSnapshot.disabled = true;
+  }
+
+  function startMeter() {
+    if (!stream.getAudioTracks().length) return;
+    const Ctx = window.AudioContext || window.webkitAudioContext;
+    if (!Ctx) return;
+    audioCtx = new Ctx();
+    const src = audioCtx.createMediaStreamSource(stream);
+    const analyser = audioCtx.createAnalyser();
+    analyser.fftSize = 512;
+    src.connect(analyser);
+    const data = new Uint8Array(analyser.fftSize);
+    meter.classList.add('on');
+    const loop = () => {
+      analyser.getByteTimeDomainData(data);
+      let sum = 0;
+      for (const v of data) { const x = (v - 128) / 128; sum += x * x; }
+      const rms = Math.sqrt(sum / data.length);
+      meterBar.style.width = `${Math.min(100, rms * 300)}%`;
+      meterRaf = requestAnimationFrame(loop);
+    };
+    loop();
+  }
+
+  function stopMeter() {
+    cancelAnimationFrame(meterRaf);
+    meter.classList.remove('on');
+    meterBar.style.width = '0';
+    if (audioCtx) audioCtx.close().catch(() => {});
+    audioCtx = null;
+  }
+
+  function startRecording() {
+    if (!stream) return;
+    const mimeType = formatSel.value;
+    try {
+      recorder = new MediaRecorder(stream, mimeType ? { mimeType } : undefined);
+    } catch (err) {
+      setStatus(`녹화를 시작하지 못했습니다: ${err.message}`, true);
+      return;
+    }
+    chunks = [];
+    recorder.ondataavailable = (e) => { if (e.data && e.data.size) chunks.push(e.data); };
+    recorder.onstop = finishRecording;
+    recorder.onerror = (e) => setStatus(`녹화 오류: ${e.error?.message || e.error || '알 수 없음'}`, true);
+    recorder.start(1000); // 1초마다 청크를 받아서 긴 녹화에서도 데이터 유실을 줄인다.
+
+    elapsedMs = 0;
+    segmentStart = performance.now();
+    tickId = setInterval(updateTimer, 250);
+    updateTimer();
+    badge.classList.add('on');
+    badge.classList.remove('paused');
+
+    btnRecord.textContent = '■ 녹화 중지';
+    btnRecord.classList.add('rec');
+    btnPause.disabled = false;
+    btnPause.textContent = '일시정지';
+    btnCamera.disabled = true;
+    videoSource.disabled = audioSource.disabled = resolution.disabled = formatSel.disabled = true;
+    setStatus('녹화 중…');
+  }
+
+  function stopRecording() {
+    if (!recorder || recorder.state === 'inactive') return;
+    elapsedMs = currentElapsed(); // stop() 이후엔 state 가 inactive 라서 진행 중 구간을 미리 합산한다.
+    recorder.stop();
+  }
+
+  function togglePause() {
+    if (!recorder) return;
+    if (recorder.state === 'recording') {
+      recorder.pause();
+      elapsedMs += performance.now() - segmentStart;
+      badge.classList.add('paused');
+      btnPause.textContent = '다시 시작';
+      setStatus('일시정지됨');
+    } else if (recorder.state === 'paused') {
+      recorder.resume();
+      segmentStart = performance.now();
+      badge.classList.remove('paused');
+      btnPause.textContent = '일시정지';
+      setStatus('녹화 중…');
+    }
+  }
+
+  function currentElapsed() {
+    return recorder?.state === 'recording' ? elapsedMs + performance.now() - segmentStart : elapsedMs;
+  }
+
+  function updateTimer() {
+    timerEl.textContent = fmtTime(currentElapsed());
+  }
+
+  function finishRecording() {
+    const duration = elapsedMs;
+    clearInterval(tickId);
+    badge.classList.remove('on', 'paused');
+    btnRecord.textContent = '● 녹화 시작';
+    btnRecord.classList.remove('rec');
+    btnRecord.disabled = !stream;
+    btnPause.disabled = true;
+    btnCamera.disabled = false;
+    videoSource.disabled = audioSource.disabled = resolution.disabled = formatSel.disabled = false;
+
+    const type = recorder.mimeType || formatSel.value || 'video/webm';
+    recorder = null;
+    if (!chunks.length) {
+      setStatus('녹화된 데이터가 없습니다.', true);
+      return;
+    }
+    const blob = new Blob(chunks, { type });
+    chunks = [];
+    const ext = type.includes('mp4') ? 'mp4' : 'webm';
+    addItem({ kind: 'video', blob, name: `webcam_${timestamp()}.${ext}`, duration });
+    setStatus(`녹화 완료 · ${fmtTime(duration)} · ${fmtSize(blob.size)}`);
+  }
+
+  function takeSnapshot() {
+    if (!stream) return;
+    const w = preview.videoWidth, h = preview.videoHeight;
+    if (!w || !h) return;
+    const canvas = document.createElement('canvas');
+    canvas.width = w;
+    canvas.height = h;
+    const ctx = canvas.getContext('2d');
+    if (mirror.checked) { ctx.translate(w, 0); ctx.scale(-1, 1); } // 사진은 화면에 보이는 그대로 저장
+    ctx.drawImage(preview, 0, 0, w, h);
+    canvas.toBlob((blob) => {
+      if (!blob) return;
+      addItem({ kind: 'image', blob, name: `snapshot_${timestamp()}.png` });
+      setStatus(`사진 저장됨 · ${w}×${h}`);
+    }, 'image/png');
+  }
+
+  function addItem({ kind, blob, name, duration }) {
+    list.querySelector('.empty')?.remove();
+    const url = URL.createObjectURL(blob);
+    const item = document.createElement('div');
+    item.className = 'item';
+
+    const media = document.createElement(kind === 'video' ? 'video' : 'img');
+    media.src = url;
+    if (kind === 'video') { media.controls = true; media.playsInline = true; media.preload = 'metadata'; }
+    else media.alt = name;
+
+    const info = document.createElement('div');
+    const nameEl = document.createElement('div');
+    nameEl.className = 'name';
+    nameEl.textContent = name;
+    const meta = document.createElement('div');
+    meta.className = 'meta';
+    meta.textContent = [kind === 'video' ? '동영상' : '사진', duration != null ? fmtTime(duration) : null, fmtSize(blob.size)]
+      .filter(Boolean).join(' · ');
+
+    const actions = document.createElement('div');
+    actions.className = 'actions';
+    const dl = document.createElement('a');
+    dl.className = 'btn';
+    dl.href = url;
+    dl.download = name;
+    dl.textContent = '다운로드';
+    const del = document.createElement('button');
+    del.textContent = '삭제';
+    del.onclick = () => {
+      URL.revokeObjectURL(url);
+      item.remove();
+      if (!list.children.length) list.innerHTML = '<p class="empty">아직 녹화한 영상이 없습니다.</p>';
+    };
+    actions.append(dl, del);
+    info.append(nameEl, meta, actions);
+    item.append(media, info);
+    list.prepend(item);
+  }
+
+  btnCamera.onclick = () => (stream ? stopCamera() : startCamera());
+  btnRecord.onclick = () => (recorder ? stopRecording() : startRecording());
+  btnPause.onclick = togglePause;
+  btnSnapshot.onclick = takeSnapshot;
+  mirror.onchange = () => preview.classList.toggle('mirror', mirror.checked);
+  // 카메라가 켜진 상태에서 장치/해상도를 바꾸면 바로 다시 연다.
+  for (const sel of [videoSource, audioSource, resolution]) {
+    sel.onchange = () => { if (stream && !recorder) startCamera(); };
+  }
+  navigator.mediaDevices?.addEventListener?.('devicechange', () => refreshDevices().catch(() => {}));
+
+  window.addEventListener('keydown', (e) => {
+    if (e.target.closest('select, input, button')) return;
+    if (e.code === 'Space' && stream) { e.preventDefault(); recorder ? stopRecording() : startRecording(); }
+    else if (e.key === 'p' && recorder) togglePause();
+    else if (e.key === 's' && stream) takeSnapshot();
+  });
+  window.addEventListener('beforeunload', (e) => {
+    if (recorder) { e.preventDefault(); e.returnValue = ''; }
+  });
+
+  initFormats();
+  if (!window.isSecureContext) setStatus('카메라는 https 또는 localhost 에서만 사용할 수 있습니다.', true);
+  else refreshDevices().catch(() => {});
+})();
+</script>
+</body>
+</html>
